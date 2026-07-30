@@ -1,0 +1,1014 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ATOMY by Anna Yakovleva — Команда Балхай</title>
+  <meta name="description" content="Личный сайт Анны Яковлевой — дистрибьютора Atomy в команде Балхай. Обучение, продукция, регистрация.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --atomy-blue: #00A9E0;
+      --atomy-blue-dark: #0088b5;
+      --atomy-blue-light: #e6f7fc;
+      --text-primary: #1a1a1a;
+      --text-secondary: #666666;
+      --bg-white: #ffffff;
+      --bg-light: #f8f9fa;
+      --transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      color: var(--text-primary);
+      background: var(--bg-white);
+      overflow-x: hidden;
+      line-height: 1.6;
+    }
+    .preloader {
+      position: fixed; inset: 0; z-index: 9999;
+      background: var(--bg-white);
+      display: flex; align-items: center; justify-content: center;
+      flex-direction: column; gap: 24px;
+      transition: opacity 0.6s ease, visibility 0.6s ease;
+    }
+    .preloader.hidden { opacity: 0; visibility: hidden; pointer-events: none; }
+    .preloader-logo {
+      font-size: 32px; font-weight: 700; letter-spacing: 2px;
+      color: var(--text-primary);
+    }
+    .preloader-logo span { color: var(--atomy-blue); font-weight: 300; }
+    .preloader-bar {
+      width: 120px; height: 2px; background: #eee; border-radius: 2px; overflow: hidden;
+    }
+    .preloader-bar::after {
+      content: ''; display: block; width: 0%; height: 100%;
+      background: var(--atomy-blue);
+      animation: loadBar 1.2s ease forwards;
+    }
+    @keyframes loadBar { to { width: 100%; } }
+
+    .header {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+      background: rgba(255,255,255,0.95);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(0,0,0,0.05);
+      transition: var(--transition);
+    }
+    .header.scrolled { box-shadow: 0 2px 20px rgba(0,0,0,0.06); }
+    .header-inner {
+      max-width: 1200px; margin: 0 auto;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 24px; height: 72px;
+    }
+    .logo {
+      font-size: 20px; font-weight: 700; letter-spacing: 1px;
+      text-decoration: none; color: var(--text-primary);
+    }
+    .logo span { color: var(--atomy-blue); font-weight: 400; }
+    .nav { display: flex; gap: 32px; align-items: center; }
+    .nav a {
+      text-decoration: none; color: var(--text-secondary);
+      font-size: 14px; font-weight: 500; letter-spacing: 0.3px;
+      transition: var(--transition); position: relative;
+    }
+    .nav a::after {
+      content: ''; position: absolute; bottom: -4px; left: 0;
+      width: 0; height: 2px; background: var(--atomy-blue);
+      transition: width 0.3s ease;
+    }
+    .nav a:hover { color: var(--text-primary); }
+    .nav a:hover::after { width: 100%; }
+    .lang-switch {
+      display: flex; gap: 8px; align-items: center;
+      font-size: 13px; font-weight: 500; cursor: pointer;
+      padding: 6px 12px; border-radius: 4px;
+      border: 1px solid rgba(0,0,0,0.08);
+      background: transparent; color: var(--text-secondary);
+      transition: var(--transition);
+    }
+    .lang-switch:hover { border-color: var(--atomy-blue); color: var(--atomy-blue); }
+    .mobile-menu-btn {
+      display: none; flex-direction: column; gap: 5px; cursor: pointer;
+      background: none; border: none; padding: 8px;
+    }
+    .mobile-menu-btn span {
+      display: block; width: 24px; height: 2px;
+      background: var(--text-primary); transition: 0.3s;
+    }
+    .mobile-nav {
+      display: none; position: fixed; top: 72px; left: 0; right: 0;
+      background: var(--bg-white); border-bottom: 1px solid rgba(0,0,0,0.08);
+      padding: 24px; flex-direction: column; gap: 20px; z-index: 999;
+    }
+    .mobile-nav.open { display: flex; }
+    .mobile-nav a {
+      text-decoration: none; color: var(--text-primary);
+      font-size: 16px; font-weight: 500;
+    }
+
+    .hero {
+      position: relative; height: 100vh; min-height: 700px;
+      display: flex; align-items: center; overflow: hidden;
+    }
+    .hero-bg {
+      position: absolute; inset: 0;
+      background: linear-gradient(135deg, #e6f7fc 0%, #ffffff 50%, #f0f8ff 100%);
+      z-index: 0;
+    }
+    .hero-bg::before {
+      content: ''; position: absolute; inset: 0;
+      background: url('https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=1920&q=80') center/cover;
+      opacity: 0.12;
+    }
+    .hero-content {
+      position: relative; z-index: 2;
+      max-width: 1200px; margin: 0 auto; padding: 0 24px;
+      width: 100%;
+    }
+    .hero-label {
+      display: inline-block; font-size: 12px; font-weight: 600;
+      letter-spacing: 3px; text-transform: uppercase;
+      color: var(--atomy-blue); margin-bottom: 24px;
+      opacity: 0; transform: translateY(20px);
+      animation: fadeUp 0.8s ease 0.3s forwards;
+    }
+    .hero-title {
+      font-size: clamp(36px, 5.5vw, 72px);
+      font-weight: 700; line-height: 1.1; letter-spacing: -1.5px;
+      max-width: 700px; margin-bottom: 24px;
+      opacity: 0; transform: translateY(30px);
+      animation: fadeUp 0.8s ease 0.5s forwards;
+    }
+    .hero-title .highlight { color: var(--atomy-blue); font-weight: 300; }
+    .hero-sub {
+      font-size: 18px; color: var(--text-secondary); max-width: 480px;
+      line-height: 1.7; margin-bottom: 40px;
+      opacity: 0; transform: translateY(20px);
+      animation: fadeUp 0.8s ease 0.7s forwards;
+    }
+    .hero-btns {
+      display: flex; gap: 16px; flex-wrap: wrap;
+      opacity: 0; transform: translateY(20px);
+      animation: fadeUp 0.8s ease 0.9s forwards;
+    }
+    .btn {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 14px 32px; font-size: 14px; font-weight: 600;
+      letter-spacing: 0.5px; text-decoration: none;
+      border-radius: 2px; transition: var(--transition); cursor: pointer; border: none;
+    }
+    .btn-primary {
+      background: var(--atomy-blue); color: #fff;
+    }
+    .btn-primary:hover { background: var(--atomy-blue-dark); transform: translateY(-2px); }
+    .btn-outline {
+      background: transparent; color: var(--text-primary);
+      border: 1.5px solid rgba(0,0,0,0.15);
+    }
+    .btn-outline:hover { border-color: var(--atomy-blue); color: var(--atomy-blue); }
+
+    .scroll-indicator {
+      position: absolute; bottom: 40px; left: 50%; transform: translateX(-50%);
+      display: flex; flex-direction: column; align-items: center; gap: 8px;
+      font-size: 11px; letter-spacing: 2px; text-transform: uppercase;
+      color: var(--text-secondary); opacity: 0;
+      animation: fadeIn 1s ease 1.5s forwards;
+    }
+    .scroll-indicator::after {
+      content: ''; width: 1px; height: 40px;
+      background: linear-gradient(to bottom, var(--atomy-blue), transparent);
+      animation: scrollPulse 2s ease-in-out infinite;
+    }
+    @keyframes scrollPulse {
+      0%, 100% { transform: scaleY(1); opacity: 1; }
+      50% { transform: scaleY(0.6); opacity: 0.5; }
+    }
+
+    .section { padding: 120px 24px; position: relative; }
+    .section-inner { max-width: 1200px; margin: 0 auto; }
+    .section-header { margin-bottom: 80px; }
+    .section-label {
+      font-size: 12px; font-weight: 600; letter-spacing: 3px;
+      text-transform: uppercase; color: var(--atomy-blue); margin-bottom: 16px;
+    }
+    .section-title {
+      font-size: clamp(28px, 3.5vw, 48px); font-weight: 700;
+      letter-spacing: -1px; line-height: 1.2;
+    }
+
+    .about-grid {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center;
+    }
+    .about-text p {
+      font-size: 17px; color: var(--text-secondary); line-height: 1.8; margin-bottom: 20px;
+    }
+    .about-img {
+      position: relative; border-radius: 2px; overflow: hidden;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.08);
+    }
+    .about-img img { width: 100%; height: 500px; object-fit: cover; display: block; }
+    .about-img::after {
+      content: ''; position: absolute; inset: 0;
+      background: linear-gradient(to top, rgba(0,169,224,0.1), transparent);
+    }
+
+    .stats-section { background: var(--bg-light); }
+    .stats-grid {
+      display: grid; grid-template-columns: repeat(4, 1fr); gap: 40px;
+    }
+    .stat-item {
+      text-align: center; padding: 40px 20px;
+      background: var(--bg-white); border-radius: 2px;
+      border: 1px solid rgba(0,0,0,0.04);
+      transition: var(--transition);
+    }
+    .stat-item:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 40px rgba(0,0,0,0.06);
+    }
+    .stat-number {
+      font-size: 48px; font-weight: 700; color: var(--atomy-blue);
+      line-height: 1; margin-bottom: 12px; letter-spacing: -2px;
+    }
+    .stat-label {
+      font-size: 14px; font-weight: 600; color: var(--text-primary);
+      margin-bottom: 8px; letter-spacing: 0.3px;
+    }
+    .stat-desc {
+      font-size: 13px; color: var(--text-secondary); line-height: 1.6;
+    }
+
+    .team-section { background: var(--atomy-blue); color: #fff; }
+    .team-section .section-label { color: rgba(255,255,255,0.7); }
+    .team-section .section-title { color: #fff; }
+    .team-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;
+    }
+    .team-card {
+      background: rgba(255,255,255,0.1); backdrop-filter: blur(10px);
+      border-radius: 2px; overflow: hidden;
+      border: 1px solid rgba(255,255,255,0.15);
+      transition: var(--transition);
+    }
+    .team-card:hover { transform: translateY(-6px); background: rgba(255,255,255,0.15); }
+    .team-card img { width: 100%; height: 280px; object-fit: cover; }
+    .team-card-body { padding: 24px; }
+    .team-card-name { font-size: 18px; font-weight: 600; margin-bottom: 4px; }
+    .team-card-role { font-size: 14px; opacity: 0.8; }
+
+    .events-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;
+    }
+    .event-card {
+      border-radius: 2px; overflow: hidden;
+      border: 1px solid rgba(0,0,0,0.06);
+      transition: var(--transition); cursor: pointer;
+    }
+    .event-card:hover { box-shadow: 0 16px 48px rgba(0,0,0,0.08); }
+    .event-card img { width: 100%; height: 220px; object-fit: cover; transition: transform 0.6s ease; }
+    .event-card:hover img { transform: scale(1.05); }
+    .event-card-body { padding: 24px; }
+    .event-card-tag {
+      display: inline-block; font-size: 11px; font-weight: 600;
+      letter-spacing: 1px; text-transform: uppercase;
+      color: var(--atomy-blue); margin-bottom: 12px;
+    }
+    .event-card-title { font-size: 18px; font-weight: 600; margin-bottom: 8px; line-height: 1.4; }
+    .event-card-date { font-size: 13px; color: var(--text-secondary); }
+
+    .products-section { background: var(--bg-light); }
+    .products-grid {
+      display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px;
+    }
+    .product-card {
+      background: var(--bg-white); border-radius: 2px;
+      padding: 32px 24px; text-align: center;
+      border: 1px solid rgba(0,0,0,0.04);
+      transition: var(--transition);
+    }
+    .product-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 40px rgba(0,0,0,0.06);
+    }
+    .product-card img { width: 100%; height: 180px; object-fit: contain; margin-bottom: 20px; }
+    .product-card-name { font-size: 16px; font-weight: 600; margin-bottom: 8px; }
+    .product-card-desc { font-size: 13px; color: var(--text-secondary); line-height: 1.5; }
+
+    .faq-list { max-width: 800px; margin: 0 auto; }
+    .faq-item {
+      border-bottom: 1px solid rgba(0,0,0,0.08);
+      padding: 24px 0;
+    }
+    .faq-question {
+      display: flex; justify-content: space-between; align-items: center;
+      cursor: pointer; font-size: 17px; font-weight: 600;
+      transition: color 0.3s;
+    }
+    .faq-question:hover { color: var(--atomy-blue); }
+    .faq-icon {
+      width: 24px; height: 24px; position: relative; flex-shrink: 0; margin-left: 16px;
+    }
+    .faq-icon::before, .faq-icon::after {
+      content: ''; position: absolute; background: var(--text-secondary);
+      transition: 0.3s;
+    }
+    .faq-icon::before { width: 12px; height: 2px; top: 11px; left: 6px; }
+    .faq-icon::after { width: 2px; height: 12px; top: 6px; left: 11px; }
+    .faq-item.open .faq-icon::after { transform: rotate(90deg); opacity: 0; }
+    .faq-item.open .faq-question { color: var(--atomy-blue); }
+    .faq-answer {
+      max-height: 0; overflow: hidden;
+      transition: max-height 0.4s ease, padding 0.4s ease;
+      font-size: 15px; color: var(--text-secondary); line-height: 1.7;
+    }
+    .faq-item.open .faq-answer {
+      max-height: 300px; padding-top: 16px;
+    }
+
+    .contact-section { background: var(--bg-light); }
+    .contact-grid {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center;
+    }
+    .contact-info h3 {
+      font-size: 28px; font-weight: 700; margin-bottom: 24px; letter-spacing: -0.5px;
+    }
+    .contact-info p {
+      font-size: 16px; color: var(--text-secondary); line-height: 1.8; margin-bottom: 32px;
+    }
+    .contact-links { display: flex; flex-direction: column; gap: 16px; }
+    .contact-link {
+      display: flex; align-items: center; gap: 16px;
+      padding: 16px 20px; background: var(--bg-white);
+      border-radius: 2px; border: 1px solid rgba(0,0,0,0.06);
+      text-decoration: none; color: var(--text-primary);
+      font-size: 15px; font-weight: 500;
+      transition: var(--transition);
+    }
+    .contact-link:hover {
+      border-color: var(--atomy-blue); transform: translateX(4px);
+    }
+    .contact-link-icon {
+      width: 40px; height: 40px; border-radius: 50%;
+      background: var(--atomy-blue-light);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 14px; font-weight: 700; color: var(--atomy-blue);
+      flex-shrink: 0;
+    }
+    .contact-visual {
+      background: var(--atomy-blue); border-radius: 2px;
+      padding: 60px; color: #fff; text-align: center;
+      position: relative; overflow: hidden;
+    }
+    .contact-visual::before {
+      content: ''; position: absolute; inset: 0;
+      background: url('https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=800&q=80') center/cover;
+      opacity: 0.2;
+    }
+    .contact-visual-content { position: relative; z-index: 1; }
+    .contact-visual h4 { font-size: 24px; font-weight: 700; margin-bottom: 16px; }
+    .contact-visual p { font-size: 15px; opacity: 0.9; line-height: 1.7; }
+
+    .footer {
+      background: var(--text-primary); color: rgba(255,255,255,0.6);
+      padding: 60px 24px 40px;
+    }
+    .footer-inner {
+      max-width: 1200px; margin: 0 auto;
+      display: flex; justify-content: space-between; align-items: flex-start;
+      flex-wrap: wrap; gap: 40px;
+    }
+    .footer-brand { font-size: 20px; font-weight: 700; color: #fff; margin-bottom: 8px; }
+    .footer-brand span { color: var(--atomy-blue); font-weight: 400; }
+    .footer-copy { font-size: 13px; }
+    .footer-links { display: flex; gap: 24px; }
+    .footer-links a {
+      color: rgba(255,255,255,0.6); text-decoration: none; font-size: 13px;
+      transition: color 0.3s;
+    }
+    .footer-links a:hover { color: #fff; }
+
+    .support-widget {
+      position: fixed; bottom: 24px; right: 24px; z-index: 999;
+      display: flex; flex-direction: column; align-items: flex-end; gap: 12px;
+    }
+    .support-bubble {
+      background: var(--bg-white); border-radius: 12px;
+      padding: 20px; box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+      border: 1px solid rgba(0,0,0,0.06);
+      max-width: 280px; opacity: 0; transform: translateY(10px) scale(0.95);
+      transition: all 0.3s ease; pointer-events: none;
+    }
+    .support-bubble.show { opacity: 1; transform: translateY(0) scale(1); pointer-events: all; }
+    .support-bubble-text { font-size: 14px; font-weight: 500; margin-bottom: 16px; color: var(--text-primary); }
+    .support-bubble-btns { display: flex; gap: 8px; }
+    .support-bubble-btn {
+      flex: 1; padding: 8px 12px; border-radius: 4px; border: none;
+      font-size: 13px; font-weight: 600; cursor: pointer; transition: 0.2s;
+    }
+    .support-bubble-btn.yes { background: var(--atomy-blue); color: #fff; }
+    .support-bubble-btn.yes:hover { background: var(--atomy-blue-dark); }
+    .support-bubble-btn.no { background: var(--bg-light); color: var(--text-secondary); }
+    .support-bubble-btn.no:hover { background: #e0e0e0; }
+    .support-trigger {
+      width: 56px; height: 56px; border-radius: 50%;
+      background: var(--atomy-blue); color: #fff; border: none;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 24px; cursor: pointer; box-shadow: 0 4px 16px rgba(0,169,224,0.3);
+      transition: var(--transition);
+    }
+    .support-trigger:hover { transform: scale(1.05); }
+
+    .back-to-top {
+      position: fixed; bottom: 24px; left: 24px; z-index: 998;
+      width: 40px; height: 40px; border-radius: 50%;
+      background: var(--bg-white); border: 1px solid rgba(0,0,0,0.08);
+      display: flex; align-items: center; justify-content: center;
+      cursor: pointer; opacity: 0; transform: translateY(10px);
+      transition: var(--transition); font-size: 18px; color: var(--text-secondary);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    }
+    .back-to-top.visible { opacity: 1; transform: translateY(0); }
+    .back-to-top:hover { border-color: var(--atomy-blue); color: var(--atomy-blue); }
+
+    .reveal {
+      opacity: 0; transform: translateY(40px);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+
+    @keyframes fadeUp {
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeIn {
+      to { opacity: 1; }
+    }
+
+    @media (max-width: 1024px) {
+      .about-grid, .contact-grid { grid-template-columns: 1fr; gap: 40px; }
+      .stats-grid { grid-template-columns: repeat(2, 1fr); }
+      .team-grid, .events-grid { grid-template-columns: repeat(2, 1fr); }
+      .products-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 768px) {
+      .nav { display: none; }
+      .mobile-menu-btn { display: flex; }
+      .section { padding: 80px 20px; }
+      .stats-grid, .team-grid, .events-grid, .products-grid { grid-template-columns: 1fr; }
+      .hero-title { font-size: 36px; }
+      .section-header { margin-bottom: 48px; }
+      .footer-inner { flex-direction: column; gap: 24px; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="preloader" id="preloader">
+  <div class="preloader-logo">atom<span>美</span> ATOMY</div>
+  <div class="preloader-bar"></div>
+</div>
+
+<header class="header" id="header">
+  <div class="header-inner">
+    <a href="#" class="logo">ATOMY <span>by Anna Yakovleva</span></a>
+    <nav class="nav">
+      <a href="#about" data-i18n="nav_about">О нас</a>
+      <a href="#team" data-i18n="nav_team">Команда</a>
+      <a href="#events" data-i18n="nav_events">Мероприятия</a>
+      <a href="#products" data-i18n="nav_products">Продукция</a>
+      <a href="#faq" data-i18n="nav_faq">FAQ</a>
+      <a href="#contact" data-i18n="nav_contact">Контакты</a>
+      <button class="lang-switch" id="langSwitch">RU / EN</button>
+    </nav>
+    <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="mobile-nav" id="mobileNav">
+    <a href="#about" data-i18n="nav_about">О нас</a>
+    <a href="#team" data-i18n="nav_team">Команда</a>
+    <a href="#events" data-i18n="nav_events">Мероприятия</a>
+    <a href="#products" data-i18n="nav_products">Продукция</a>
+    <a href="#faq" data-i18n="nav_faq">FAQ</a>
+    <a href="#contact" data-i18n="nav_contact">Контакты</a>
+  </div>
+</header>
+
+<section class="hero" id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-content">
+    <div class="hero-label" data-i18n="hero_label">Команда Балхай — Atomy</div>
+    <h1 class="hero-title">
+      <span data-i18n="hero_title_1">Atomy — это не только</span><br>
+      <span class="highlight" data-i18n="hero_title_2">продукция</span>
+    </h1>
+    <p class="hero-sub" data-i18n="hero_sub">
+      Это команда, обучение, путешествия и возможность построить международный бизнес, совмещая его с основной работой.
+    </p>
+    <div class="hero-btns">
+      <a href="#contact" class="btn btn-primary" data-i18n="btn_join">Присоединиться</a>
+      <a href="#about" class="btn btn-outline" data-i18n="btn_learn">Узнать больше</a>
+    </div>
+  </div>
+  <div class="scroll-indicator">Scroll Down</div>
+</section>
+
+<section class="section" id="about">
+  <div class="section-inner">
+    <div class="section-header reveal">
+      <div class="section-label" data-i18n="about_label">История</div>
+      <h2 class="section-title" data-i18n="about_title">От мастера депиляции до международного бизнеса</h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <p data-i18n="about_p1">
+          Меня зовут Анна Яковлева. Более 10 лет я работаю мастером по депиляции. Я люблю свою профессию, но поняла, что доход всегда зависит от моего времени.
+        </p>
+        <p data-i18n="about_p2">
+          Тогда в моей жизни появилась Atomy. Сначала я пришла за продукцией. Меня зацепило качество, философия компании и то, что здесь не нужно никому ничего навязывать.
+        </p>
+        <p data-i18n="about_p3">
+          Сегодня я совмещаю два любимых дела. Я продолжаю работать мастером и параллельно развиваю международный бизнес с компанией Atomy в команде Балхай.
+        </p>
+      </div>
+      <div class="about-img reveal">
+        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&q=80" alt="Anna Yakovleva">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section stats-section" id="stats">
+  <div class="section-inner">
+    <div class="section-header reveal" style="text-align:center;">
+      <div class="section-label" data-i18n="stats_label">Цифры</div>
+      <h2 class="section-title" data-i18n="stats_title">Растем вместе</h2>
+    </div>
+    <div class="stats-grid">
+      <div class="stat-item reveal">
+        <div class="stat-number" data-count="5">0</div>
+        <div class="stat-label" data-i18n="stat_1_label">Лет в Atomy</div>
+        <div class="stat-desc" data-i18n="stat_1_desc">С 2020 года развиваем бизнес вместе с командой</div>
+      </div>
+      <div class="stat-item reveal">
+        <div class="stat-number" data-count="27">0</div>
+        <div class="stat-label" data-i18n="stat_2_label">Стран</div>
+        <div class="stat-desc" data-i18n="stat_2_desc">Atomy работает по всему миру</div>
+      </div>
+      <div class="stat-item reveal">
+        <div class="stat-number" data-count="100">0</div>
+        <div class="stat-label" data-i18n="stat_3_label">Семинаров</div>
+        <div class="stat-desc" data-i18n="stat_3_desc">Проведено онлайн и офлайн встреч</div>
+      </div>
+      <div class="stat-item reveal">
+        <div class="stat-number" data-count="2">0</div>
+        <div class="stat-label" data-i18n="stat_4_label">Бизнеса</div>
+        <div class="stat-desc" data-i18n="stat_4_desc">Совмещаю студию и Atomy</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section team-section" id="team">
+  <div class="section-inner">
+    <div class="section-header reveal">
+      <div class="section-label" data-i18n="team_label">Команда</div>
+      <h2 class="section-title" data-i18n="team_title">Балхай — команда мечты</h2>
+    </div>
+    <div class="team-grid">
+      <div class="team-card reveal">
+        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=600&q=80" alt="Team">
+        <div class="team-card-body">
+          <div class="team-card-name" data-i18n="team_card_1_name">Лидерский клуб</div>
+          <div class="team-card-role" data-i18n="team_card_1_role">Регулярные встречи лидеров</div>
+        </div>
+      </div>
+      <div class="team-card reveal">
+        <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=600&q=80" alt="Team">
+        <div class="team-card-body">
+          <div class="team-card-name" data-i18n="team_card_2_name">Обучение</div>
+          <div class="team-card-role" data-i18n="team_card_2_role">Zoom и офлайн форматы</div>
+        </div>
+      </div>
+      <div class="team-card reveal">
+        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&q=80" alt="Team">
+        <div class="team-card-body">
+          <div class="team-card-name" data-i18n="team_card_3_name">Поддержка 24/7</div>
+          <div class="team-card-role" data-i18n="team_card_3_role">Чаты и обучающие боты</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="events">
+  <div class="section-inner">
+    <div class="section-header reveal">
+      <div class="section-label" data-i18n="events_label">Активности</div>
+      <h2 class="section-title" data-i18n="events_title">Чем мы занимаемся</h2>
+    </div>
+    <div class="events-grid">
+      <div class="event-card reveal">
+        <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=600&q=80" alt="Event">
+        <div class="event-card-body">
+          <div class="event-card-tag" data-i18n="event_1_tag">Семинар</div>
+          <div class="event-card-title" data-i18n="event_1_title">Лидерские клубы</div>
+          <div class="event-card-date" data-i18n="event_1_date">Ежемесячно в Москве</div>
+        </div>
+      </div>
+      <div class="event-card reveal">
+        <img src="https://images.unsplash.com/photo-1515187029135-18ee286d815b?w=600&q=80" alt="Event">
+        <div class="event-card-body">
+          <div class="event-card-tag" data-i18n="event_2_tag">Онлайн</div>
+          <div class="event-card-title" data-i18n="event_2_title">Star Zoom</div>
+          <div class="event-card-date" data-i18n="event_2_date">Каждый четверг</div>
+        </div>
+      </div>
+      <div class="event-card reveal">
+        <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=600&q=80" alt="Event">
+        <div class="event-card-body">
+          <div class="event-card-tag" data-i18n="event_3_tag">Мастер-класс</div>
+          <div class="event-card-title" data-i18n="event_3_title">Дни здоровья и красоты</div>
+          <div class="event-card-date" data-i18n="event_3_date">По записи у партнеров</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section products-section" id="products">
+  <div class="section-inner">
+    <div class="section-header reveal">
+      <div class="section-label" data-i18n="products_label">Продукция</div>
+      <h2 class="section-title" data-i18n="products_title">Абсолютное качество — абсолютная цена</h2>
+    </div>
+    <div class="products-grid">
+      <div class="product-card reveal">
+        <img src="https://kimi-web-img.moonshot.cn/img/ch.static.atomy.com/b5de017ec44aff3e34775931f3979c7436aac11c.jpg" alt="HemoHim">
+        <div class="product-card-name" data-i18n="prod_1_name">HemoHim</div>
+        <div class="product-card-desc" data-i18n="prod_1_desc">Бестселлер для иммунитета, разработан в Корее</div>
+      </div>
+      <div class="product-card reveal">
+        <img src="https://kimi-web-img.moonshot.cn/img/publish-static.atomy.com/73999d7aa00e0e6a5ed228b382f2a7f7c4ca4152.webp" alt="Skincare">
+        <div class="product-card-name" data-i18n="prod_2_name">Absolute Skincare</div>
+        <div class="product-card-desc" data-i18n="prod_2_desc">Премиальная линия ухода за кожей</div>
+      </div>
+      <div class="product-card reveal">
+        <img src="https://kimi-web-img.moonshot.cn/img/global.atomy.com/c65ff843547d5d74f65cf585fe92314643b5713b.jpg" alt="Toothpaste">
+        <div class="product-card-name" data-i18n="prod_3_name">Прополисная зубная паста</div>
+        <div class="product-card-desc" data-i18n="prod_3_desc">Натуральный уход за полостью рта</div>
+      </div>
+      <div class="product-card reveal">
+        <img src="https://kimi-web-img.moonshot.cn/img/ch.static.atomy.com/84d8fc153d7921772555d6d2078cd79f67067047.jpg_500" alt="Manuka">
+        <div class="product-card-name" data-i18n="prod_4_name">Manuka Honey</div>
+        <div class="product-card-desc" data-i18n="prod_4_desc">Премиальный мед из Новой Зеландии</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="faq">
+  <div class="section-inner">
+    <div class="section-header reveal">
+      <div class="section-label" data-i18n="faq_label">FAQ</div>
+      <h2 class="section-title" data-i18n="faq_title">Частые вопросы</h2>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item reveal">
+        <div class="faq-question">
+          <span data-i18n="faq_1_q">Как зарегистрироваться в Atomy?</span>
+          <div class="faq-icon"></div>
+        </div>
+        <div class="faq-answer" data-i18n="faq_1_a">
+          Регистрация бесплатная. Напишите мне в удобный мессенджер — я вышлю ссылку и помогу пройти все шаги.
+        </div>
+      </div>
+      <div class="faq-item reveal">
+        <div class="faq-question">
+          <span data-i18n="faq_2_q">Нужны ли вложения?</span>
+          <div class="faq-icon"></div>
+        </div>
+        <div class="faq-answer" data-i18n="faq_2_a">
+          Нет. Регистрация бесплатная, нет обязательных закупок и ежемесячных платежей. Вы покупаете только то, что нужно вам.
+        </div>
+      </div>
+      <div class="faq-item reveal">
+        <div class="faq-question">
+          <span data-i18n="faq_3_q">Как зарабатывают в Atomy?</span>
+          <div class="faq-icon"></div>
+        </div>
+        <div class="faq-answer" data-i18n="faq_3_a">
+          Компания выплачивает вознаграждения за личные покупки и покупки вашей команды. Чем больше команда — тем выше доход.
+        </div>
+      </div>
+      <div class="faq-item reveal">
+        <div class="faq-question">
+          <span data-i18n="faq_4_q">Можно ли совмещать с основной работой?</span>
+          <div class="faq-icon"></div>
+        </div>
+        <div class="faq-answer" data-i18n="faq_4_a">
+          Да. Я сама совмещаю студию депиляции и Atomy. Это пассивный доход, который растет со временем.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section contact-section" id="contact">
+  <div class="section-inner">
+    <div class="section-header reveal">
+      <div class="section-label" data-i18n="contact_label">Связь</div>
+      <h2 class="section-title" data-i18n="contact_title">Готовы начать?</h2>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info reveal">
+        <h3 data-i18n="contact_subtitle">Напишите мне — расскажу, как присоединиться</h3>
+        <p data-i18n="contact_desc">
+          Выберите удобный способ связи. Я отвечу в течение дня и помогу с регистрацией, выбором продукции или вопросами по бизнесу.
+        </p>
+        <div class="contact-links">
+          <a href="https://t.me/" class="contact-link" target="_blank" rel="noopener">
+            <div class="contact-link-icon">TG</div>
+            <span>Telegram</span>
+          </a>
+          <a href="https://wa.me/" class="contact-link" target="_blank" rel="noopener">
+            <div class="contact-link-icon">WA</div>
+            <span>WhatsApp</span>
+          </a>
+          <a href="https://vk.com/" class="contact-link" target="_blank" rel="noopener">
+            <div class="contact-link-icon">VK</div>
+            <span>ВКонтакте</span>
+          </a>
+          <a href="tel:+7" class="contact-link">
+            <div class="contact-link-icon">T</div>
+            <span data-i18n="contact_phone">Позвонить</span>
+          </a>
+        </div>
+      </div>
+      <div class="contact-visual reveal">
+        <div class="contact-visual-content">
+          <h4 data-i18n="contact_visual_title">Atomy — это люди</h4>
+          <p data-i18n="contact_visual_text">
+            Мы не просто продаем продукцию. Мы строим сообщество людей, которые растут, путешествуют и меняют свою жизнь к лучшему.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div>
+      <div class="footer-brand">ATOMY <span>by Anna Yakovleva</span></div>
+      <div class="footer-copy">&copy; 2026 Atomy. All rights reserved.</div>
+    </div>
+    <div class="footer-links">
+      <a href="#about" data-i18n="footer_about">О нас</a>
+      <a href="#contact" data-i18n="footer_contact">Контакты</a>
+      <a href="#faq" data-i18n="footer_faq">FAQ</a>
+    </div>
+  </div>
+</footer>
+
+<div class="support-widget" id="supportWidget">
+  <div class="support-bubble" id="supportBubble">
+    <div class="support-bubble-text" data-i18n="support_text">У вас есть вопросы?</div>
+    <div class="support-bubble-btns">
+      <button class="support-bubble-btn yes" id="supportYes" data-i18n="support_yes">Да, есть</button>
+      <button class="support-bubble-btn no" id="supportNo" data-i18n="support_no">Нет, спасибо</button>
+    </div>
+  </div>
+  <button class="support-trigger" id="supportTrigger" aria-label="Support">?</button>
+</div>
+
+<button class="back-to-top" id="backToTop" aria-label="Back to top">&#8593;</button>
+
+<script>
+const translations = {
+  ru: {
+    nav_about: "О нас", nav_team: "Команда", nav_events: "Мероприятия",
+    nav_products: "Продукция", nav_faq: "FAQ", nav_contact: "Контакты",
+    hero_label: "Команда Балхай — Atomy",
+    hero_title_1: "Atomy — это не только", hero_title_2: "продукция",
+    hero_sub: "Это команда, обучение, путешествия и возможность построить международный бизнес, совмещая его с основной работой.",
+    btn_join: "Присоединиться", btn_learn: "Узнать больше",
+    about_label: "История", about_title: "От мастера депиляции до международного бизнеса",
+    about_p1: "Меня зовут Анна Яковлева. Более 10 лет я работаю мастером по депиляции. Я люблю свою профессию, но поняла, что доход всегда зависит от моего времени.",
+    about_p2: "Тогда в моей жизни появилась Atomy. Сначала я пришла за продукцией. Меня зацепило качество, философия компании и то, что здесь не нужно никому ничего навязывать.",
+    about_p3: "Сегодня я совмещаю два любимых дела. Я продолжаю работать мастером и параллельно развиваю международный бизнес с компанией Atomy в команде Балхай.",
+    stats_label: "Цифры", stats_title: "Растем вместе",
+    stat_1_label: "Лет в Atomy", stat_1_desc: "С 2020 года развиваем бизнес вместе с командой",
+    stat_2_label: "Стран", stat_2_desc: "Atomy работает по всему миру",
+    stat_3_label: "Семинаров", stat_3_desc: "Проведено онлайн и офлайн встреч",
+    stat_4_label: "Бизнеса", stat_4_desc: "Совмещаю студию и Atomy",
+    team_label: "Команда", team_title: "Балхай — команда мечты",
+    team_card_1_name: "Лидерский клуб", team_card_1_role: "Регулярные встречи лидеров",
+    team_card_2_name: "Обучение", team_card_2_role: "Zoom и офлайн форматы",
+    team_card_3_name: "Поддержка 24/7", team_card_3_role: "Чаты и обучающие боты",
+    events_label: "Активности", events_title: "Чем мы занимаемся",
+    event_1_tag: "Семинар", event_1_title: "Лидерские клубы", event_1_date: "Ежемесячно в Москве",
+    event_2_tag: "Онлайн", event_2_title: "Star Zoom", event_2_date: "Каждый четверг",
+    event_3_tag: "Мастер-класс", event_3_title: "Дни здоровья и красоты", event_3_date: "По записи у партнеров",
+    products_label: "Продукция", products_title: "Абсолютное качество — абсолютная цена",
+    prod_1_name: "HemoHim", prod_1_desc: "Бестселлер для иммунитета, разработан в Корее",
+    prod_2_name: "Absolute Skincare", prod_2_desc: "Премиальная линия ухода за кожей",
+    prod_3_name: "Прополисная зубная паста", prod_3_desc: "Натуральный уход за полостью рта",
+    prod_4_name: "Manuka Honey", prod_4_desc: "Премиальный мед из Новой Зеландии",
+    faq_label: "FAQ", faq_title: "Частые вопросы",
+    faq_1_q: "Как зарегистрироваться в Atomy?",
+    faq_1_a: "Регистрация бесплатная. Напишите мне в удобный мессенджер — я вышлю ссылку и помогу пройти все шаги.",
+    faq_2_q: "Нужны ли вложения?",
+    faq_2_a: "Нет. Регистрация бесплатная, нет обязательных закупок и ежемесячных платежей. Вы покупаете только то, что нужно вам.",
+    faq_3_q: "Как зарабатывают в Atomy?",
+    faq_3_a: "Компания выплачивает вознаграждения за личные покупки и покупки вашей команды. Чем больше команда — тем выше доход.",
+    faq_4_q: "Можно ли совмещать с основной работой?",
+    faq_4_a: "Да. Я сама совмещаю студию депиляции и Atomy. Это пассивный доход, который растет со временем.",
+    contact_label: "Связь", contact_title: "Готовы начать?",
+    contact_subtitle: "Напишите мне — расскажу, как присоединиться",
+    contact_desc: "Выберите удобный способ связи. Я отвечу в течение дня и помогу с регистрацией, выбором продукции или вопросами по бизнесу.",
+    contact_phone: "Позвонить",
+    contact_visual_title: "Atomy — это люди",
+    contact_visual_text: "Мы не просто продаем продукцию. Мы строим сообщество людей, которые растут, путешествуют и меняют свою жизнь к лучшему.",
+    support_text: "У вас есть вопросы?", support_yes: "Да, есть", support_no: "Нет, спасибо",
+    footer_about: "О нас", footer_contact: "Контакты", footer_faq: "FAQ"
+  },
+  en: {
+    nav_about: "About", nav_team: "Team", nav_events: "Events",
+    nav_products: "Products", nav_faq: "FAQ", nav_contact: "Contact",
+    hero_label: "Balhai Team — Atomy",
+    hero_title_1: "Atomy is not just", hero_title_2: "products",
+    hero_sub: "It is a team, training, travel and the opportunity to build an international business while combining it with your main job.",
+    btn_join: "Join Us", btn_learn: "Learn More",
+    about_label: "Story", about_title: "From waxing master to international business",
+    about_p1: "My name is Anna Yakovleva. I have been a waxing master for over 10 years. I love my job, but I realized that income always depends on my time.",
+    about_p2: "Then Atomy came into my life. At first I came for the products. I was hooked by the quality, the company philosophy and the fact that you don't have to push anything on anyone here.",
+    about_p3: "Today I combine two favorite things. I continue to work as a master and simultaneously develop an international business with Atomy in the Balhai team.",
+    stats_label: "Numbers", stats_title: "Growing together",
+    stat_1_label: "Years in Atomy", stat_1_desc: "Developing business with the team since 2020",
+    stat_2_label: "Countries", stat_2_desc: "Atomy operates worldwide",
+    stat_3_label: "Seminars", stat_3_desc: "Online and offline meetings held",
+    stat_4_label: "Businesses", stat_4_desc: "Combining studio and Atomy",
+    team_label: "Team", team_title: "Balhai — dream team",
+    team_card_1_name: "Leadership Club", team_card_1_role: "Regular leader meetings",
+    team_card_2_name: "Training", team_card_2_role: "Zoom and offline formats",
+    team_card_3_name: "24/7 Support", team_card_3_role: "Chats and training bots",
+    events_label: "Activities", events_title: "What we do",
+    event_1_tag: "Seminar", event_1_title: "Leadership Clubs", event_1_date: "Monthly in Moscow",
+    event_2_tag: "Online", event_2_title: "Star Zoom", event_2_date: "Every Thursday",
+    event_3_tag: "Masterclass", event_3_title: "Health & Beauty Days", event_3_date: "By appointment",
+    products_label: "Products", products_title: "Absolute quality — absolute price",
+    prod_1_name: "HemoHim", prod_1_desc: "Immunity bestseller, developed in Korea",
+    prod_2_name: "Absolute Skincare", prod_2_desc: "Premium skincare line",
+    prod_3_name: "Propolis Toothpaste", prod_3_desc: "Natural oral care",
+    prod_4_name: "Manuka Honey", prod_4_desc: "Premium honey from New Zealand",
+    faq_label: "FAQ", faq_title: "Frequently asked questions",
+    faq_1_q: "How to register in Atomy?",
+    faq_1_a: "Registration is free. Write to me in a convenient messenger — I will send a link and help you go through all the steps.",
+    faq_2_q: "Are investments needed?",
+    faq_2_a: "No. Registration is free, no mandatory purchases or monthly fees. You buy only what you need.",
+    faq_3_q: "How do you earn in Atomy?",
+    faq_3_a: "The company pays rewards for personal purchases and your team's purchases. The bigger the team, the higher the income.",
+    faq_4_q: "Can I combine it with my main job?",
+    faq_4_a: "Yes. I myself combine my waxing studio and Atomy. This is a passive income that grows over time.",
+    contact_label: "Contact", contact_title: "Ready to start?",
+    contact_subtitle: "Write to me — I'll tell you how to join",
+    contact_desc: "Choose a convenient way to contact. I will reply within a day and help with registration, product selection or business questions.",
+    contact_phone: "Call",
+    contact_visual_title: "Atomy is about people",
+    contact_visual_text: "We don't just sell products. We build a community of people who grow, travel and change their lives for the better.",
+    support_text: "Do you have questions?", support_yes: "Yes", support_no: "No, thanks",
+    footer_about: "About", footer_contact: "Contact", footer_faq: "FAQ"
+  }
+};
+
+let currentLang = 'ru';
+
+function setLanguage(lang) {
+  currentLang = lang;
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const key = el.getAttribute('data-i18n');
+    if (translations[lang][key]) el.textContent = translations[lang][key];
+  });
+}
+
+document.getElementById('langSwitch').addEventListener('click', () => {
+  setLanguage(currentLang === 'ru' ? 'en' : 'ru');
+});
+
+// Preloader
+window.addEventListener('load', () => {
+  setTimeout(() => {
+    document.getElementById('preloader').classList.add('hidden');
+  }, 1400);
+});
+
+// Scroll reveal
+const revealObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+    }
+  });
+}, { threshold: 0.1 });
+
+document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+// Counter animation
+const counterObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      const el = entry.target;
+      const target = parseInt(el.getAttribute('data-count'));
+      let current = 0;
+      const increment = target / 60;
+      const timer = setInterval(() => {
+        current += increment;
+        if (current >= target) {
+          el.textContent = target + (target === 100 ? '+' : '');
+          clearInterval(timer);
+        } else {
+          el.textContent = Math.floor(current);
+        }
+      }, 25);
+      counterObserver.unobserve(el);
+    }
+  });
+}, { threshold: 0.5 });
+
+document.querySelectorAll('[data-count]').forEach(el => counterObserver.observe(el));
+
+// FAQ accordion
+document.querySelectorAll('.faq-question').forEach(q => {
+  q.addEventListener('click', () => {
+    const item = q.parentElement;
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+    if (!isOpen) item.classList.add('open');
+  });
+});
+
+// Support widget
+const supportBubble = document.getElementById('supportBubble');
+const supportTrigger = document.getElementById('supportTrigger');
+let supportTimeout;
+
+function showSupport() { supportBubble.classList.add('show'); }
+function hideSupport() { supportBubble.classList.remove('show'); }
+
+supportTimeout = setTimeout(showSupport, 4000);
+
+supportTrigger.addEventListener('click', () => {
+  supportBubble.classList.toggle('show');
+});
+
+document.getElementById('supportYes').addEventListener('click', () => {
+  hideSupport();
+  document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+});
+
+document.getElementById('supportNo').addEventListener('click', () => {
+  hideSupport();
+});
+
+// Back to top
+const backToTop = document.getElementById('backToTop');
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 600) {
+    backToTop.classList.add('visible');
+  } else {
+    backToTop.classList.remove('visible');
+  }
+});
+backToTop.addEventListener('click', () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
+// Header shadow on scroll
+const header = document.getElementById('header');
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 50) {
+    header.classList.add('scrolled');
+  } else {
+    header.classList.remove('scrolled');
+  }
+});
+
+// Mobile menu
+const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+const mobileNav = document.getElementById('mobileNav');
+mobileMenuBtn.addEventListener('click', () => {
+  mobileNav.classList.toggle('open');
+});
+document.querySelectorAll('.mobile-nav a').forEach(link => {
+  link.addEventListener('click', () => {
+    mobileNav.classList.remove('open');
+  });
+});
+</script>
+
+</body>
+</html>
