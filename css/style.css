@@ -837,17 +837,12 @@ body {
   object-fit: contain;
 }
 
-.contact-link-icon.max-icon {
-  background-color: var(--ab);
-  -webkit-mask-image: url('https://maxicons.ru/icons/Max_logo.svg');
-  mask-image: url('https://maxicons.ru/icons/Max_logo.svg');
-  -webkit-mask-size: 60%;
-  mask-size: 60%;
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-  -webkit-mask-position: center;
-  mask-position: center;
+.max-icon-img {
+  /* чёрный SVG перекрашен в фирменный голубой #00A9E0 через CSS-фильтр */
+  filter: invert(48%) sepia(75%) saturate(1885%) hue-rotate(162deg) brightness(98%) contrast(101%);
 }
+
+
 
 .contact-visual {
   background: linear-gradient(135deg, var(--ab), var(--abd));
