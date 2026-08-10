@@ -837,6 +837,18 @@ body {
   object-fit: contain;
 }
 
+.contact-link-icon.max-icon {
+  background-color: var(--ab);
+  -webkit-mask-image: url('https://maxicons.ru/icons/Max_logo.svg');
+  mask-image: url('https://maxicons.ru/icons/Max_logo.svg');
+  -webkit-mask-size: 60%;
+  mask-size: 60%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
+}
+
 .contact-visual {
   background: linear-gradient(135deg, var(--ab), var(--abd));
   border-radius: 16px;
