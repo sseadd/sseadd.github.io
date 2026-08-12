@@ -249,8 +249,8 @@ body {
   content: '';
   position: absolute;
   inset: 0;
-  background: url('https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=1920&q=80') center/cover;
-  opacity: .12;
+  background: url('/assets/anna-portrait-office.jpg') center 20%/cover;
+  opacity: .14;
 }
 
 .hero-content {
@@ -1015,11 +1015,11 @@ body {
 
 .support-bubble {
   background: var(--bw);
-  border-radius: 16px;
-  padding: 20px;
+  border-radius: 18px;
+  padding: 26px;
   box-shadow: 0 8px 32px rgba(0, 0, 0, .12);
   border: 1px solid rgba(0, 0, 0, .06);
-  max-width: 280px;
+  max-width: 320px;
   opacity: 0;
   transform: translateY(10px) scale(.95);
   transition: all .3s ease;
@@ -1033,10 +1033,11 @@ body {
 }
 
 .support-bubble-text {
-  font-size: 14px;
-  font-weight: 500;
-  margin-bottom: 16px;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 18px;
   color: var(--tp);
+  line-height: 1.4;
 }
 
 .support-bubble-btns {
@@ -1100,6 +1101,71 @@ body {
 
 .support-trigger:hover {
   transform: scale(1.05);
+}
+
+/* ---------- Личная страница Анны ---------- */
+
+.anna-gallery {
+  display: grid;
+  grid-template-columns: 1.1fr .9fr;
+  gap: 24px;
+  max-width: 900px;
+  margin: 0 auto 100px;
+  padding: 0 24px;
+}
+
+.anna-gallery img {
+  width: 100%;
+  height: 100%;
+  min-height: 360px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, .08);
+}
+
+.office-card {
+  max-width: 900px;
+  margin: 0 auto 140px;
+  padding: 0 24px;
+  display: grid;
+  grid-template-columns: .8fr 1.2fr;
+  gap: 32px;
+  align-items: center;
+}
+
+.office-card img {
+  width: 100%;
+  height: 320px;
+  object-fit: contain;
+  background: var(--bl);
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.office-info h3 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.office-info p {
+  font-size: 15px;
+  color: var(--ts);
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .anna-gallery,
+  .office-card {
+    grid-template-columns: 1fr;
+  }
+  .anna-gallery {
+    margin-bottom: 60px;
+  }
+  .office-card {
+    margin-bottom: 80px;
+  }
 }
 
 /* ---------- Кнопка "на главную" (внутренние страницы) ---------- */

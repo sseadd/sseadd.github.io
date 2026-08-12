@@ -69,9 +69,10 @@
 <p data-i18n="about_p2">Но в какой-то момент я поняла, что, сколько бы я ни работала, мой доход всегда напрямую зависел от моего времени. Мне хотелось создать что-то более стабильное. Именно тогда в моей жизни появилась Атоми — меня зацепило качество, философия компании и то, что здесь не нужно никому ничего навязывать.</p>
 <p data-i18n="about_p3">Сегодня я совмещаю два любимых дела: продолжаю работать мастером по депиляции и параллельно развиваю международный бизнес с компанией Атоми в команде Балхай.</p>
 <p style="font-style:italic;color:var(--tp);border-left:3px solid var(--ab);padding-left:16px" data-i18n="about_quote">«Аня — сильный и успешный лидер. Её мягкая сила непременно приведёт к успеху»</p>
+<a href="/anna/" class="btn-more" data-i18n="btn_more_anna">Узнать обо мне подробнее</a>
 </div>
 <div class="about-img reveal">
-<img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&q=80" alt="Anna Yakovleva">
+<img src="/assets/anna-portrait-office.jpg" alt="Anna Yakovleva">
 </div>
 </div>
 </div>
@@ -116,14 +117,14 @@
 </div>
 <div class="team-grid">
 <div class="team-card reveal">
-<img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=600&q=80" alt="Team">
+<img src="/assets/team-small-group.jpg" alt="Team">
 <div class="team-card-body">
 <div class="team-card-name" data-i18n="team_card_1_name">Лидерский клуб</div>
 <div class="team-card-role" data-i18n="team_card_1_role">Регулярные встречи лидеров</div>
 </div>
 </div>
 <div class="team-card reveal">
-<img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=600&q=80" alt="Team">
+<img src="/assets/team-big-group.jpg" alt="Team">
 <div class="team-card-body">
 <div class="team-card-name" data-i18n="team_card_2_name">Обучение</div>
 <div class="team-card-role" data-i18n="team_card_2_role">Zoom и офлайн форматы</div>
@@ -151,7 +152,7 @@
 </div>
 <div class="events-grid">
 <div class="event-card reveal">
-<img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=600&q=80" alt="Event">
+<img src="/assets/atomy-academy-moscow.jpg" alt="Event">
 <div class="event-card-body">
 <div class="event-card-tag" data-i18n="event_1_tag">Семинар</div>
 <div class="event-card-title" data-i18n="event_1_title">Лидерские клубы</div>
@@ -167,7 +168,7 @@
 </div>
 </div>
 <div class="event-card reveal">
-<img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=600&q=80" alt="Event">
+<img src="/assets/team-big-group.jpg" alt="Event">
 <div class="event-card-body">
 <div class="event-card-tag" data-i18n="event_3_tag">Мастер-класс</div>
 <div class="event-card-title" data-i18n="event_3_title">Дни здоровья и красоты</div>
@@ -402,9 +403,14 @@ function hideBubble() {
   supportBubble.classList.remove('show');
 }
 
+/* показываем бабл только когда блок FAQ полностью пройден скроллом вверх
+   (пользователь долистал ЧЕРЕЗ него, а не просто увидел его начало) */
 const faqObserver = new IntersectionObserver((entries) => {
-  entries.forEach(entry => { if (entry.isIntersecting) showSupport(); });
-}, { threshold: .3 });
+  entries.forEach(entry => {
+    const scrolledPast = !entry.isIntersecting && entry.boundingClientRect.top < 0;
+    if (scrolledPast) showSupport();
+  });
+}, { threshold: 0 });
 if (faqSection) faqObserver.observe(faqSection);
 
 supportTrigger.addEventListener('click', () => supportBubble.classList.toggle('show'));
