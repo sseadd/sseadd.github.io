@@ -466,8 +466,9 @@ body {
 
 .about-img img {
   width: 100%;
-  height: 500px;
+  aspect-ratio: 4 / 5;
   object-fit: cover;
+  object-position: center 20%;
   display: block;
 }
 
@@ -668,10 +669,11 @@ body {
 
 .product-card img {
   width: 100%;
-  height: 180px;
-  object-fit: contain;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
   margin-bottom: 20px;
-  border-radius: 8px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, .06);
 }
 
 .product-card-name {
@@ -961,18 +963,21 @@ body {
 .footer-inner {
   max-width: 1200px;
   margin: 0 auto;
+}
+
+.footer-top {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   flex-wrap: wrap;
-  gap: 40px;
+  gap: 24px;
+  padding-bottom: 32px;
 }
 
 .footer-brand {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 700;
   color: #fff;
-  margin-bottom: 8px;
 }
 
 .footer-brand span {
@@ -980,24 +985,76 @@ body {
   font-weight: 400;
 }
 
-.footer-copy {
-  font-size: 13px;
-}
-
-.footer-links {
+.footer-nav {
   display: flex;
   gap: 24px;
+  flex-wrap: wrap;
 }
 
-.footer-links a {
+.footer-nav a {
   color: rgba(255, 255, 255, .6);
   text-decoration: none;
   font-size: 13px;
   transition: color .3s;
 }
 
-.footer-links a:hover {
+.footer-nav a:hover {
   color: #fff;
+}
+
+.footer-contact {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.footer-phone {
+  color: rgba(255, 255, 255, .85);
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 600;
+  transition: color .3s;
+}
+
+.footer-phone:hover {
+  color: var(--ab);
+}
+
+.footer-social {
+  display: flex;
+  gap: 10px;
+}
+
+.footer-social a {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, .08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255, 255, 255, .7);
+  transition: var(--tr);
+}
+
+.footer-social a:hover {
+  background: var(--ab);
+  color: #fff;
+}
+
+.footer-social svg {
+  width: 15px;
+  height: 15px;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, .08);
+  padding-top: 20px;
+}
+
+.footer-copy {
+  font-size: 12px;
+  color: rgba(255, 255, 255, .45);
 }
 
 /* ---------- Виджет поддержки ---------- */
@@ -1156,10 +1213,6 @@ body {
 }
 
 @media (max-width: 768px) {
-  .anna-gallery,
-  .office-card {
-    grid-template-columns: 1fr;
-  }
   .anna-gallery {
     margin-bottom: 60px;
   }
@@ -1288,9 +1341,10 @@ body {
   .products-grid {
     grid-template-columns: repeat(2, 1fr);
   }
-}
 
-@media (max-width: 768px) {
+  /* планшеты (портрет и альбомная ориентация): полное меню из 6 пунктов
+     + переключатель языка физически не помещается в шапку — переносим
+     на бургер-меню здесь же, а не только на телефонах */
   .nav {
     display: none;
   }
@@ -1299,6 +1353,18 @@ body {
     display: flex;
   }
 
+  .anna-gallery,
+  .office-card {
+    grid-template-columns: 1fr;
+  }
+
+  .about-img {
+    max-width: 440px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
   .section {
     padding: 80px 20px;
   }
@@ -1318,9 +1384,16 @@ body {
     margin-bottom: 48px;
   }
 
-  .footer-inner {
+  .footer-top {
     flex-direction: column;
-    gap: 24px;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .footer-contact {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
   }
 
   .back-to-top {

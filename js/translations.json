@@ -45,7 +45,7 @@
     "events_label": "Активности",
     "events_title": "Чем мы занимаемся",
     "event_1_tag": "Семинар",
-    "event_1_title": "Лидерские клубы",
+    "event_1_title": "Академия Успеха",
     "event_1_date": "Ежемесячно в Москве",
     "event_2_tag": "Онлайн",
     "event_2_title": "Star Zoom",
@@ -93,6 +93,7 @@
     "footer_about": "О нас",
     "footer_contact": "Контакты",
     "footer_faq": "FAQ",
+    "footer_copy": "© 2026 Анна Яковлева. Независимый партнёр Atomy.",
 
     "page_team_label": "Команда",
     "page_team_title": "Балхай — команда мечты",
@@ -170,7 +171,7 @@
     "events_label": "Activities",
     "events_title": "What we do",
     "event_1_tag": "Seminar",
-    "event_1_title": "Leadership Clubs",
+    "event_1_title": "Success Academy",
     "event_1_date": "Monthly in Moscow",
     "event_2_tag": "Online",
     "event_2_title": "Star Zoom",
@@ -218,6 +219,7 @@
     "footer_about": "About",
     "footer_contact": "Contact",
     "footer_faq": "FAQ",
+    "footer_copy": "© 2026 Anna Yakovleva. Independent Atomy Partner.",
 
     "page_team_label": "Team",
     "page_team_title": "Balhai — dream team",
