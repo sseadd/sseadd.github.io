@@ -399,10 +399,10 @@
 				});
 				});
 
-				/* Виджет поддержки: появляется, когда пользователь долистал до блока FAQ */
+				/* Виджет поддержки: появляется, как только в кадре показывается заголовок блока "Готовы начать?" */
 				const supportBubble = document.getElementById('supportBubble');
 				const supportTrigger = document.getElementById('supportTrigger');
-				const faqSection = document.getElementById('faq');
+				const contactSection = document.getElementById('contact');
 				let supportShown = false;
 
 				function showSupport() {
@@ -416,19 +416,12 @@
 				supportBubble.classList.remove('show');
 				}
 
-				/* показываем бабл, когда пользователь ДЕЙСТВИТЕЛЬНО побывал на FAQ
-				и затем ушёл из него — неважно, вверх или вниз проскроллил */
-				let faqWasVisible = false;
-				const faqObserver = new IntersectionObserver((entries) => {
-				entries.forEach(entry => {
-				if (entry.isIntersecting) {
-				faqWasVisible = true;
-				} else if (faqWasVisible) {
-				showSupport();
-				}
-				});
+				/* срабатывает сразу, как только блок "Контакты" хоть немного показался снизу экрана —
+				то есть примерно в момент, когда виден заголовок "Готовы начать?" */
+				const contactObserver = new IntersectionObserver((entries) => {
+				entries.forEach(entry => { if (entry.isIntersecting) showSupport(); });
 				}, { threshold: 0 });
-				if (faqSection) faqObserver.observe(faqSection);
+				if (contactSection) contactObserver.observe(contactSection);
 
 				supportTrigger.addEventListener('click', () => supportBubble.classList.toggle('show'));
 				document.getElementById('supportYes').addEventListener('click', () => { window.location.href = '/faq/'; });
