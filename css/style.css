@@ -1047,6 +1047,19 @@ body {
   height: 15px;
 }
 
+.footer-max-icon {
+  width: 15px;
+  height: 15px;
+  object-fit: contain;
+  filter: invert(100%);
+  opacity: .7;
+  transition: opacity .3s;
+}
+
+.footer-social a:hover .footer-max-icon {
+  opacity: 1;
+}
+
 .footer-bottom {
   border-top: 1px solid rgba(255, 255, 255, .08);
   padding-top: 20px;

@@ -1,6 +1,6 @@
 {
   "ru": {
-    "nav_about": "О нас",
+    "nav_about": "Обо мне",
     "nav_team": "Команда",
     "nav_events": "Мероприятия",
     "nav_products": "Продукция",
@@ -90,7 +90,7 @@
     "faq_widget_yes": "Да, есть",
     "faq_widget_no": "Нет, спасибо",
 
-    "footer_about": "О нас",
+    "footer_about": "Обо мне",
     "footer_contact": "Контакты",
     "footer_faq": "FAQ",
     "footer_copy": "© 2026 Анна Яковлева. Независимый партнёр Atomy.",
@@ -126,7 +126,7 @@
     "page_404_sub": "Похоже, такой страницы не существует или она ещё не готова. Вернитесь на главную — там всё самое важное."
   },
   "en": {
-    "nav_about": "About",
+    "nav_about": "About Me",
     "nav_team": "Team",
     "nav_events": "Events",
     "nav_products": "Products",
@@ -216,7 +216,7 @@
     "faq_widget_yes": "Yes, please",
     "faq_widget_no": "No, thanks",
 
-    "footer_about": "About",
+    "footer_about": "About Me",
     "footer_contact": "Contact",
     "footer_faq": "FAQ",
     "footer_copy": "© 2026 Anna Yakovleva. Independent Atomy Partner.",
