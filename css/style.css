@@ -1173,6 +1173,122 @@ body {
   transform: scale(1.05);
 }
 
+/* ---------- Личная страница Анны: сторителлинг-лонгрид ---------- */
+
+.story-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto 110px;
+  padding: 0 24px;
+}
+
+.story-row.story-reverse .story-img-col {
+  order: 2;
+}
+
+.story-row.story-reverse .story-text-col {
+  order: 1;
+}
+
+.story-img-col img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border-radius: 14px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, .1);
+  display: block;
+}
+
+.story-caption {
+  margin-top: 14px;
+  font-size: 13px;
+  font-style: italic;
+  color: var(--ts);
+  text-align: center;
+}
+
+.story-text-col p {
+  font-size: 17px;
+  line-height: 1.85;
+  color: var(--ts);
+  margin-bottom: 20px;
+}
+
+.story-text-col p:last-child {
+  margin-bottom: 0;
+}
+
+.pull-quote {
+  max-width: 760px;
+  margin: 0 auto 110px;
+  padding: 0 24px;
+  text-align: center;
+}
+
+.pull-quote p {
+  font-size: clamp(22px, 3vw, 30px);
+  font-weight: 600;
+  line-height: 1.55;
+  color: var(--tp);
+  letter-spacing: -.3px;
+}
+
+.pull-quote-mark {
+  font-size: 48px;
+  color: var(--ab);
+  line-height: 1;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.leader-quote {
+  max-width: 1100px;
+  margin: 0 auto 110px;
+  padding: 0 24px;
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: 64px;
+  align-items: center;
+}
+
+.leader-quote .story-img-col img {
+  aspect-ratio: 3 / 4;
+}
+
+.leader-quote-text {
+  font-size: 22px;
+  font-weight: 600;
+  font-style: italic;
+  line-height: 1.6;
+  color: var(--tp);
+  border-left: 3px solid var(--ab);
+  padding-left: 24px;
+}
+
+@media (max-width: 900px) {
+  .story-row,
+  .leader-quote {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    margin-bottom: 70px;
+  }
+
+  .story-row.story-reverse .story-img-col,
+  .story-row.story-reverse .story-text-col {
+    order: initial;
+  }
+
+  .story-img-col img,
+  .leader-quote .story-img-col img {
+    max-width: 380px;
+    margin: 0 auto;
+    aspect-ratio: 4 / 5;
+  }
+}
+
 /* ---------- Личная страница Анны ---------- */
 
 .anna-gallery {
