@@ -885,9 +885,9 @@ body {
 /* ---------- Заглушки внутренних страниц ---------- */
 
 .page-hero {
-  padding: 180px 24px 100px;
+  padding: 180px 24px 120px;
   text-align: center;
-  background: linear-gradient(135deg, #e6f7fc 0%, #fff 60%);
+  background: linear-gradient(180deg, #e6f7fc 0%, #fff 85%);
 }
 
 .page-hero-label {
@@ -1237,11 +1237,57 @@ body {
 }
 
 .pull-quote-mark {
-  font-size: 48px;
-  color: var(--ab);
-  line-height: 1;
+  font-size: 13px;
   font-weight: 700;
-  margin-bottom: 8px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--ab);
+  margin-bottom: 16px;
+}
+
+.leader-quote .leader-quote-content {
+  order: 2;
+}
+
+.leader-quote.story-reverse .story-img-col {
+  order: 2;
+}
+
+.leader-quote.story-reverse .leader-quote-content {
+  order: 1;
+}
+
+.leader-quote-kicker {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--ab);
+  margin-bottom: 16px;
+}
+
+.story-badge {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--ab);
+  background: var(--abl);
+  padding: 6px 14px;
+  border-radius: 999px;
+  margin-bottom: 18px;
+}
+
+.story-text-col strong,
+.leader-quote-content strong {
+  color: var(--tp);
+  font-weight: 700;
+}
+
+.story-text-col em,
+.leader-quote-content em,
+.pull-quote em {
+  font-style: italic;
+  color: var(--tp);
 }
 
 .leader-quote {
