@@ -38,7 +38,7 @@
 			</div>
 		</header>
 
-		<a href="/" class="back-home"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"/><path d="M12 19l-7-7 7-7"/></svg><span data-i18n="back_to_home">На главную</span></a>
+		<a href="/" class="back-home" id="backHomeLink"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"/><path d="M12 19l-7-7 7-7"/></svg><span data-i18n="back_to_home">На главную</span></a>
 
 
 		<section class="page-hero">
@@ -110,7 +110,7 @@
 			<p style="font-size:18px;font-weight:400;color:var(--ts);line-height:1.8" data-i18n="anna_closing">Когда-то я просто искала возможность создать для своей семьи более надёжное будущее. Сегодня я помогаю другим людям сделать такой же первый шаг. И, возможно, именно это решение однажды станет для них таким же судьбоносным, каким когда-то стало для меня.</p>
 		</div>
 
-		<div class="office-card">
+		<div class="office-card" style="margin-bottom: 140px">
 			<div class="reveal">
 				<img src="/assets/office-storefront.jpg" alt="Офис Atomy — Уфа, Балхай Сипайлово">
 			</div>
@@ -122,12 +122,6 @@
 				<a href="https://2gis.ru/ufa/geo/70000001103608592" class="btn-more" target="_blank" rel="noopener" data-i18n="office_link">Открыть на карте (2ГИС)</a>
 			</div>
 		</div>
-
-		<section class="page-stub">
-			<div class="page-stub-inner">
-				<a href="/#contact" class="btn btn-primary" data-i18n="page_stub_btn">Написать Анне</a>
-			</div>
-		</section>
 
 		<footer class="footer">
 			<div class="footer-inner">
@@ -200,6 +194,18 @@
 				if (window.scrollY > 50) header.classList.add('scrolled');
 				else header.classList.remove('scrolled');
 				});
+
+				/* "На главную" — если пришли с самого сайта, возвращаем ровно туда, откуда зашли
+				(в том числе на тот же якорь/скролл), а не просто на верх главной */
+				const backHomeLink = document.getElementById('backHomeLink');
+				if (backHomeLink) {
+				backHomeLink.addEventListener('click', function (e) {
+				if (document.referrer && document.referrer.indexOf(location.host) !== -1 && window.history.length > 1) {
+				e.preventDefault();
+				window.history.back();
+				}
+				});
+				}
 
 				const mobileMenuBtn = document.getElementById('mobileMenuBtn');
 				const mobileNav = document.getElementById('mobileNav');
