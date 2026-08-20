@@ -1,0 +1,36 @@
+{
+  "ru": {
+    "back_to_home": "На главную",
+    "footer_about": "Обо мне",
+    "footer_copy": "© 2026 Анна Яковлева. Независимый партнёр Atomy.",
+    "footer_faq": "FAQ",
+    "nav_about": "Обо мне",
+    "nav_contact": "Контакты",
+    "nav_events": "Мероприятия",
+    "nav_faq": "FAQ",
+    "nav_products": "Продукция",
+    "nav_team": "Команда",
+    "page_products_label": "Продукция",
+    "page_products_sub": "Полный каталог с обзорами, отзывами и личными рекомендациями Анны.",
+    "page_products_title": "Каталог продукции",
+    "page_stub_btn": "Написать Анне",
+    "page_stub_text": "Эта страница ещё наполняется. Пока подробнее можно узнать напрямую у Анны — свяжитесь любым удобным способом."
+  },
+  "en": {
+    "back_to_home": "Back to home",
+    "footer_about": "About Me",
+    "footer_copy": "© 2026 Anna Yakovleva. Independent Atomy Partner.",
+    "footer_faq": "FAQ",
+    "nav_about": "About Me",
+    "nav_contact": "Contact",
+    "nav_events": "Events",
+    "nav_faq": "FAQ",
+    "nav_products": "Products",
+    "nav_team": "Team",
+    "page_products_label": "Products",
+    "page_products_sub": "Full catalog with reviews and Anna's personal recommendations.",
+    "page_products_title": "Product catalog",
+    "page_stub_btn": "Message Anna",
+    "page_stub_text": "This page is still being filled in. For now, reach out to Anna directly for details."
+  }
+}

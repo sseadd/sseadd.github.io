@@ -20,7 +20,7 @@
 
 		<header class="header" id="header">
 			<div class="header-inner">
-				<a href="/" class="logo">ATOM美 <span>by Anna Yakovleva</span></a>
+				<a href="/" class="logo">ATOMY <span>by Anna Yakovleva</span></a>
 				<nav class="nav">
 					<a href="#about" data-i18n="nav_about">Обо мне</a>
 					<a href="#team" data-i18n="nav_team">Команда</a>
@@ -68,7 +68,8 @@
 						<p data-i18n="about_p1">Меня зовут Анна Яковлева. Уже больше 10 лет я работаю мастером по депиляции. Я очень люблю свою профессию, люблю видеть счастливых клиентов и помогать людям чувствовать себя увереннее.</p>
 						<p data-i18n="about_p2">Но в какой-то момент я поняла, что, сколько бы я ни работала, мой доход всегда напрямую зависел от моего времени. Мне хотелось создать что-то более стабильное. Именно тогда в моей жизни появилась Атоми — меня зацепило качество, философия компании и то, что здесь не нужно никому ничего навязывать.</p>
 						<p data-i18n="about_p3">Сегодня я совмещаю два любимых дела: продолжаю работать мастером по депиляции и параллельно развиваю международный бизнес с компанией Атоми в команде Балхай.</p>
-						<p style="font-style:italic;color:var(--tp);border-left:3px solid var(--ab);padding-left:16px" data-i18n="about_quote">«Аня — сильный и успешный лидер. Её мягкая сила непременно приведёт к успеху»</p>
+						<p style="font-style:italic;color:var(--tp);border-left:3px solid var(--ab);padding-left:16px;margin-bottom:8px" data-i18n="about_quote">«Аня — сильный и успешный лидер. Её мягкая сила непременно приведёт к успеху»</p>
+						<p style="font-size:14px;color:var(--ts);padding-left:16px" data-i18n="about_quote_author">— Ольга Брижак</p>
 						<a href="/anna/" class="btn-more" data-i18n="btn_more_anna">Узнать обо мне подробнее</a>
 					</div>
 					<div class="about-img reveal">
@@ -124,14 +125,14 @@
 						</div>
 					</div>
 					<div class="team-card reveal">
-						<img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=600&q=80" alt="Team">
+						<img src="/assets/training-seminar.jpg" alt="Team">
 						<div class="team-card-body">
 							<div class="team-card-name" data-i18n="team_card_2_name">Обучение</div>
 							<div class="team-card-role" data-i18n="team_card_2_role">Zoom и офлайн форматы</div>
 						</div>
 					</div>
 					<div class="team-card reveal">
-						<img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&q=80" alt="Team">
+						<img src="/assets/balkhai-family-fountain.jpg" alt="Team">
 						<div class="team-card-body">
 							<div class="team-card-name" data-i18n="team_card_3_name">Поддержка 24/7</div>
 							<div class="team-card-role" data-i18n="team_card_3_role">Чаты и обучающие боты</div>
@@ -160,7 +161,7 @@
 						</div>
 					</div>
 					<div class="event-card reveal">
-						<img src="https://images.unsplash.com/photo-1515187029135-18ee286d815b?w=600&q=80" alt="Event">
+						<img src="/assets/star-zoom-call.jpg" alt="Event">
 						<div class="event-card-body">
 							<div class="event-card-tag" data-i18n="event_2_tag">Онлайн</div>
 							<div class="event-card-title" data-i18n="event_2_title">Star Zoom</div>
@@ -168,7 +169,7 @@
 						</div>
 					</div>
 					<div class="event-card reveal">
-						<img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=600&q=80" alt="Event">
+						<img src="/assets/health-days-sofa.jpg" alt="Event">
 						<div class="event-card-body">
 							<div class="event-card-tag" data-i18n="event_3_tag">Мастер-класс</div>
 							<div class="event-card-title" data-i18n="event_3_title">Дни здоровья и красоты</div>
@@ -205,7 +206,7 @@
 						<div class="product-card-desc" data-i18n="prod_3_desc">Натуральный уход за полостью рта</div>
 					</div>
 					<div class="product-card reveal">
-						<img src="/assets/prod-manuka.jpg" alt="Manuka">
+						<img src="/assets/prod-powder.jpg" alt="Стиральный порошок">
 						<div class="product-card-name" data-i18n="prod_4_name">Manuka Honey</div>
 						<div class="product-card-desc" data-i18n="prod_4_desc">Премиальный мед из Новой Зеландии</div>
 					</div>
@@ -290,7 +291,7 @@
 			<div class="footer-inner">
 				<div class="footer-top">
 					<div class="footer-brand-block">
-						<div class="footer-brand">ATOM美 <span>by Anna Yakovleva</span></div>
+						<div class="footer-brand">ATOMY <span>by Anna Yakovleva</span></div>
 					</div>
 					<nav class="footer-nav">
 						<a href="#about" data-i18n="footer_about">Обо мне</a>
@@ -343,7 +344,7 @@
 				applyTranslations(lang);
 				}
 
-				fetch('/js/translations.json')
+				fetch('/js/index.json')
 				.then(res => res.json())
 				.then(data => { translations = data; applyTranslations(currentLang); })
 				.catch(err => console.error('Не удалось загрузить переводы:', err));
