@@ -576,6 +576,7 @@ body {
   width: 100%;
   height: 280px;
   object-fit: cover;
+  background: var(--bl);
 }
 
 .team-card-body {
@@ -617,6 +618,7 @@ body {
   width: 100%;
   height: 220px;
   object-fit: cover;
+  background: var(--bl);
   transition: transform .6s ease;
 }
 
@@ -682,6 +684,7 @@ body {
   object-fit: cover;
   margin-bottom: 20px;
   border-radius: 16px;
+  background: var(--bl);
   box-shadow: 0 8px 24px rgba(0, 0, 0, .06);
 }
 
@@ -870,7 +873,7 @@ body {
   content: '';
   position: absolute;
   inset: 0;
-  background: url('https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=800&q=80') center/cover;
+  background: url('/assets/atomy-is-people.jpg') center 20%/cover;
   opacity: .15;
 }
 
@@ -1207,6 +1210,7 @@ body {
   aspect-ratio: 4 / 5;
   object-fit: cover;
   border-radius: 14px;
+  background: var(--bl);
   box-shadow: 0 20px 60px rgba(0, 0, 0, .1);
   display: block;
 }
