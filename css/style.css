@@ -258,7 +258,7 @@ body {
   content: '';
   position: absolute;
   inset: 0;
-  background: url('/assets/anna-portrait-office.jpg') center 20%/cover;
+  background: url('/assets/anna-portrait-office.webp') center 20%/cover;
   opacity: .14;
 }
 
@@ -873,7 +873,7 @@ body {
   content: '';
   position: absolute;
   inset: 0;
-  background: url('/assets/atomy-is-people.jpg') center 20%/cover;
+  background: url('/assets/atomy-is-people.webp') center 20%/cover;
   opacity: .15;
 }
 
