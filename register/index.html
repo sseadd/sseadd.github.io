@@ -133,6 +133,16 @@
 				});
 				}
 
+				/* Прогреваем в фоне остальные страницы сайта (без спешки, низкий приоритет),
+				чтобы переход по меню на них открывался мгновенно, без ожидания */
+				const prefetchPages = ['/', '/team/', '/events/', '/products/', '/faq/', '/anna/'];
+				prefetchPages.forEach(href => {
+				const link = document.createElement('link');
+				link.rel = 'prefetch';
+				link.href = href;
+				document.head.appendChild(link);
+				});
+
 				const mobileMenuBtn = document.getElementById('mobileMenuBtn');
 				const mobileNav = document.getElementById('mobileNav');
 				mobileMenuBtn.addEventListener('click', () => mobileNav.classList.toggle('open'));
