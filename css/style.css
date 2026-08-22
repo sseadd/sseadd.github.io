@@ -873,7 +873,7 @@ body {
   content: '';
   position: absolute;
   inset: 0;
-  background: url('/assets/atomy-is-people.webp') center 20%/cover;
+  background: url('/assets/atomy-is-people.webp') center 35%/cover;
   opacity: .15;
 }
 
