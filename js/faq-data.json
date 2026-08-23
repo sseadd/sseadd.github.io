@@ -1,0 +1,106 @@
+{
+  "ru": {
+    "all_label": "Все",
+    "categories": [
+      { "id": "start", "label": "Начало и регистрация" },
+      { "id": "products", "label": "Продукция и заказы" },
+      { "id": "earnings", "label": "Заработок и выплаты" },
+      { "id": "team", "label": "Команда и рост" },
+      { "id": "events", "label": "Мероприятия и обучение" },
+      { "id": "general", "label": "Организационное" }
+    ],
+    "questions": [
+      { "id": "q01", "category": "start", "q": "Как зарегистрироваться в Atomy?", "a": "Регистрация полностью бесплатная и занимает несколько минут. Напишите мне в любой мессенджер — пришлю персональную ссылку и подскажу на каждом шаге." },
+      { "id": "q02", "category": "start", "q": "Нужно ли покупать стартовый набор?", "a": "Нет, обязательного стартового набора не существует. Можно начать вообще без вложений и просто пользоваться продукцией." },
+      { "id": "q03", "category": "start", "q": "Могу я завести несколько ID?", "a": "Нет, у Atomy действует правило «один человек — один ID». Если вы уже зарегистрированы через другого человека, поменять спонсора можно, но по определённым правилам — напишите мне, разберём вашу ситуацию." },
+      { "id": "q04", "category": "start", "q": "Как аннулировать участие, если передумал?", "a": "Аннулировать личный кабинет можно через личный кабинет на сайте Atomy или обратившись в службу поддержки. Никаких обязательств оставаться «навсегда» нет — это не абонемент." },
+      { "id": "q05", "category": "start", "q": "Можно ли зарегистрироваться, если я живу не в России?", "a": "Да, Atomy работает более чем в 50 странах. Расскажу, как это устроено конкретно для вашей страны." },
+      { "id": "q06", "category": "start", "q": "Обязательно ли указывать спонсора при регистрации?", "a": "Да, у каждого участника есть наставник — тот, кто его пригласил. Если вы регистрируетесь через меня, я и буду вашим наставником и помогу на старте." },
+
+      { "id": "q07", "category": "products", "q": "Продукция сертифицирована?", "a": "Да, вся продукция Atomy имеет необходимые сертификаты качества и проходит проверки перед выходом на рынок." },
+      { "id": "q08", "category": "products", "q": "Сколько стоит доставка заказа?", "a": "Зависит от региона и способа доставки — точную стоимость видно на этапе оформления заказа в личном кабинете. Расскажу подробнее, когда будете оформлять первый заказ." },
+      { "id": "q09", "category": "products", "q": "Можно ли вернуть товар, если не подошёл?", "a": "Да, у Atomy есть политика возврата — подробности и форма для оформления есть в личном кабинете, помогу оформить, если понадобится." },
+      { "id": "q10", "category": "products", "q": "Какая продукция самая популярная?", "a": "HemoHim (для иммунитета), линейка Absolute Skincare, прополисная зубная паста и стиральный порошок — то, что чаще всего берут в первую очередь. Всё это есть в разделе «Продукция» на сайте." },
+      { "id": "q11", "category": "products", "q": "Цена одинаковая для всех?", "a": "Да, цена в каталоге фиксированная для всех участников, вне зависимости от статуса — никаких «оптовых» наценок или скидок для избранных." },
+
+      { "id": "q12", "category": "earnings", "q": "Как вообще зарабатывают в Atomy?", "a": "За счёт личных покупок и покупок команды, которую вы приглашаете и развиваете. Чем больше и активнее команда — тем выше доход." },
+      { "id": "q13", "category": "earnings", "q": "Когда я получу свои вознаграждения?", "a": "Вознаграждения начисляются регулярно, выплаты приходят на карту — точный график всегда виден в личном кабинете." },
+      { "id": "q14", "category": "earnings", "q": "Сколько можно заработать?", "a": "Тут буду честна: точную цифру никто не назовёт заранее, всё зависит от вашей вовлечённости. Я не обещаю лёгких денег — но при регулярных усилиях и правильной системе результат реален." },
+      { "id": "q15", "category": "earnings", "q": "Нужно ли делать закупки каждый месяц?", "a": "Обязательных ежемесячных закупок нет — вы покупаете то, что реально нужно вам самим или вашим клиентам." },
+      { "id": "q16", "category": "earnings", "q": "Как устроена система рангов?", "a": "Ранги растут вместе с объёмом ваших продаж и продаж команды. Я сама сейчас на статусе Sales Master — с радостью расскажу, как это работает, на личном примере." },
+
+      { "id": "q17", "category": "team", "q": "Что такое команда Балхай?", "a": "Это команда, к которой принадлежу я внутри Atomy — люди, которые вместе учатся, растут и поддерживают друг друга." },
+      { "id": "q18", "category": "team", "q": "Обязательно ли самому искать людей в команду?", "a": "Нет, никакого давления «продавать» не будет. Это личный выбор — делиться продукцией и возможностью с теми, кому это действительно актуально." },
+      { "id": "q19", "category": "team", "q": "Помогает ли наставник новичкам?", "a": "Да, и это буквально то, чем я занимаюсь каждый день — сопровождаю новых людей на старте, объясняю все шаги." },
+      { "id": "q20", "category": "team", "q": "Что если я вообще никого не приглашу в команду?", "a": "Ничего страшного, можно оставаться просто покупателем с личным доступом к продукции — никаких обязательств строить структуру нет." },
+      { "id": "q21", "category": "team", "q": "Как быстро можно рассчитывать на первых людей в команде?", "a": "Зависит от вас: кто-то начинает делиться сразу, кто-то сначала присматривается к продукции пару месяцев. Тут нет «правильного» темпа." },
+
+      { "id": "q22", "category": "events", "q": "Какие мероприятия проводит команда?", "a": "Лидерские клубы, онлайн-встречи Star Zoom, дни здоровья и красоты — подробнее в разделе «Активности»." },
+      { "id": "q23", "category": "events", "q": "Нужно ли посещать все мероприятия?", "a": "Нет, это по желанию, но они реально помогают быстрее разобраться и в продукте, и в бизнесе." },
+      { "id": "q24", "category": "events", "q": "Есть ли формат для тех, кто не в Уфе?", "a": "Да, Star Zoom — это как раз онлайн-формат, можно подключаться из любого города." },
+      { "id": "q25", "category": "events", "q": "Что такое Академия Успеха?", "a": "Крупное официальное мероприятие Atomy, куда съезжаются лидеры со всей страны — я сама там была, фото есть на сайте." },
+      { "id": "q26", "category": "events", "q": "Проводится ли обучение для новичков отдельно?", "a": "Да, у нас регулярно идут учебные встречи именно для тех, кто только начал — рассказываю с нуля, без спешки." },
+
+      { "id": "q27", "category": "general", "q": "Как связаться с Анной напрямую?", "a": "Telegram, WhatsApp, VK, MAX или по телефону — все контакты внизу главной страницы." },
+      { "id": "q28", "category": "general", "q": "Есть ли у Анны свой офис?", "a": "Да, личный офис Atomy в Уфе, Балхай Сипайлово — адрес и карта есть на странице «Обо мне»." },
+      { "id": "q29", "category": "general", "q": "Можно ли прийти в офис без записи?", "a": "Лучше предварительно написать — так я точно буду на месте и смогу уделить вам время." },
+      { "id": "q30", "category": "general", "q": "Это официальный сайт Atomy?", "a": "Нет, это мой личный сайт как независимого партнёра Atomy — с реальными фото и историей, а не корпоративная страница компании." },
+      { "id": "q31", "category": "general", "q": "Сколько времени займёт первый разговор с Анной?", "a": "Обычно 15–20 минут, чтобы понять ваш запрос и предложить, с чего начать — без давления и обязательств." }
+    ],
+    "cta_title": "Всё ещё остались вопросы?",
+    "cta_text": "Пишите мне — отвечу лично и разберём именно вашу ситуацию.",
+    "cta_btn": "Написать Анне"
+  },
+  "en": {
+    "all_label": "All",
+    "categories": [
+      { "id": "start", "label": "Getting started" },
+      { "id": "products", "label": "Products & orders" },
+      { "id": "earnings", "label": "Earnings & payouts" },
+      { "id": "team", "label": "Team & growth" },
+      { "id": "events", "label": "Events & training" },
+      { "id": "general", "label": "General" }
+    ],
+    "questions": [
+      { "id": "q01", "category": "start", "q": "How do I register with Atomy?", "a": "Registration is completely free and takes a few minutes. Message me on any messenger — I'll send you a personal link and guide you through every step." },
+      { "id": "q02", "category": "start", "q": "Do I need to buy a starter kit?", "a": "No, there's no mandatory starter kit. You can start with zero investment and simply use the products." },
+      { "id": "q03", "category": "start", "q": "Can I have more than one ID?", "a": "No, Atomy has a strict «one person — one ID» rule. If you're already registered under someone else, changing sponsors is possible under certain rules — message me and we'll sort out your situation." },
+      { "id": "q04", "category": "start", "q": "How do I cancel my membership if I change my mind?", "a": "You can cancel your account through your Atomy account or by contacting support. There's no obligation to stay «forever» — it's not a subscription." },
+      { "id": "q05", "category": "start", "q": "Can I register if I don't live in Russia?", "a": "Yes, Atomy operates in more than 50 countries. I'll explain exactly how it works for your country." },
+      { "id": "q06", "category": "start", "q": "Do I have to name a sponsor when registering?", "a": "Yes, every member has a mentor — the person who invited them. If you register through me, I'll be your mentor and help you get started." },
+
+      { "id": "q07", "category": "products", "q": "Are the products certified?", "a": "Yes, all Atomy products carry the required quality certificates and go through checks before reaching the market." },
+      { "id": "q08", "category": "products", "q": "How much does delivery cost?", "a": "It depends on your region and delivery method — the exact cost is shown at checkout in your account. I'll walk you through it for your first order." },
+      { "id": "q09", "category": "products", "q": "Can I return a product that didn't work for me?", "a": "Yes, Atomy has a return policy — details and the form are in your account, and I can help you file it if needed." },
+      { "id": "q10", "category": "products", "q": "What are the most popular products?", "a": "HemoHim (immunity), the Absolute Skincare line, propolis toothpaste, and laundry powder — the ones people usually try first. All of them are in the Products section of this site." },
+      { "id": "q11", "category": "products", "q": "Is the price the same for everyone?", "a": "Yes, catalog prices are fixed for every member regardless of status — no «wholesale» markups or hidden discounts for a select few." },
+
+      { "id": "q12", "category": "earnings", "q": "How do people actually earn with Atomy?", "a": "From personal purchases and purchases made by the team you invite and grow. The bigger and more active your team, the higher your income." },
+      { "id": "q13", "category": "earnings", "q": "When will I receive my rewards?", "a": "Rewards accrue regularly and are paid out to your card — the exact schedule is always visible in your account." },
+      { "id": "q14", "category": "earnings", "q": "How much can I actually earn?", "a": "I'll be honest: nobody can name an exact figure in advance, it depends entirely on your involvement. I don't promise easy money — but with consistent effort and the right system, real results are possible." },
+      { "id": "q15", "category": "earnings", "q": "Do I need to order something every month?", "a": "There's no mandatory monthly purchase — you buy what you and your clients actually need." },
+      { "id": "q16", "category": "earnings", "q": "How does the rank system work?", "a": "Ranks grow along with your sales volume and your team's sales. I'm currently at Sales Master status myself — happy to explain how it works using my own example." },
+
+      { "id": "q17", "category": "team", "q": "What is the Balhai team?", "a": "It's the team I belong to within Atomy — people who learn, grow, and support each other together." },
+      { "id": "q18", "category": "team", "q": "Do I have to recruit people myself?", "a": "No, there's no pressure to «sell». It's a personal choice — sharing the products and the opportunity with people it's genuinely relevant to." },
+      { "id": "q19", "category": "team", "q": "Does a mentor help beginners?", "a": "Yes, and that's literally what I do every day — guiding new people through their first steps and explaining everything." },
+      { "id": "q20", "category": "team", "q": "What if I don't invite anyone to my team?", "a": "That's fine — you can simply stay a customer with personal access to the products, with no obligation to build a structure." },
+      { "id": "q21", "category": "team", "q": "How quickly can I expect my first team members?", "a": "It depends on you: some people start sharing right away, others explore the products for a couple of months first. There's no «right» pace." },
+
+      { "id": "q22", "category": "events", "q": "What events does the team hold?", "a": "Leadership clubs, Star Zoom online meetings, health & beauty days — more details in the Events section." },
+      { "id": "q23", "category": "events", "q": "Do I have to attend every event?", "a": "No, it's optional, but they really do help you get up to speed on both the product and the business faster." },
+      { "id": "q24", "category": "events", "q": "Is there a format for people outside Ufa?", "a": "Yes, Star Zoom is exactly that — an online format you can join from any city." },
+      { "id": "q25", "category": "events", "q": "What is the Success Academy?", "a": "A major official Atomy event that brings together leaders from across the country — I've been there myself, there are photos on the site." },
+      { "id": "q26", "category": "events", "q": "Is there separate training for beginners?", "a": "Yes, we regularly hold training sessions specifically for people who are just starting — I explain everything from scratch, no rush." },
+
+      { "id": "q27", "category": "general", "q": "How do I contact Anna directly?", "a": "Telegram, WhatsApp, VK, MAX, or phone — all contacts are at the bottom of the homepage." },
+      { "id": "q28", "category": "general", "q": "Does Anna have her own office?", "a": "Yes, a personal Atomy office in Ufa, Balhai Sipaylovo — the address and map are on the «About me» page." },
+      { "id": "q29", "category": "general", "q": "Can I come to the office without an appointment?", "a": "It's better to message ahead — that way I'll definitely be there and can give you my full attention." },
+      { "id": "q30", "category": "general", "q": "Is this the official Atomy website?", "a": "No, this is my personal site as an independent Atomy partner — with real photos and my own story, not a corporate company page." },
+      { "id": "q31", "category": "general", "q": "How long does a first conversation with Anna take?", "a": "Usually 15–20 minutes, just to understand what you're looking for and suggest where to start — no pressure, no obligations." }
+    ],
+    "cta_title": "Still have questions?",
+    "cta_text": "Message me — I'll answer personally and we'll look at your exact situation.",
+    "cta_btn": "Message Anna"
+  }
+}

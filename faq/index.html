@@ -47,10 +47,15 @@
 			<p class="page-hero-sub" data-i18n="page_faq_sub">Расширенный список: как зарегистрироваться, как поменять центр, как стать дистрибьютором и получить выплаты.</p>
 		</section>
 
-		<section class="page-stub">
-			<div class="page-stub-inner">
-				<p data-i18n="page_stub_text">Эта страница ещё наполняется. Пока подробнее можно узнать напрямую у Анны — свяжитесь любым удобным способом.</p>
-				<a href="/#contact" class="btn btn-primary" data-i18n="page_stub_btn">Написать Анне</a>
+		<section class="section" style="padding-top: 0">
+			<div class="section-inner">
+				<div class="faq-topics" id="faqTopics"></div>
+				<div class="faq-list" id="faqList"></div>
+				<div class="faq-cta">
+					<h3 id="faqCtaTitle">Всё ещё остались вопросы?</h3>
+					<p id="faqCtaText">Пишите мне — отвечу лично и разберём именно вашу ситуацию.</p>
+					<a href="/#contact" class="btn btn-primary" id="faqCtaBtn">Написать Анне</a>
+				</div>
 			</div>
 		</section>
 
@@ -98,12 +103,76 @@
 				currentLang = lang;
 				localStorage.setItem('atomy_lang', lang);
 				applyTranslations(lang);
+				renderFaqContent(lang);
 				}
 
 				fetch('/js/faq.json')
 				.then(res => res.json())
 				.then(data => { translations = data; applyTranslations(currentLang); })
 				.catch(err => console.error('Не удалось загрузить переводы:', err));
+
+				/* Данные самих вопросов/ответов лежат отдельно от UI-переводов (faq.json) —
+				в faq-data.json, потому что это контент, а не интерфейсные подписи, и его
+				удобнее держать и расширять отдельно. */
+				let faqData = null;
+				let activeCategory = 'all';
+
+				function renderFaqContent(lang) {
+				if (!faqData || !faqData[lang]) return;
+				const d = faqData[lang];
+
+				const topicsEl = document.getElementById('faqTopics');
+				topicsEl.innerHTML = '';
+				const allPill = document.createElement('button');
+				allPill.className = 'faq-topic-pill' + (activeCategory === 'all' ? ' active' : '');
+				allPill.textContent = d.all_label;
+				allPill.addEventListener('click', () => { activeCategory = 'all'; renderFaqContent(currentLang); });
+				topicsEl.appendChild(allPill);
+				d.categories.forEach(cat => {
+				const pill = document.createElement('button');
+				pill.className = 'faq-topic-pill' + (activeCategory === cat.id ? ' active' : '');
+				pill.textContent = cat.label;
+				pill.addEventListener('click', () => { activeCategory = cat.id; renderFaqContent(currentLang); });
+				topicsEl.appendChild(pill);
+				});
+
+				const listEl = document.getElementById('faqList');
+				listEl.innerHTML = '';
+
+				function appendQuestion(item) {
+				const wrap = document.createElement('div');
+				wrap.className = 'faq-item reveal visible';
+				wrap.innerHTML = '<div class="faq-question"><span>' + item.q + '</span><div class="faq-icon"></div></div>' +
+				'<div class="faq-answer">' + item.a + '</div>';
+				wrap.querySelector('.faq-question').addEventListener('click', () => {
+				const isOpen = wrap.classList.contains('open');
+				document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+				if (!isOpen) wrap.classList.add('open');
+				});
+				listEl.appendChild(wrap);
+				}
+
+				if (activeCategory === 'all') {
+				d.categories.forEach(cat => {
+				const heading = document.createElement('div');
+				heading.className = 'faq-category-heading';
+				heading.textContent = cat.label;
+				listEl.appendChild(heading);
+				d.questions.filter(q => q.category === cat.id).forEach(appendQuestion);
+				});
+				} else {
+				d.questions.filter(q => q.category === activeCategory).forEach(appendQuestion);
+				}
+
+				document.getElementById('faqCtaTitle').textContent = d.cta_title;
+				document.getElementById('faqCtaText').textContent = d.cta_text;
+				document.getElementById('faqCtaBtn').textContent = d.cta_btn;
+				}
+
+				fetch('/js/faq-data.json')
+				.then(res => res.json())
+				.then(data => { faqData = data; renderFaqContent(currentLang); })
+				.catch(err => console.error('Не удалось загрузить вопросы FAQ:', err));
 
 				document.getElementById('langSwitch').addEventListener('click', () => setLanguage(currentLang === 'ru' ? 'en' : 'ru'));
 				document.getElementById('langSwitchMobile').addEventListener('click', () => setLanguage(currentLang === 'ru' ? 'en' : 'ru'));
