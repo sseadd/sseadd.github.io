@@ -704,17 +704,28 @@ body {
 
 .faq-topics {
   display: flex;
+  flex-wrap: wrap;
   gap: 10px;
-  overflow-x: auto;
   padding: 4px 4px 12px;
   margin: 0 auto 40px;
   max-width: 800px;
-  -webkit-overflow-scrolling: touch;
-  scrollbar-width: none;
 }
 
-.faq-topics::-webkit-scrollbar {
-  display: none;
+@media (max-width: 1024px) {
+  .faq-topics {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    /* лёгкая подсказка, что список можно пролистать вбок: правый край плавно
+    затухает, вместо того чтобы список резко обрывался ровной линией */
+    -webkit-mask-image: linear-gradient(to right, #000 88%, transparent 100%);
+    mask-image: linear-gradient(to right, #000 88%, transparent 100%);
+  }
+
+  .faq-topics::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 .faq-topic-pill {
@@ -954,7 +965,7 @@ body {
   content: '';
   position: absolute;
   inset: 0;
-  background: url('/assets/atomy-is-people.webp') center 35%/cover;
+  background: url('/assets/atomy-is-people.webp') 65% 45%/cover;
   opacity: .15;
 }
 
