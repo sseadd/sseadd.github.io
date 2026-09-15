@@ -881,7 +881,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 80px;
-  align-items: center;
+  align-items: stretch;
 }
 
 .contact-info h3 {
@@ -984,9 +984,13 @@ body {
 }
 
 .contact-links {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.contact-links a:last-child {
+  grid-column: 1 / -1;
 }
 
 .contact-link {
@@ -1043,7 +1047,19 @@ body {
   text-align: center;
   position: relative;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   box-shadow: 0 20px 60px rgba(0, 169, 224, .2);
+}
+
+/* min-height нужен только там, где карточка стоит рядом со второй колонкой
+и должна тянуться под её высоту (desktop/широкий планшет). На телефоне
+grid уже в одну колонку — высота там и так по содержимому, трогать не нужно */
+@media (min-width: 1025px) {
+  .contact-visual {
+    min-height: 320px;
+  }
 }
 
 .contact-visual::before {
@@ -1592,6 +1608,15 @@ body {
   .logo,
   .footer-brand {
     font-size: 16px;
+  }
+
+  .contact-links {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .contact-links a:last-child {
+    grid-column: auto;
   }
 }
 
