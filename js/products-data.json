@@ -1,0 +1,124 @@
+{
+  "ru": {
+    "all_label": "Все",
+    "categories": [
+      { "id": "health", "label": "Здоровье" },
+      { "id": "beauty", "label": "Красота" },
+      { "id": "hygiene", "label": "Личная гигиена" },
+      { "id": "home", "label": "Товары для жизни" },
+      { "id": "food", "label": "Продукты питания" }
+    ],
+    "products": [
+      {
+        "id": "p01",
+        "category": "health",
+        "name": "ХемоХИМ",
+        "desc": "Флагман Atomy для иммунитета — помогает организму быстрее восстанавливать силы и легче справляться с нагрузками",
+        "image": "/assets/prod-hemohim.webp",
+        "price_before": 9700,
+        "price_after": 8800
+      },
+      {
+        "id": "p02",
+        "category": "beauty",
+        "name": "Absolute Skincare",
+        "desc": "Премиальная антивозрастная линия — работает на клеточном уровне, возвращает коже упругость и разглаживает морщины",
+        "image": "/assets/prod-skincare.webp",
+        "price_before": 18000,
+        "price_after": 16000
+      },
+      {
+        "id": "p03",
+        "category": "hygiene",
+        "name": "Прополисная зубная паста (4 шт)",
+        "desc": "На натуральном прополисе и экстракте зелёного чая — бережно ухаживает за полостью рта",
+        "image": "/assets/prod-toothpaste.webp",
+        "price_before": 700,
+        "price_after": 600
+      },
+      {
+        "id": "p04",
+        "category": "home",
+        "name": "Стиральный порошок (500 г)",
+        "desc": "Концентрированный гипоаллергенный порошок для ручной и машинной стирки",
+        "image": "/assets/prod-powder.webp",
+        "price_before": 700,
+        "price_after": 600
+      }
+    ],
+    "price_switch_before": "До регистрации",
+    "price_switch_after": "После регистрации",
+    "add_to_cart": "В корзину",
+    "in_cart": "В корзине",
+    "buy_now": "Купить",
+    "cart_title": "Корзина",
+    "cart_empty": "Пока пусто",
+    "cart_total": "Итого",
+    "cart_checkout": "Оформить",
+    "cart_clear": "Очистить",
+    "not_full_catalog_title": "Это не весь ассортимент",
+    "not_full_catalog_text": "Показала то, что действительно рекомендую сама — если ищете что-то конкретное, просто напишите мне",
+    "not_full_catalog_btn": "Написать Анне"
+  },
+  "en": {
+    "all_label": "All",
+    "categories": [
+      { "id": "health", "label": "Health" },
+      { "id": "beauty", "label": "Beauty" },
+      { "id": "hygiene", "label": "Personal care" },
+      { "id": "home", "label": "Home" },
+      { "id": "food", "label": "Food" }
+    ],
+    "products": [
+      {
+        "id": "p01",
+        "category": "health",
+        "name": "HemoHim",
+        "desc": "Atomy's flagship for immunity — helps the body recover strength faster and handle daily load with more ease",
+        "image": "/assets/prod-hemohim.webp",
+        "price_before": 9700,
+        "price_after": 8800
+      },
+      {
+        "id": "p02",
+        "category": "beauty",
+        "name": "Absolute Skincare",
+        "desc": "Premium anti-aging line — works on a cellular level, restores firmness and smooths out wrinkles",
+        "image": "/assets/prod-skincare.webp",
+        "price_before": 18000,
+        "price_after": 16000
+      },
+      {
+        "id": "p03",
+        "category": "hygiene",
+        "name": "Propolis Toothpaste (4 pcs)",
+        "desc": "Made with natural propolis and green tea extract — gentle, thorough oral care",
+        "image": "/assets/prod-toothpaste.webp",
+        "price_before": 700,
+        "price_after": 600
+      },
+      {
+        "id": "p04",
+        "category": "home",
+        "name": "Laundry Powder (500 g)",
+        "desc": "Concentrated hypoallergenic powder for both hand and machine wash",
+        "image": "/assets/prod-powder.webp",
+        "price_before": 700,
+        "price_after": 600
+      }
+    ],
+    "price_switch_before": "Before registration",
+    "price_switch_after": "After registration",
+    "add_to_cart": "Add to cart",
+    "in_cart": "In cart",
+    "buy_now": "Buy",
+    "cart_title": "Cart",
+    "cart_empty": "Empty for now",
+    "cart_total": "Total",
+    "cart_checkout": "Checkout",
+    "cart_clear": "Clear",
+    "not_full_catalog_title": "This isn't the full lineup",
+    "not_full_catalog_text": "I'm showing what I genuinely recommend myself — if you're looking for something specific, just message me",
+    "not_full_catalog_btn": "Message Anna"
+  }
+}

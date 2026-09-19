@@ -772,6 +772,320 @@ body {
   margin-top: 0;
 }
 
+/* ---------- Свитч цен "до/после регистрации" ---------- */
+
+.price-switch {
+  position: fixed;
+  left: 24px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 500;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  background: var(--bw);
+  padding: 16px 10px;
+  border-radius: 18px;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, .12);
+  border: 1px solid rgba(0, 0, 0, .06);
+}
+
+.price-switch-label {
+  font-size: 11px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.3;
+  max-width: 72px;
+  color: var(--ts);
+  transition: color .3s;
+}
+
+.price-switch-label.active {
+  color: var(--ab);
+}
+
+.price-switch-track {
+  width: 28px;
+  height: 64px;
+  background: var(--bl);
+  border-radius: 999px;
+  position: relative;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.price-switch-thumb {
+  position: absolute;
+  left: 3px;
+  top: 3px;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: var(--ab);
+  box-shadow: 0 2px 8px rgba(0, 169, 224, .45);
+  transition: transform .35s cubic-bezier(.4, 0, .2, 1);
+}
+
+.price-switch.after .price-switch-thumb {
+  transform: translateY(36px);
+}
+
+@media (max-width: 768px) {
+  .price-switch {
+    position: static;
+    transform: none;
+    flex-direction: row;
+    max-width: 340px;
+    margin: 0 auto 32px;
+    width: fit-content;
+  }
+
+  .price-switch-track {
+    width: 64px;
+    height: 28px;
+  }
+
+  .price-switch-thumb {
+    transform: none;
+  }
+
+  .price-switch.after .price-switch-thumb {
+    transform: translateX(36px);
+  }
+}
+
+.price-tag {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  justify-content: center;
+  margin-top: 4px;
+}
+
+.price-tag .price-current {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--tp);
+}
+
+.price-tag .price-old {
+  font-size: 13px;
+  color: var(--ts);
+  text-decoration: line-through;
+}
+
+.price-tag .price-old.hidden {
+  display: none;
+}
+
+.product-card-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 14px;
+}
+
+.product-card-actions button {
+  flex: 1;
+  padding: 9px 10px;
+  border-radius: 8px;
+  border: none;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--tr);
+}
+
+.btn-add-cart {
+  background: var(--bl);
+  color: var(--tp);
+}
+
+.btn-add-cart:hover {
+  background: #e5e5e5;
+}
+
+.btn-add-cart.in-cart {
+  background: var(--ab);
+  color: #fff;
+}
+
+.btn-buy-now {
+  background: var(--tp);
+  color: #fff;
+}
+
+.btn-buy-now:hover {
+  background: #000;
+}
+
+/* ---------- Корзина ---------- */
+
+.cart-widget {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 12px;
+}
+
+.cart-trigger {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: var(--ab);
+  color: #fff;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 16px rgba(0, 169, 224, .35);
+  position: relative;
+  transition: var(--tr);
+}
+
+.cart-trigger:hover {
+  transform: scale(1.05);
+}
+
+.cart-trigger svg {
+  width: 24px;
+  height: 24px;
+}
+
+.cart-badge {
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  background: #fff;
+  color: var(--ab);
+  border: 2px solid var(--ab);
+  font-size: 11px;
+  font-weight: 700;
+  min-width: 20px;
+  height: 20px;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 4px;
+}
+
+.cart-badge.hidden {
+  display: none;
+}
+
+.cart-panel {
+  width: 300px;
+  max-height: 420px;
+  background: var(--bw);
+  border-radius: 16px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, .15);
+  border: 1px solid rgba(0, 0, 0, .06);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  opacity: 0;
+  transform: translateY(10px) scale(.96);
+  pointer-events: none;
+  transition: all .25s ease;
+}
+
+.cart-panel.open {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  pointer-events: all;
+}
+
+.cart-panel-title {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.cart-items {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+}
+
+.cart-item img {
+  width: 36px;
+  height: 36px;
+  border-radius: 6px;
+  object-fit: cover;
+  flex-shrink: 0;
+  background: var(--bl);
+}
+
+.cart-item-name {
+  flex: 1;
+  color: var(--tp);
+  font-weight: 500;
+}
+
+.cart-item-price {
+  color: var(--ts);
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.cart-item-remove {
+  background: none;
+  border: none;
+  color: var(--ts);
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 1;
+  padding: 2px 4px;
+}
+
+.cart-empty-msg {
+  font-size: 13px;
+  color: var(--ts);
+  text-align: center;
+  padding: 12px 0;
+}
+
+.cart-total-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  border-top: 1px solid rgba(0, 0, 0, .08);
+  padding-top: 12px;
+}
+
+.cart-checkout {
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+  padding: 12px;
+}
+
+.cart-clear {
+  background: none;
+  border: none;
+  color: var(--ts);
+  font-size: 12px;
+  text-decoration: underline;
+  cursor: pointer;
+  align-self: center;
+}
+
 .faq-cta {
   max-width: 700px;
   margin: 80px auto 0;
@@ -881,7 +1195,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 80px;
-  align-items: stretch;
+  align-items: center;
 }
 
 .contact-info h3 {
@@ -984,13 +1298,9 @@ body {
 }
 
 .contact-links {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 12px;
-}
-
-.contact-links a:last-child {
-  grid-column: 1 / -1;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
 .contact-link {
@@ -1047,19 +1357,7 @@ body {
   text-align: center;
   position: relative;
   overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   box-shadow: 0 20px 60px rgba(0, 169, 224, .2);
-}
-
-/* min-height нужен только там, где карточка стоит рядом со второй колонкой
-и должна тянуться под её высоту (desktop/широкий планшет). На телефоне
-grid уже в одну колонку — высота там и так по содержимому, трогать не нужно */
-@media (min-width: 1025px) {
-  .contact-visual {
-    min-height: 320px;
-  }
 }
 
 .contact-visual::before {
@@ -1608,15 +1906,6 @@ grid уже в одну колонку — высота там и так по с
   .logo,
   .footer-brand {
     font-size: 16px;
-  }
-
-  .contact-links {
-    grid-template-columns: 1fr;
-    gap: 16px;
-  }
-
-  .contact-links a:last-child {
-    grid-column: auto;
   }
 }
 
