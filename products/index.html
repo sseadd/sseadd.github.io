@@ -209,6 +209,12 @@
 				topicsEl.appendChild(pill);
 				});
 
+				function formatName(name) {
+				const m = name.match(/^(.*?)(\s*\([^)]+\))\s*$/);
+				if (!m) return name;
+				return m[1] + ' <span class="nowrap-tail">' + m[2].trim() + '</span>';
+				}
+
 				const gridEl = document.getElementById('productsGrid');
 				gridEl.innerHTML = '';
 				const list = activeProductCategory === 'all' ? d.products : d.products.filter(p => p.category === activeProductCategory);
@@ -220,7 +226,7 @@
 				const inCart = cart.includes(p.id);
 				card.innerHTML =
 				'<img src="' + p.image + '" alt="' + p.name + '" loading="lazy">' +
-				'<div class="product-card-name">' + p.name + '</div>' +
+				'<div class="product-card-name">' + formatName(p.name) + '</div>' +
 				'<div class="product-card-desc">' + p.desc + '</div>' +
 				'<div class="price-tag"><span class="price-current">' + formatPrice(price) + '</span></div>' +
 				'<div class="product-card-actions">' +
@@ -283,7 +289,7 @@
 				row.className = 'cart-item';
 				row.innerHTML =
 				'<img src="' + p.image + '" alt="' + p.name + '">' +
-				'<span class="cart-item-name">' + p.name + '</span>' +
+				'<span class="cart-item-name">' + formatName(p.name) + '</span>' +
 				'<span class="cart-item-price">' + formatPrice(price) + '</span>' +
 				'<button class="cart-item-remove" aria-label="remove">×</button>';
 				row.querySelector('.cart-item-remove').addEventListener('click', () => { toggleCart(id); renderProductsContent(currentLang); });

@@ -196,7 +196,7 @@ body {
 }
 
 .mobile-nav {
-  display: none;
+  display: flex;
   position: fixed;
   top: 72px;
   left: 0;
@@ -209,10 +209,18 @@ body {
   z-index: 999;
   border-radius: 0 0 16px 16px;
   box-shadow: 0 10px 40px rgba(0, 0, 0, .1);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-8px);
+  pointer-events: none;
+  transition: opacity .25s ease, transform .25s ease, visibility .25s;
 }
 
 .mobile-nav.open {
-  display: flex;
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  pointer-events: all;
 }
 
 .mobile-nav a {
@@ -671,6 +679,8 @@ body {
   text-align: center;
   border: 1px solid rgba(0, 0, 0, .04);
   transition: var(--tr);
+  display: flex;
+  flex-direction: column;
 }
 
 .product-card:hover {
@@ -694,6 +704,10 @@ body {
   margin-bottom: 8px;
 }
 
+.nowrap-tail {
+  white-space: nowrap;
+}
+
 .product-card-desc {
   font-size: 13px;
   color: var(--ts);
@@ -705,6 +719,7 @@ body {
 .faq-topics {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 10px;
   padding: 4px 4px 12px;
   margin: 0 auto 40px;
@@ -831,7 +846,7 @@ body {
   transform: translateY(36px);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .price-switch {
     position: static;
     transform: none;
@@ -860,7 +875,8 @@ body {
   align-items: baseline;
   gap: 8px;
   justify-content: center;
-  margin-top: 4px;
+  margin-top: auto;
+  padding-top: 4px;
 }
 
 .price-tag .price-current {
@@ -926,10 +942,6 @@ body {
   bottom: 24px;
   right: 24px;
   z-index: 999;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  gap: 12px;
 }
 
 .cart-trigger {
@@ -980,6 +992,9 @@ body {
 }
 
 .cart-panel {
+  position: absolute;
+  bottom: 68px;
+  right: 0;
   width: 300px;
   max-height: 420px;
   background: var(--bw);
@@ -1081,7 +1096,6 @@ body {
   border: none;
   color: var(--ts);
   font-size: 12px;
-  text-decoration: underline;
   cursor: pointer;
   align-self: center;
 }
@@ -1195,7 +1209,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 80px;
-  align-items: center;
+  align-items: stretch;
 }
 
 .contact-info h3 {
@@ -1298,9 +1312,13 @@ body {
 }
 
 .contact-links {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.contact-links a:last-child {
+  grid-column: 1 / -1;
 }
 
 .contact-link {
@@ -1357,7 +1375,16 @@ body {
   text-align: center;
   position: relative;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   box-shadow: 0 20px 60px rgba(0, 169, 224, .2);
+}
+
+@media (min-width: 1025px) {
+  .contact-visual {
+    min-height: 320px;
+  }
 }
 
 .contact-visual::before {
@@ -1906,6 +1933,15 @@ body {
   .logo,
   .footer-brand {
     font-size: 16px;
+  }
+
+  .contact-links {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .contact-links a:last-child {
+    grid-column: auto;
   }
 }
 
