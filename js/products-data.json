@@ -44,7 +44,27 @@
         "image": "/assets/prod-powder.webp",
         "price_before": 700,
         "price_after": 600
+      },
+      {
+        "id": "p05",
+        "category": "health",
+        "name": "Витамин С",
+        "desc": "Порошковая добавка - поддерживает иммунитет, защищает клетки от окислительного стресса и способствует выработке коллагена",
+        "image": "/assets/prod-vitaminc.webp",
+        "price_before": 2200,
+        "price_after": 2000
+      }, 
+      {
+        "id": "p06",
+        "category": "health",
+        "name": "Аляска Е-Омега 3",
+        "desc": "Натуральный концентрат Омега-3 из дикой рыбы Аляски с витамином E — поддерживает сердце, сосуды и защищает клетки от старения.",
+        "image": "/assets/prod-omega3.webp",
+        "price_before": 2200,
+        "price_after": 2000
       }
+
+
     ],
     "price_switch_before": "До регистрации",
     "price_switch_after": "После регистрации",
@@ -105,6 +125,24 @@
         "image": "/assets/prod-powder.webp",
         "price_before": 700,
         "price_after": 600
+      },
+      {
+        "id": "p05",
+        "category": "health",
+        "name": "Vitamin C",
+        "desc": "Powder supplement: supports immunity, protects cells from oxidative stress, and boosts collagen production.",
+        "image": "/assets/prod-vitaminc.webp",
+        "price_before": 2200,
+        "price_after": 2000
+      },
+      {
+        "id": "p06",
+        "category": "health",
+        "name": "Alaska E-Omega 3",
+        "desc": "Natural Alaska wild-caught Omega-3 with Vitamin E to support heart health and protect cells from aging.",
+        "image": "/assets/prod-omega3.webp",
+        "price_before": 2200,
+        "price_after": 2000
       }
     ],
     "price_switch_before": "Before registration",
