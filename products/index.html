@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="ru">
 	<head>
@@ -190,6 +191,12 @@
 				return n.toLocaleString('ru-RU') + ' ₽';
 				}
 
+				function formatName(name) {
+				const m = name.match(/^(.*?)(\s*\([^)]+\))\s*$/);
+				if (!m) return name;
+				return m[1] + ' <span class="nowrap-tail">' + m[2].trim() + '</span>';
+				}
+
 				function renderProductsContent(lang) {
 				if (!productsData || !productsData[lang]) return;
 				const d = productsData[lang];
@@ -208,12 +215,6 @@
 				pill.addEventListener('click', () => { activeProductCategory = cat.id; renderProductsContent(currentLang); });
 				topicsEl.appendChild(pill);
 				});
-
-				function formatName(name) {
-				const m = name.match(/^(.*?)(\s*\([^)]+\))\s*$/);
-				if (!m) return name;
-				return m[1] + ' <span class="nowrap-tail">' + m[2].trim() + '</span>';
-				}
 
 				const gridEl = document.getElementById('productsGrid');
 				gridEl.innerHTML = '';
