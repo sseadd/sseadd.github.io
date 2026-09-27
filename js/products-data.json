@@ -62,7 +62,17 @@
         "image": "/assets/prod-omega3.webp",
         "price_before": 2200,
         "price_after": 2000
+      }, 
+      {
+        "id": "p07",
+        "category": "health",
+        "name": "Спирулина",
+        "desc": "Натуральная добавка из сине-зелёной водоросли — поддерживает организм и обеспечивает антиоксидантную защиту.",
+        "image": "/assets/prod-spirulina.webp",
+        "price_before": 2200,
+        "price_after": 2000
       }
+
 
 
     ],
@@ -141,6 +151,15 @@
         "name": "Alaska E-Omega 3",
         "desc": "Natural Alaska wild-caught Omega-3 with Vitamin E to support heart health and protect cells from aging.",
         "image": "/assets/prod-omega3.webp",
+        "price_before": 2200,
+        "price_after": 2000
+      },
+      {
+        "id": "p07",
+        "category": "health",
+        "name": "Spirulina",
+        "desc": "Natural blue-green algae supplement — supports the body and provides antioxidant protection.",
+        "image": "/assets/prod-spirulina.webp",
         "price_before": 2200,
         "price_after": 2000
       }
