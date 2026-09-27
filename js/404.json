@@ -1,0 +1,12 @@
+{
+  "ru": {
+    "back_to_home": "На главную",
+    "page_404_sub": "Похоже, такой страницы не существует или она ещё не готова. Вернитесь на главную — там всё самое важное.",
+    "page_404_title": "Страница не найдена"
+  },
+  "en": {
+    "back_to_home": "Back to home",
+    "page_404_sub": "Looks like this page doesn't exist yet or isn't ready. Head back to the homepage — everything important is there.",
+    "page_404_title": "Page not found"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "ru": {
+    "back_to_home": "На главную",
+    "footer_about": "Обо мне",
+    "footer_copy": "© 2026 Анна Яковлева. Независимый партнёр Atomy.",
+    "footer_faq": "FAQ",
+    "nav_about": "Обо мне",
+    "nav_contact": "Контакты",
+    "nav_events": "Мероприятия",
+    "nav_faq": "FAQ",
+    "nav_products": "Продукция",
+    "nav_team": "Команда",
+    "page_stub_btn": "Написать Анне",
+    "page_stub_text": "Эта страница ещё наполняется. Пока подробнее можно узнать напрямую у Анны — свяжитесь любым удобным способом.",
+    "page_team_label": "Команда",
+    "page_team_sub": "Подробнее о лидерах команды, форматах встреч и историях людей, которые уже растут вместе с нами.",
+    "page_team_title": "Балхай — команда мечты"
+  },
+  "en": {
+    "back_to_home": "Back to home",
+    "footer_about": "About Me",
+    "footer_copy": "© 2026 Anna Yakovleva. Independent Atomy Partner.",
+    "footer_faq": "FAQ",
+    "nav_about": "About Me",
+    "nav_contact": "Contact",
+    "nav_events": "Events",
+    "nav_faq": "FAQ",
+    "nav_products": "Products",
+    "nav_team": "Team",
+    "page_stub_btn": "Message Anna",
+    "page_stub_text": "This page is still being filled in. For now, reach out to Anna directly for details.",
+    "page_team_label": "Team",
+    "page_team_sub": "More about the team's leaders, meeting formats and the stories of people already growing with us.",
+    "page_team_title": "Balhai — dream team"
+  }
+}
