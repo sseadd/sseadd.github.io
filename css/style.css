@@ -2143,3 +2143,152 @@ body {
     padding: 140px 20px 70px;
   }
 }
+
+/* ---------- Страница «Команда» ---------- */
+
+.block-header {
+  max-width: 700px;
+  margin: 0 auto 48px;
+  padding: 0 24px;
+  text-align: center;
+}
+
+.section-intro {
+  max-width: 700px;
+  margin: 0 auto 48px;
+  padding: 0 24px;
+  text-align: center;
+  font-size: 17px;
+  color: var(--ts);
+  line-height: 1.8;
+}
+
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  max-width: 1100px;
+  margin: 0 auto 110px;
+  padding: 0 24px;
+}
+
+.why-card {
+  background: var(--bl);
+  border-radius: 14px;
+  padding: 32px 28px;
+}
+
+.why-card-title {
+  font-size: 17px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  letter-spacing: -.2px;
+}
+
+.why-card-text {
+  font-size: 14.5px;
+  color: var(--ts);
+  line-height: 1.7;
+}
+
+.timeline {
+  max-width: 640px;
+  margin: 0 auto 100px;
+  padding: 0 24px;
+}
+
+.timeline-item {
+  position: relative;
+  padding-left: 32px;
+  padding-bottom: 32px;
+  border-left: 2px solid var(--abl);
+}
+
+.timeline-item:last-child {
+  padding-bottom: 0;
+  border-left: 2px solid transparent;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -7px;
+  top: 2px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--ab);
+  box-shadow: 0 0 0 4px var(--bw);
+}
+
+.timeline-date {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: .3px;
+  text-transform: uppercase;
+  color: var(--ab);
+  margin-bottom: 6px;
+}
+
+.timeline-text {
+  font-size: 16px;
+  color: var(--tp);
+  line-height: 1.6;
+}
+
+.photo-gallery-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 1100px;
+  margin: 0 auto 100px;
+  padding: 0 24px;
+}
+
+.photo-gallery-3 figure {
+  margin: 0;
+}
+
+.photo-gallery-3 img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border-radius: 12px;
+  background: var(--bl);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, .08);
+  display: block;
+}
+
+.photo-gallery-3 figcaption {
+  margin-top: 10px;
+  font-size: 13px;
+  font-style: italic;
+  color: var(--ts);
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  .why-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 700px) {
+  .photo-gallery-3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .photo-gallery-3 figure:first-child {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 480px) {
+  .photo-gallery-3 {
+    grid-template-columns: 1fr;
+  }
+
+  .photo-gallery-3 figure:first-child {
+    grid-column: auto;
+  }
+}
