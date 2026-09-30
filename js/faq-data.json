@@ -50,7 +50,7 @@
     ],
     "cta_title": "Всё ещё остались вопросы?",
     "cta_text": "Пишите мне — отвечу лично и разберём именно вашу ситуацию.",
-    "cta_btn": "Написать Анне"
+    "cta_btn": "Написать мне"
   },
   "en": {
     "all_label": "All",
@@ -103,6 +103,6 @@
     ],
     "cta_title": "Still have questions?",
     "cta_text": "Message me — I'll answer personally and we'll look at your exact situation.",
-    "cta_btn": "Message Anna"
+    "cta_btn": "Message me"
   }
 }

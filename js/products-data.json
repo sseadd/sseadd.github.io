@@ -88,7 +88,7 @@
     "cart_clear": "Очистить",
     "not_full_catalog_title": "Это не весь ассортимент",
     "not_full_catalog_text": "Показала то, что действительно рекомендую сама — если ищете что-то конкретное, просто напишите мне",
-    "not_full_catalog_btn": "Написать Анне"
+    "not_full_catalog_btn": "Написать мне"
   },
   "en": {
     "all_label": "All",
@@ -176,6 +176,6 @@
     "cart_clear": "Clear",
     "not_full_catalog_title": "This isn't the full lineup",
     "not_full_catalog_text": "I'm showing what I genuinely recommend myself — if you're looking for something specific, just message me",
-    "not_full_catalog_btn": "Message Anna"
+    "not_full_catalog_btn": "Message me"
   }
 }
