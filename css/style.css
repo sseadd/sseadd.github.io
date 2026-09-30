@@ -2293,6 +2293,10 @@ body {
   }
 }
 
+.section.team-section {
+  padding-bottom: 0;
+}
+
 .tsoy-layout {
   display: grid;
   grid-template-columns: .85fr 1.15fr;
@@ -2303,12 +2307,22 @@ body {
 .tsoy-photo {
   display: flex;
   justify-content: center;
+  align-self: flex-end;
 }
 
 .tsoy-photo img {
   width: 100%;
-  max-width: 340px;
+  max-width: 420px;
+  display: block;
   filter: drop-shadow(0 24px 50px rgba(0, 0, 0, .3));
+}
+
+.tsoy-content {
+  margin-bottom: 70px;
+}
+
+.block-header.mt-lg {
+  margin-top: 64px;
 }
 
 .tsoy-subtitle {
@@ -2370,16 +2384,34 @@ body {
     text-align: center;
   }
 
+  .tsoy-photo {
+    align-self: center;
+  }
+
   .tsoy-fact {
     text-align: left;
   }
 
   .tsoy-photo img {
-    max-width: 240px;
+    max-width: 260px;
+  }
+
+  .tsoy-content {
+    margin-bottom: 48px;
+  }
+
+  .block-header.mt-lg {
+    margin-top: 48px;
   }
 
   .team-stats-wrap .stats-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .tsoy-photo img {
+    max-width: 200px;
   }
 }
