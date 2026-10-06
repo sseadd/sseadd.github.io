@@ -13,7 +13,7 @@
     "page_products_label": "Продукция",
     "page_products_sub": "То, что я рекомендую лично — с ценами до и после регистрации.",
     "page_products_title": "Каталог продукции",
-    "page_stub_btn": "Написать Анне",
+    "page_stub_btn": "Написать мне",
     "page_stub_text": "Эта страница ещё наполняется. Пока подробнее можно узнать напрямую у Анны — свяжитесь любым удобным способом."
   },
   "en": {
@@ -30,7 +30,7 @@
     "page_products_label": "Products",
     "page_products_sub": "What I genuinely recommend — with prices before and after registration.",
     "page_products_title": "Product catalog",
-    "page_stub_btn": "Message Anna",
+    "page_stub_btn": "Message me",
     "page_stub_text": "This page is still being filled in. For now, reach out to Anna directly for details."
   }
 }

@@ -13,7 +13,7 @@
     "page_register_label": "Регистрация",
     "page_register_sub": "Пошаговая инструкция по регистрации и персональная реферальная ссылка Анны.",
     "page_register_title": "Как начать с Atomy",
-    "page_stub_btn": "Написать Анне",
+    "page_stub_btn": "Написать мне",
     "page_stub_text": "Эта страница ещё наполняется. Пока подробнее можно узнать напрямую у Анны — свяжитесь любым удобным способом."
   },
   "en": {
@@ -30,7 +30,7 @@
     "page_register_label": "Registration",
     "page_register_sub": "Step-by-step registration guide and Anna's personal referral link.",
     "page_register_title": "How to start with Atomy",
-    "page_stub_btn": "Message Anna",
+    "page_stub_btn": "Message me",
     "page_stub_text": "This page is still being filled in. For now, reach out to Anna directly for details."
   }
 }
