@@ -2372,6 +2372,10 @@ body {
   margin-top: 10px;
 }
 
+.team-cta-wrap {
+  padding: 0 24px 140px;
+}
+
 .team-stats-wrap {
   max-width: 1100px;
   margin: 56px auto 110px;
@@ -2418,6 +2422,12 @@ body {
   .team-stats-wrap .stats-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .team-cta-wrap {
+    padding: 0 20px 100px;
   }
 }
 
