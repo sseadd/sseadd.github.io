@@ -71,6 +71,96 @@
         "image": "/assets/prod-spirulina.webp",
         "price_before": 2200,
         "price_after": 2000
+      },
+      {
+        "id": "p08",
+        "category": "health",
+        "name": "Пробиотик 10+",
+        "desc": "12 видов лактобактерий и 3 млрд полезных бактерий — поддерживает кишечник, пищеварение и иммунитет всей семьи",
+        "image": "/assets/prod-probiotic.webp",
+        "price_before": 3100,
+        "price_after": 2800
+      },
+      {
+        "id": "p09",
+        "category": "health",
+        "name": "Железо",
+        "desc": "В одном стике 114% суточной нормы железа — способствует кроветворению и поддерживает энергию",
+        "image": "/assets/prod-iron.webp",
+        "price_before": 2800,
+        "price_after": 2500
+      },
+      {
+        "id": "p10",
+        "category": "health",
+        "name": "Красный женьшень в стик-желе",
+        "desc": "Корейское желе в стиках с гинзенозидами — поддерживает иммунитет, память и помогает справляться с усталостью",
+        "image": "/assets/prod-ginseng.webp",
+        "price_before": 3900,
+        "price_after": 3500
+      },
+      {
+        "id": "p11",
+        "category": "beauty",
+        "name": "The Fame питательный крем",
+        "desc": "С пантенолом, церамидами и 5 видами гиалуроновой кислоты — глубоко питает кожу и укрепляет её барьер без липкости",
+        "image": "/assets/prod-fame-cream.webp",
+        "price_before": 1750,
+        "price_after": 1600
+      },
+      {
+        "id": "p12",
+        "category": "beauty",
+        "name": "Солнцезащитный крем SPF50+",
+        "desc": "SPF50+ PA+++ — мощная защита от солнца, увлажняет и успокаивает кожу растительными экстрактами без белых пятен",
+        "image": "/assets/prod-sunscreen.webp",
+        "price_before": 800,
+        "price_after": 700
+      },
+      {
+        "id": "p13",
+        "category": "beauty",
+        "name": "ББ-крем SPF30",
+        "desc": "SPF30 PA++ — ровное покрытие и защита от солнца; экстракты кордицепса и санхвана увлажняют и дают сияние",
+        "image": "/assets/prod-bb-cream.webp",
+        "price_before": 800,
+        "price_after": 700
+      },
+      {
+        "id": "p14",
+        "category": "beauty",
+        "name": "Тканевая маска «Питание и упругость»",
+        "desc": "Профессиональная тканевая маска на основе морских водорослей — глубоко увлажняет, питает и укрепляет кожу",
+        "image": "/assets/prod-sheet-mask.webp",
+        "price_before": 1000,
+        "price_after": 900
+      },
+      {
+        "id": "p15",
+        "category": "hygiene",
+        "name": "Хербал шампунь",
+        "desc": "Травяной шампунь с комплексами Сэнмодан и HGSC — глубоко очищает и питает волосы, поддерживает pH-баланс",
+        "image": "/assets/prod-shampoo.webp",
+        "price_before": 1300,
+        "price_after": 1200
+      },
+      {
+        "id": "p16",
+        "category": "hygiene",
+        "name": "Зубные щётки (8 шт)",
+        "desc": "С золотым напылением 99,9% и щетинками 0,03 мм — бережно очищают зубы и препятствуют размножению бактерий",
+        "image": "/assets/prod-toothbrushes.webp",
+        "price_before": 1100,
+        "price_after": 1000
+      },
+      {
+        "id": "p17",
+        "category": "hygiene",
+        "name": "Мыло для рук",
+        "desc": "Жидкое мыло с экстрактом апельсина — мягко очищает и увлажняет кожу рук всей семьи, не пересушивая",
+        "image": "/assets/prod-hand-soap.webp",
+        "price_before": 400,
+        "price_after": 350
       }
 
 
@@ -162,6 +252,96 @@
         "image": "/assets/prod-spirulina.webp",
         "price_before": 2200,
         "price_after": 2000
+      },
+      {
+        "id": "p08",
+        "category": "health",
+        "name": "Probiotics 10+",
+        "desc": "12 lactobacilli strains and 3 billion beneficial bacteria — support gut health, digestion and immunity",
+        "image": "/assets/prod-probiotic.webp",
+        "price_before": 3100,
+        "price_after": 2800
+      },
+      {
+        "id": "p09",
+        "category": "health",
+        "name": "Iron",
+        "desc": "One stick provides 114% of the daily iron value — supports blood formation and energy",
+        "image": "/assets/prod-iron.webp",
+        "price_before": 2800,
+        "price_after": 2500
+      },
+      {
+        "id": "p10",
+        "category": "health",
+        "name": "Red Ginseng Jelly Sticks",
+        "desc": "Korean jelly sticks with ginsenosides — support immunity and memory and help fight fatigue",
+        "image": "/assets/prod-ginseng.webp",
+        "price_before": 3900,
+        "price_after": 3500
+      },
+      {
+        "id": "p11",
+        "category": "beauty",
+        "name": "The Fame Nutrition Cream",
+        "desc": "With panthenol, ceramides and 5 hyaluronic acids — deeply nourishes and strengthens skin without stickiness",
+        "image": "/assets/prod-fame-cream.webp",
+        "price_before": 1750,
+        "price_after": 1600
+      },
+      {
+        "id": "p12",
+        "category": "beauty",
+        "name": "Sunscreen SPF50+",
+        "desc": "SPF50+ PA+++ — powerful sun protection that hydrates and soothes with plant extracts, leaving no white cast",
+        "image": "/assets/prod-sunscreen.webp",
+        "price_before": 800,
+        "price_after": 700
+      },
+      {
+        "id": "p13",
+        "category": "beauty",
+        "name": "BB Cream SPF30",
+        "desc": "SPF30 PA++ — even coverage and sun protection, with cordyceps extracts for hydration and glow",
+        "image": "/assets/prod-bb-cream.webp",
+        "price_before": 800,
+        "price_after": 700
+      },
+      {
+        "id": "p14",
+        "category": "beauty",
+        "name": "Sheet Mask — Nourish & Firm",
+        "desc": "Professional seaweed-based sheet mask — deeply hydrates, nourishes and firms the skin",
+        "image": "/assets/prod-sheet-mask.webp",
+        "price_before": 1000,
+        "price_after": 900
+      },
+      {
+        "id": "p15",
+        "category": "hygiene",
+        "name": "Herbal Shampoo",
+        "desc": "Herbal shampoo with Saenmodan and HGSC complexes — deeply cleanses and nourishes hair, keeps pH balanced",
+        "image": "/assets/prod-shampoo.webp",
+        "price_before": 1300,
+        "price_after": 1200
+      },
+      {
+        "id": "p16",
+        "category": "hygiene",
+        "name": "Toothbrushes (8 pcs)",
+        "desc": "Gold-coated (99.9%) with ultra-fine 0.03 mm bristles — gentle cleaning that helps prevent bacterial growth",
+        "image": "/assets/prod-toothbrushes.webp",
+        "price_before": 1100,
+        "price_after": 1000
+      },
+      {
+        "id": "p17",
+        "category": "hygiene",
+        "name": "Hand Soap",
+        "desc": "Liquid hand soap with orange extract — gently cleanses and moisturises without drying skin",
+        "image": "/assets/prod-hand-soap.webp",
+        "price_before": 400,
+        "price_after": 350
       }
     ],
     "price_switch_before": "Before registration",
