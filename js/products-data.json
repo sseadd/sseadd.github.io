@@ -129,7 +129,7 @@
       {
         "id": "p14",
         "category": "beauty",
-        "name": "Тканевая маска «Питание и упругость»",
+        "name": "Тканевая маска «Питание и упругость» (10 шт)",
         "desc": "Профессиональная тканевая маска на основе морских водорослей — глубоко увлажняет, питает и укрепляет кожу",
         "image": "/assets/prod-sheet-mask.webp",
         "price_before": 1000,
@@ -310,7 +310,7 @@
       {
         "id": "p14",
         "category": "beauty",
-        "name": "Sheet Mask — Nourish & Firm",
+        "name": "Sheet Mask — Nourish & Firm (10 pcs)",
         "desc": "Professional seaweed-based sheet mask — deeply hydrates, nourishes and firms the skin",
         "image": "/assets/prod-sheet-mask.webp",
         "price_before": 1000,
