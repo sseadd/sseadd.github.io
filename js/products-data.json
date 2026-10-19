@@ -161,6 +161,96 @@
         "image": "/assets/prod-hand-soap.webp",
         "price_before": 400,
         "price_after": 350
+      },
+      {
+        "id": "p18",
+        "category": "health",
+        "name": "Турмацин МСМ",
+        "desc": "Куркума, селен и очищенный МСМ — поддерживают здоровье суставов и хрящей и лёгкость движений",
+        "image": "/assets/prod-turmacin.webp",
+        "price_before": 3850,
+        "price_after": 3500
+      },
+      {
+        "id": "p19",
+        "category": "health",
+        "name": "Премиум Лютеин",
+        "desc": "Лютеин FloraGLO, цинк и витамин А — поддерживают здоровье макулы и помогают зрению в темноте",
+        "image": "/assets/prod-lutein.webp",
+        "price_before": 3500,
+        "price_after": 3200
+      },
+      {
+        "id": "p20",
+        "category": "health",
+        "name": "Ферментированный концентрат Нони",
+        "desc": "Органический суперфуд из плодов нони с Явы после 1440 часов ферментации — поддерживает иммунитет и энергию",
+        "image": "/assets/prod-noni.webp",
+        "price_before": 6000,
+        "price_after": 5500
+      },
+      {
+        "id": "p21",
+        "category": "beauty",
+        "name": "The Fame крем для кожи вокруг глаз",
+        "desc": "С пантенолом и церамидами — увлажняет нежную кожу вокруг глаз и укрепляет её барьер при ежедневном уходе",
+        "image": "/assets/prod-fame-eye-cream.webp",
+        "price_before": 1750,
+        "price_after": 1600
+      },
+      {
+        "id": "p22",
+        "category": "beauty",
+        "name": "Бальзам для губ",
+        "desc": "Масла розы, авокадо и ши — глубоко увлажняют и защищают губы, питание и мягкость без липкости",
+        "image": "/assets/prod-lip-balm.webp",
+        "price_before": 450,
+        "price_after": 400
+      },
+      {
+        "id": "p23",
+        "category": "beauty",
+        "name": "Ивнинг Кеар пенка для умывания",
+        "desc": "С экстрактами кордицепса и гриба санхван — глубоко очищает поры и увлажняет, не стягивая кожу",
+        "image": "/assets/prod-foam-cleanser.webp",
+        "price_before": 850,
+        "price_after": 750
+      },
+      {
+        "id": "p24",
+        "category": "hygiene",
+        "name": "Крем для рук",
+        "desc": "300 мл с маслом салового дерева и витамином Е — увлажняет кожу рук и укрепляет ногти без липкости",
+        "image": "/assets/prod-hand-cream.webp",
+        "price_before": 1300,
+        "price_after": 1200
+      },
+      {
+        "id": "p25",
+        "category": "hygiene",
+        "name": "Хербал кондиционер",
+        "desc": "С комплексом Сэнмодан и 16 травяными экстрактами — блеск, сила, лёгкое расчёсывание и pH-баланс",
+        "image": "/assets/prod-conditioner.webp",
+        "price_before": 1300,
+        "price_after": 1200
+      },
+      {
+        "id": "p26",
+        "category": "hygiene",
+        "name": "Ультра Рич гель для душа",
+        "desc": "С маслом ши и морингой — глубоко очищает и питает кожу, долго увлажняет, приятный аромат для всей семьи",
+        "image": "/assets/prod-shower-gel.webp",
+        "price_before": 1300,
+        "price_after": 1200
+      },
+      {
+        "id": "p27",
+        "category": "hygiene",
+        "name": "Скраб для тела",
+        "desc": "Три вида сахара и натуральные масла — деликатно отшелушивает и питает кожу, делая её гладкой",
+        "image": "/assets/prod-body-scrub.webp",
+        "price_before": 1550,
+        "price_after": 1400
       }
 
 
@@ -342,6 +432,96 @@
         "image": "/assets/prod-hand-soap.webp",
         "price_before": 400,
         "price_after": 350
+      },
+      {
+        "id": "p18",
+        "category": "health",
+        "name": "Turmacin MSM",
+        "desc": "Turmeric, selenium and purified MSM — support healthy joints and cartilage and ease of movement",
+        "image": "/assets/prod-turmacin.webp",
+        "price_before": 3850,
+        "price_after": 3500
+      },
+      {
+        "id": "p19",
+        "category": "health",
+        "name": "Premium Lutein",
+        "desc": "FloraGLO lutein, zinc and vitamin A — support macular health and help vision in low light",
+        "image": "/assets/prod-lutein.webp",
+        "price_before": 3500,
+        "price_after": 3200
+      },
+      {
+        "id": "p20",
+        "category": "health",
+        "name": "Fermented Noni Concentrate",
+        "desc": "Organic superfood from Java noni fruit, fermented for 1,440 hours — supports immunity and energy",
+        "image": "/assets/prod-noni.webp",
+        "price_before": 6000,
+        "price_after": 5500
+      },
+      {
+        "id": "p21",
+        "category": "beauty",
+        "name": "The Fame Eye Cream",
+        "desc": "With panthenol and ceramides — hydrates delicate skin around the eyes and strengthens its barrier daily",
+        "image": "/assets/prod-fame-eye-cream.webp",
+        "price_before": 1750,
+        "price_after": 1600
+      },
+      {
+        "id": "p22",
+        "category": "beauty",
+        "name": "Lip Balm",
+        "desc": "Rose, avocado and shea oils — deeply moisturise and protect lips, nourishing without stickiness",
+        "image": "/assets/prod-lip-balm.webp",
+        "price_before": 450,
+        "price_after": 400
+      },
+      {
+        "id": "p23",
+        "category": "beauty",
+        "name": "Evening Care Foam Cleanser",
+        "desc": "With cordyceps and sanghwang mushroom extracts — deeply cleanses pores and hydrates without tightness",
+        "image": "/assets/prod-foam-cleanser.webp",
+        "price_before": 850,
+        "price_after": 750
+      },
+      {
+        "id": "p24",
+        "category": "hygiene",
+        "name": "Hand Cream",
+        "desc": "300 ml with sal butter and vitamin E — moisturises hands and strengthens nails without stickiness",
+        "image": "/assets/prod-hand-cream.webp",
+        "price_before": 1300,
+        "price_after": 1200
+      },
+      {
+        "id": "p25",
+        "category": "hygiene",
+        "name": "Herbal Conditioner",
+        "desc": "With Saenmodan complex and 16 herbal extracts — shine, strength, easy combing and healthy pH balance",
+        "image": "/assets/prod-conditioner.webp",
+        "price_before": 1300,
+        "price_after": 1200
+      },
+      {
+        "id": "p26",
+        "category": "hygiene",
+        "name": "Ultra Rich Body Wash",
+        "desc": "With shea butter and moringa — deeply cleanses and nourishes, with long-lasting hydration",
+        "image": "/assets/prod-shower-gel.webp",
+        "price_before": 1300,
+        "price_after": 1200
+      },
+      {
+        "id": "p27",
+        "category": "hygiene",
+        "name": "Body Scrub",
+        "desc": "Three types of sugar and natural oils — gently exfoliates and nourishes for smooth, hydrated skin",
+        "image": "/assets/prod-body-scrub.webp",
+        "price_before": 1550,
+        "price_after": 1400
       }
     ],
     "price_switch_before": "Before registration",
