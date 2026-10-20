@@ -46,6 +46,15 @@
         "price_after": 600
       },
       {
+        "id": "p28",
+        "category": "food",
+        "name": "Кофе Арабика 3 в 1 (50 шт)",
+        "desc": "Кофейный микс 3 в 1 из 100% арабики с натуральным казеином — мягкий вкус, богатый аромат, контроль сахара",
+        "image": "/assets/prod-coffee-arabica.webp",
+        "price_before": 1300,
+        "price_after": 1200
+      },
+      {
         "id": "p05",
         "category": "health",
         "name": "Витамин С",
@@ -53,51 +62,6 @@
         "image": "/assets/prod-vitaminc.webp",
         "price_before": 2200,
         "price_after": 2000
-      }, 
-      {
-        "id": "p06",
-        "category": "health",
-        "name": "Аляска Е-Омега 3",
-        "desc": "Натуральный концентрат Омега-3 из дикой рыбы Аляски с витамином E — поддерживает сердце, сосуды и защищает клетки от старения.",
-        "image": "/assets/prod-omega3.webp",
-        "price_before": 2200,
-        "price_after": 2000
-      }, 
-      {
-        "id": "p07",
-        "category": "health",
-        "name": "Спирулина",
-        "desc": "Натуральная добавка из сине-зелёной водоросли — поддерживает организм и обеспечивает антиоксидантную защиту.",
-        "image": "/assets/prod-spirulina.webp",
-        "price_before": 2200,
-        "price_after": 2000
-      },
-      {
-        "id": "p08",
-        "category": "health",
-        "name": "Пробиотик 10+",
-        "desc": "12 видов лактобактерий и 3 млрд полезных бактерий — поддерживает кишечник, пищеварение и иммунитет всей семьи",
-        "image": "/assets/prod-probiotic.webp",
-        "price_before": 3100,
-        "price_after": 2800
-      },
-      {
-        "id": "p09",
-        "category": "health",
-        "name": "Железо",
-        "desc": "В одном стике 114% суточной нормы железа — способствует кроветворению и поддерживает энергию",
-        "image": "/assets/prod-iron.webp",
-        "price_before": 2800,
-        "price_after": 2500
-      },
-      {
-        "id": "p10",
-        "category": "health",
-        "name": "Красный женьшень в стик-желе",
-        "desc": "Корейское желе в стиках с гинзенозидами — поддерживает иммунитет, память и помогает справляться с усталостью",
-        "image": "/assets/prod-ginseng.webp",
-        "price_before": 3900,
-        "price_after": 3500
       },
       {
         "id": "p11",
@@ -109,33 +73,6 @@
         "price_after": 1600
       },
       {
-        "id": "p12",
-        "category": "beauty",
-        "name": "Солнцезащитный крем SPF50+",
-        "desc": "SPF50+ PA+++ — мощная защита от солнца, увлажняет и успокаивает кожу растительными экстрактами без белых пятен",
-        "image": "/assets/prod-sunscreen.webp",
-        "price_before": 800,
-        "price_after": 700
-      },
-      {
-        "id": "p13",
-        "category": "beauty",
-        "name": "ББ-крем SPF30",
-        "desc": "SPF30 PA++ — ровное покрытие и защита от солнца; экстракты кордицепса и санхвана увлажняют и дают сияние",
-        "image": "/assets/prod-bb-cream.webp",
-        "price_before": 800,
-        "price_after": 700
-      },
-      {
-        "id": "p14",
-        "category": "beauty",
-        "name": "Тканевая маска «Питание и упругость» (10 шт)",
-        "desc": "Профессиональная тканевая маска на основе морских водорослей — глубоко увлажняет, питает и укрепляет кожу",
-        "image": "/assets/prod-sheet-mask.webp",
-        "price_before": 1000,
-        "price_after": 900
-      },
-      {
         "id": "p15",
         "category": "hygiene",
         "name": "Хербал шампунь",
@@ -143,6 +80,42 @@
         "image": "/assets/prod-shampoo.webp",
         "price_before": 1300,
         "price_after": 1200
+      },
+      {
+        "id": "p34",
+        "category": "home",
+        "name": "Капсулы для стирки (100 шт)",
+        "desc": "Концентрированные веганские капсулы с 7 энзимами — мощная стирка, защита цвета и мягкость ткани без аллергенов",
+        "image": "/assets/prod-laundry-pods.webp",
+        "price_before": 2200,
+        "price_after": 2000
+      },
+      {
+        "id": "p29",
+        "category": "food",
+        "name": "Кофе Арабика Чёрный",
+        "desc": "Растворимый кофе из 100% арабики Бразилии и Колумбии — сублимация и криогенный помол сохраняют аромат",
+        "image": "/assets/prod-coffee-black.webp",
+        "price_before": 1450,
+        "price_after": 1300
+      },
+      {
+        "id": "p06",
+        "category": "health",
+        "name": "Аляска Е-Омега 3",
+        "desc": "Натуральный концентрат Омега-3 из дикой рыбы Аляски с витамином E — поддерживает сердце, сосуды и защищает клетки от старения.",
+        "image": "/assets/prod-omega3.webp",
+        "price_before": 2200,
+        "price_after": 2000
+      },
+      {
+        "id": "p12",
+        "category": "beauty",
+        "name": "Солнцезащитный крем SPF50+",
+        "desc": "SPF50+ PA+++ — мощная защита от солнца, увлажняет и успокаивает кожу растительными экстрактами без белых пятен",
+        "image": "/assets/prod-sunscreen.webp",
+        "price_before": 800,
+        "price_after": 700
       },
       {
         "id": "p16",
@@ -154,6 +127,42 @@
         "price_after": 1000
       },
       {
+        "id": "p35",
+        "category": "home",
+        "name": "Листовой порошок",
+        "desc": "Листовой порошок 3 в 1 заменяет средство для стирки, кондиционер и отбеливатель, удаляет пятна в холодной воде",
+        "image": "/assets/prod-laundry-sheets.webp",
+        "price_before": 1000,
+        "price_after": 900
+      },
+      {
+        "id": "p30",
+        "category": "food",
+        "name": "Кофе Арабика без сахара (50 шт)",
+        "desc": "Растворимый кофе из колумбийской арабики со стевией вместо сахара, с молоком высшего сорта и казеином",
+        "image": "/assets/prod-coffee-stevia.webp",
+        "price_before": 2100,
+        "price_after": 1900
+      },
+      {
+        "id": "p07",
+        "category": "health",
+        "name": "Спирулина",
+        "desc": "Натуральная добавка из сине-зелёной водоросли — поддерживает организм и обеспечивает антиоксидантную защиту.",
+        "image": "/assets/prod-spirulina.webp",
+        "price_before": 2200,
+        "price_after": 2000
+      },
+      {
+        "id": "p13",
+        "category": "beauty",
+        "name": "ББ-крем SPF30",
+        "desc": "SPF30 PA++ — ровное покрытие и защита от солнца; экстракты кордицепса и санхвана увлажняют и дают сияние",
+        "image": "/assets/prod-bb-cream.webp",
+        "price_before": 800,
+        "price_after": 700
+      },
+      {
         "id": "p17",
         "category": "hygiene",
         "name": "Мыло для рук",
@@ -163,58 +172,40 @@
         "price_after": 350
       },
       {
-        "id": "p18",
+        "id": "p36",
+        "category": "home",
+        "name": "Кислородный отбеливатель О2 (500 г)",
+        "desc": "Кислород и 5 видов ферментов удаляют сложные пятна и сохраняют яркость тканей, подходит для детских вещей",
+        "image": "/assets/prod-oxygen-bleach.webp",
+        "price_before": 700,
+        "price_after": 600
+      },
+      {
+        "id": "p31",
+        "category": "food",
+        "name": "Морская капуста в оливковом масле (36 уп.)",
+        "desc": "Хрустящий перекус из морской капусты в оливковом масле первого отжима с солью Синана — минералы и витамины",
+        "image": "/assets/prod-seaweed.webp",
+        "price_before": 1900,
+        "price_after": 1700
+      },
+      {
+        "id": "p08",
         "category": "health",
-        "name": "Турмацин МСМ",
-        "desc": "Куркума, селен и очищенный МСМ — поддерживают здоровье суставов и хрящей и лёгкость движений",
-        "image": "/assets/prod-turmacin.webp",
-        "price_before": 3850,
-        "price_after": 3500
+        "name": "Пробиотик 10+",
+        "desc": "12 видов лактобактерий и 3 млрд полезных бактерий — поддерживает кишечник, пищеварение и иммунитет всей семьи",
+        "image": "/assets/prod-probiotic.webp",
+        "price_before": 3100,
+        "price_after": 2800
       },
       {
-        "id": "p19",
-        "category": "health",
-        "name": "Премиум Лютеин",
-        "desc": "Лютеин FloraGLO, цинк и витамин А — поддерживают здоровье макулы и помогают зрению в темноте",
-        "image": "/assets/prod-lutein.webp",
-        "price_before": 3500,
-        "price_after": 3200
-      },
-      {
-        "id": "p20",
-        "category": "health",
-        "name": "Ферментированный концентрат Нони",
-        "desc": "Органический суперфуд из плодов нони с Явы после 1440 часов ферментации — поддерживает иммунитет и энергию",
-        "image": "/assets/prod-noni.webp",
-        "price_before": 6000,
-        "price_after": 5500
-      },
-      {
-        "id": "p21",
+        "id": "p14",
         "category": "beauty",
-        "name": "The Fame крем для кожи вокруг глаз",
-        "desc": "С пантенолом и церамидами — увлажняет нежную кожу вокруг глаз и укрепляет её барьер при ежедневном уходе",
-        "image": "/assets/prod-fame-eye-cream.webp",
-        "price_before": 1750,
-        "price_after": 1600
-      },
-      {
-        "id": "p22",
-        "category": "beauty",
-        "name": "Бальзам для губ",
-        "desc": "Масла розы, авокадо и ши — глубоко увлажняют и защищают губы, питание и мягкость без липкости",
-        "image": "/assets/prod-lip-balm.webp",
-        "price_before": 450,
-        "price_after": 400
-      },
-      {
-        "id": "p23",
-        "category": "beauty",
-        "name": "Ивнинг Кеар пенка для умывания",
-        "desc": "С экстрактами кордицепса и гриба санхван — глубоко очищает поры и увлажняет, не стягивая кожу",
-        "image": "/assets/prod-foam-cleanser.webp",
-        "price_before": 850,
-        "price_after": 750
+        "name": "Тканевая маска «Питание и упругость» (10 шт)",
+        "desc": "Профессиональная тканевая маска на основе морских водорослей — глубоко увлажняет, питает и укрепляет кожу",
+        "image": "/assets/prod-sheet-mask.webp",
+        "price_before": 1000,
+        "price_after": 900
       },
       {
         "id": "p24",
@@ -226,6 +217,42 @@
         "price_after": 1200
       },
       {
+        "id": "p37",
+        "category": "home",
+        "name": "Пятновыводитель",
+        "desc": "7 ферментов и растительные ПАВ удаляют стойкие пятна от кофе, косметики и еды, сохраняя структуру ткани",
+        "image": "/assets/prod-stain-remover.webp",
+        "price_before": 800,
+        "price_after": 700
+      },
+      {
+        "id": "p32",
+        "category": "food",
+        "name": "Вегетарианская лапша (брикет 24 шт)",
+        "desc": "Острая лапша из картофельного крахмала с овощами и 6 г клетчатки — без мяса и трансжиров",
+        "image": "/assets/prod-noodles.webp",
+        "price_before": 3000,
+        "price_after": 2700
+      },
+      {
+        "id": "p09",
+        "category": "health",
+        "name": "Железо",
+        "desc": "В одном стике 114% суточной нормы железа — способствует кроветворению и поддерживает энергию",
+        "image": "/assets/prod-iron.webp",
+        "price_before": 2800,
+        "price_after": 2500
+      },
+      {
+        "id": "p21",
+        "category": "beauty",
+        "name": "The Fame крем для кожи вокруг глаз",
+        "desc": "С пантенолом и церамидами — увлажняет нежную кожу вокруг глаз и укрепляет её барьер при ежедневном уходе",
+        "image": "/assets/prod-fame-eye-cream.webp",
+        "price_before": 1750,
+        "price_after": 1600
+      },
+      {
         "id": "p25",
         "category": "hygiene",
         "name": "Хербал кондиционер",
@@ -233,6 +260,42 @@
         "image": "/assets/prod-conditioner.webp",
         "price_before": 1300,
         "price_after": 1200
+      },
+      {
+        "id": "p38",
+        "category": "home",
+        "name": "Таблетки для посудомоечной машины",
+        "desc": "Веганские таблетки «всё в одном» по французской технологии — чистота и блеск посуды без микропластика",
+        "image": "/assets/prod-dishwasher-tabs.webp",
+        "price_before": 1900,
+        "price_after": 1700
+      },
+      {
+        "id": "p33",
+        "category": "food",
+        "name": "Картофельный рамен, неострый (4 шт)",
+        "desc": "Корейская лапша из натурального картофельного крахмала с мягким вкусом и упругой текстурой, подходит детям",
+        "image": "/assets/prod-potato-ramen.webp",
+        "price_before": 700,
+        "price_after": 600
+      },
+      {
+        "id": "p10",
+        "category": "health",
+        "name": "Красный женьшень в стик-желе",
+        "desc": "Корейское желе в стиках с гинзенозидами — поддерживает иммунитет, память и помогает справляться с усталостью",
+        "image": "/assets/prod-ginseng.webp",
+        "price_before": 3900,
+        "price_after": 3500
+      },
+      {
+        "id": "p22",
+        "category": "beauty",
+        "name": "Бальзам для губ",
+        "desc": "Масла розы, авокадо и ши — глубоко увлажняют и защищают губы, питание и мягкость без липкости",
+        "image": "/assets/prod-lip-balm.webp",
+        "price_before": 450,
+        "price_after": 400
       },
       {
         "id": "p26",
@@ -244,6 +307,33 @@
         "price_after": 1200
       },
       {
+        "id": "p39",
+        "category": "home",
+        "name": "Средство для мытья посуды",
+        "desc": "На натуральных ПАВ с экстрактом каламанси — удаляет жир, безопасно для мытья фруктов и бережно к коже рук",
+        "image": "/assets/prod-dish-soap.webp",
+        "price_before": 900,
+        "price_after": 800
+      },
+      {
+        "id": "p18",
+        "category": "health",
+        "name": "Турмацин МСМ",
+        "desc": "Куркума, селен и очищенный МСМ — поддерживают здоровье суставов и хрящей и лёгкость движений",
+        "image": "/assets/prod-turmacin.webp",
+        "price_before": 3850,
+        "price_after": 3500
+      },
+      {
+        "id": "p23",
+        "category": "beauty",
+        "name": "Ивнинг Кеар пенка для умывания",
+        "desc": "С экстрактами кордицепса и гриба санхван — глубоко очищает поры и увлажняет, не стягивая кожу",
+        "image": "/assets/prod-foam-cleanser.webp",
+        "price_before": 850,
+        "price_after": 750
+      },
+      {
         "id": "p27",
         "category": "hygiene",
         "name": "Скраб для тела",
@@ -251,10 +341,43 @@
         "image": "/assets/prod-body-scrub.webp",
         "price_before": 1550,
         "price_after": 1400
+      },
+      {
+        "id": "p40",
+        "category": "home",
+        "name": "Чистящее средство для ванной (2 емкости + распылитель)",
+        "desc": "На растительных ПАВ — удаляет налёт и запахи, быстрая и безопасная уборка для всей семьи",
+        "image": "/assets/prod-bathroom-cleaner.webp",
+        "price_before": 1300,
+        "price_after": 1200
+      },
+      {
+        "id": "p19",
+        "category": "health",
+        "name": "Премиум Лютеин",
+        "desc": "Лютеин FloraGLO, цинк и витамин А — поддерживают здоровье макулы и помогают зрению в темноте",
+        "image": "/assets/prod-lutein.webp",
+        "price_before": 3500,
+        "price_after": 3200
+      },
+      {
+        "id": "p41",
+        "category": "home",
+        "name": "Пищевая эко-плёнка (20 см)",
+        "desc": "Био-полиэтилен на основе мелассы сахарного тростника без бисфенола-А — сохраняет свежесть продуктов",
+        "image": "/assets/prod-eco-wrap.webp",
+        "price_before": 1000,
+        "price_after": 900
+      },
+      {
+        "id": "p20",
+        "category": "health",
+        "name": "Ферментированный концентрат Нони",
+        "desc": "Органический суперфуд из плодов нони с Явы после 1440 часов ферментации — поддерживает иммунитет и энергию",
+        "image": "/assets/prod-noni.webp",
+        "price_before": 6000,
+        "price_after": 5500
       }
-
-
-
     ],
     "price_switch_before": "До регистрации",
     "price_switch_after": "После регистрации",
@@ -317,6 +440,15 @@
         "price_after": 600
       },
       {
+        "id": "p28",
+        "category": "food",
+        "name": "Café Arabica 3-in-1 (50 pcs)",
+        "desc": "Premium 3-in-1 coffee mix of 100% arabica and natural casein — smooth taste, rich aroma, sugar control",
+        "image": "/assets/prod-coffee-arabica.webp",
+        "price_before": 1300,
+        "price_after": 1200
+      },
+      {
         "id": "p05",
         "category": "health",
         "name": "Vitamin C",
@@ -324,51 +456,6 @@
         "image": "/assets/prod-vitaminc.webp",
         "price_before": 2200,
         "price_after": 2000
-      },
-      {
-        "id": "p06",
-        "category": "health",
-        "name": "Alaska E-Omega 3",
-        "desc": "Natural Alaska wild-caught Omega-3 with Vitamin E to support heart health and protect cells from aging.",
-        "image": "/assets/prod-omega3.webp",
-        "price_before": 2200,
-        "price_after": 2000
-      },
-      {
-        "id": "p07",
-        "category": "health",
-        "name": "Spirulina",
-        "desc": "Natural blue-green algae supplement — supports the body and provides antioxidant protection.",
-        "image": "/assets/prod-spirulina.webp",
-        "price_before": 2200,
-        "price_after": 2000
-      },
-      {
-        "id": "p08",
-        "category": "health",
-        "name": "Probiotics 10+",
-        "desc": "12 lactobacilli strains and 3 billion beneficial bacteria — support gut health, digestion and immunity",
-        "image": "/assets/prod-probiotic.webp",
-        "price_before": 3100,
-        "price_after": 2800
-      },
-      {
-        "id": "p09",
-        "category": "health",
-        "name": "Iron",
-        "desc": "One stick provides 114% of the daily iron value — supports blood formation and energy",
-        "image": "/assets/prod-iron.webp",
-        "price_before": 2800,
-        "price_after": 2500
-      },
-      {
-        "id": "p10",
-        "category": "health",
-        "name": "Red Ginseng Jelly Sticks",
-        "desc": "Korean jelly sticks with ginsenosides — support immunity and memory and help fight fatigue",
-        "image": "/assets/prod-ginseng.webp",
-        "price_before": 3900,
-        "price_after": 3500
       },
       {
         "id": "p11",
@@ -380,33 +467,6 @@
         "price_after": 1600
       },
       {
-        "id": "p12",
-        "category": "beauty",
-        "name": "Sunscreen SPF50+",
-        "desc": "SPF50+ PA+++ — powerful sun protection that hydrates and soothes with plant extracts, leaving no white cast",
-        "image": "/assets/prod-sunscreen.webp",
-        "price_before": 800,
-        "price_after": 700
-      },
-      {
-        "id": "p13",
-        "category": "beauty",
-        "name": "BB Cream SPF30",
-        "desc": "SPF30 PA++ — even coverage and sun protection, with cordyceps extracts for hydration and glow",
-        "image": "/assets/prod-bb-cream.webp",
-        "price_before": 800,
-        "price_after": 700
-      },
-      {
-        "id": "p14",
-        "category": "beauty",
-        "name": "Sheet Mask — Nourish & Firm (10 pcs)",
-        "desc": "Professional seaweed-based sheet mask — deeply hydrates, nourishes and firms the skin",
-        "image": "/assets/prod-sheet-mask.webp",
-        "price_before": 1000,
-        "price_after": 900
-      },
-      {
         "id": "p15",
         "category": "hygiene",
         "name": "Herbal Shampoo",
@@ -414,6 +474,42 @@
         "image": "/assets/prod-shampoo.webp",
         "price_before": 1300,
         "price_after": 1200
+      },
+      {
+        "id": "p34",
+        "category": "home",
+        "name": "Laundry Pods (100 pcs)",
+        "desc": "Concentrated vegan pods with 7 enzymes — powerful cleaning, colour protection and soft fabric, no allergens",
+        "image": "/assets/prod-laundry-pods.webp",
+        "price_before": 2200,
+        "price_after": 2000
+      },
+      {
+        "id": "p29",
+        "category": "food",
+        "name": "Café Arabica Black",
+        "desc": "Instant coffee of 100% Brazilian and Colombian arabica, freeze-dried and cryo-ground to keep its aroma",
+        "image": "/assets/prod-coffee-black.webp",
+        "price_before": 1450,
+        "price_after": 1300
+      },
+      {
+        "id": "p06",
+        "category": "health",
+        "name": "Alaska E-Omega 3",
+        "desc": "Natural Alaska wild-caught Omega-3 with Vitamin E to support heart health and protect cells from aging.",
+        "image": "/assets/prod-omega3.webp",
+        "price_before": 2200,
+        "price_after": 2000
+      },
+      {
+        "id": "p12",
+        "category": "beauty",
+        "name": "Sunscreen SPF50+",
+        "desc": "SPF50+ PA+++ — powerful sun protection that hydrates and soothes with plant extracts, leaving no white cast",
+        "image": "/assets/prod-sunscreen.webp",
+        "price_before": 800,
+        "price_after": 700
       },
       {
         "id": "p16",
@@ -425,6 +521,42 @@
         "price_after": 1000
       },
       {
+        "id": "p35",
+        "category": "home",
+        "name": "Laundry Sheets",
+        "desc": "3-in-1 laundry sheets replace detergent, softener and bleach and remove stains in cold water",
+        "image": "/assets/prod-laundry-sheets.webp",
+        "price_before": 1000,
+        "price_after": 900
+      },
+      {
+        "id": "p30",
+        "category": "food",
+        "name": "Café Arabica Zero Sugar (50 pcs)",
+        "desc": "Instant Colombian arabica coffee sweetened with stevia instead of sugar, with premium milk and casein",
+        "image": "/assets/prod-coffee-stevia.webp",
+        "price_before": 2100,
+        "price_after": 1900
+      },
+      {
+        "id": "p07",
+        "category": "health",
+        "name": "Spirulina",
+        "desc": "Natural blue-green algae supplement — supports the body and provides antioxidant protection.",
+        "image": "/assets/prod-spirulina.webp",
+        "price_before": 2200,
+        "price_after": 2000
+      },
+      {
+        "id": "p13",
+        "category": "beauty",
+        "name": "BB Cream SPF30",
+        "desc": "SPF30 PA++ — even coverage and sun protection, with cordyceps extracts for hydration and glow",
+        "image": "/assets/prod-bb-cream.webp",
+        "price_before": 800,
+        "price_after": 700
+      },
+      {
         "id": "p17",
         "category": "hygiene",
         "name": "Hand Soap",
@@ -434,58 +566,40 @@
         "price_after": 350
       },
       {
-        "id": "p18",
+        "id": "p36",
+        "category": "home",
+        "name": "Oxygen Bleach O2 (500 g)",
+        "desc": "Oxygen and 5 enzymes remove tough stains and keep fabrics bright, suitable for baby clothes",
+        "image": "/assets/prod-oxygen-bleach.webp",
+        "price_before": 700,
+        "price_after": 600
+      },
+      {
+        "id": "p31",
+        "category": "food",
+        "name": "Roasted Seaweed in Olive Oil (36 packs)",
+        "desc": "Crispy seaweed snack roasted in extra virgin olive oil with Sinan sea salt — rich in minerals and vitamins",
+        "image": "/assets/prod-seaweed.webp",
+        "price_before": 1900,
+        "price_after": 1700
+      },
+      {
+        "id": "p08",
         "category": "health",
-        "name": "Turmacin MSM",
-        "desc": "Turmeric, selenium and purified MSM — support healthy joints and cartilage and ease of movement",
-        "image": "/assets/prod-turmacin.webp",
-        "price_before": 3850,
-        "price_after": 3500
+        "name": "Probiotics 10+",
+        "desc": "12 lactobacilli strains and 3 billion beneficial bacteria — support gut health, digestion and immunity",
+        "image": "/assets/prod-probiotic.webp",
+        "price_before": 3100,
+        "price_after": 2800
       },
       {
-        "id": "p19",
-        "category": "health",
-        "name": "Premium Lutein",
-        "desc": "FloraGLO lutein, zinc and vitamin A — support macular health and help vision in low light",
-        "image": "/assets/prod-lutein.webp",
-        "price_before": 3500,
-        "price_after": 3200
-      },
-      {
-        "id": "p20",
-        "category": "health",
-        "name": "Fermented Noni Concentrate",
-        "desc": "Organic superfood from Java noni fruit, fermented for 1,440 hours — supports immunity and energy",
-        "image": "/assets/prod-noni.webp",
-        "price_before": 6000,
-        "price_after": 5500
-      },
-      {
-        "id": "p21",
+        "id": "p14",
         "category": "beauty",
-        "name": "The Fame Eye Cream",
-        "desc": "With panthenol and ceramides — hydrates delicate skin around the eyes and strengthens its barrier daily",
-        "image": "/assets/prod-fame-eye-cream.webp",
-        "price_before": 1750,
-        "price_after": 1600
-      },
-      {
-        "id": "p22",
-        "category": "beauty",
-        "name": "Lip Balm",
-        "desc": "Rose, avocado and shea oils — deeply moisturise and protect lips, nourishing without stickiness",
-        "image": "/assets/prod-lip-balm.webp",
-        "price_before": 450,
-        "price_after": 400
-      },
-      {
-        "id": "p23",
-        "category": "beauty",
-        "name": "Evening Care Foam Cleanser",
-        "desc": "With cordyceps and sanghwang mushroom extracts — deeply cleanses pores and hydrates without tightness",
-        "image": "/assets/prod-foam-cleanser.webp",
-        "price_before": 850,
-        "price_after": 750
+        "name": "Sheet Mask — Nourish & Firm (10 pcs)",
+        "desc": "Professional seaweed-based sheet mask — deeply hydrates, nourishes and firms the skin",
+        "image": "/assets/prod-sheet-mask.webp",
+        "price_before": 1000,
+        "price_after": 900
       },
       {
         "id": "p24",
@@ -497,6 +611,42 @@
         "price_after": 1200
       },
       {
+        "id": "p37",
+        "category": "home",
+        "name": "Stain Remover",
+        "desc": "7 enzymes and plant-based surfactants remove stubborn coffee, makeup and food stains, protecting the fabric",
+        "image": "/assets/prod-stain-remover.webp",
+        "price_before": 800,
+        "price_after": 700
+      },
+      {
+        "id": "p32",
+        "category": "food",
+        "name": "Vegetarian Noodles (24-pack)",
+        "desc": "Spicy potato-starch noodles with vegetables and 6 g of fiber — no meat, no trans fats",
+        "image": "/assets/prod-noodles.webp",
+        "price_before": 3000,
+        "price_after": 2700
+      },
+      {
+        "id": "p09",
+        "category": "health",
+        "name": "Iron",
+        "desc": "One stick provides 114% of the daily iron value — supports blood formation and energy",
+        "image": "/assets/prod-iron.webp",
+        "price_before": 2800,
+        "price_after": 2500
+      },
+      {
+        "id": "p21",
+        "category": "beauty",
+        "name": "The Fame Eye Cream",
+        "desc": "With panthenol and ceramides — hydrates delicate skin around the eyes and strengthens its barrier daily",
+        "image": "/assets/prod-fame-eye-cream.webp",
+        "price_before": 1750,
+        "price_after": 1600
+      },
+      {
         "id": "p25",
         "category": "hygiene",
         "name": "Herbal Conditioner",
@@ -504,6 +654,42 @@
         "image": "/assets/prod-conditioner.webp",
         "price_before": 1300,
         "price_after": 1200
+      },
+      {
+        "id": "p38",
+        "category": "home",
+        "name": "Dishwasher Tablets",
+        "desc": "Vegan all-in-one tablets based on French technology — spotless, shiny dishes without microplastics",
+        "image": "/assets/prod-dishwasher-tabs.webp",
+        "price_before": 1900,
+        "price_after": 1700
+      },
+      {
+        "id": "p33",
+        "category": "food",
+        "name": "Potato Ramen, Mild (4 pcs)",
+        "desc": "Korean noodles made from natural potato starch, mild flavor and springy texture, great for kids and adults",
+        "image": "/assets/prod-potato-ramen.webp",
+        "price_before": 700,
+        "price_after": 600
+      },
+      {
+        "id": "p10",
+        "category": "health",
+        "name": "Red Ginseng Jelly Sticks",
+        "desc": "Korean jelly sticks with ginsenosides — support immunity and memory and help fight fatigue",
+        "image": "/assets/prod-ginseng.webp",
+        "price_before": 3900,
+        "price_after": 3500
+      },
+      {
+        "id": "p22",
+        "category": "beauty",
+        "name": "Lip Balm",
+        "desc": "Rose, avocado and shea oils — deeply moisturise and protect lips, nourishing without stickiness",
+        "image": "/assets/prod-lip-balm.webp",
+        "price_before": 450,
+        "price_after": 400
       },
       {
         "id": "p26",
@@ -515,6 +701,33 @@
         "price_after": 1200
       },
       {
+        "id": "p39",
+        "category": "home",
+        "name": "Dish Soap",
+        "desc": "With natural surfactants and calamansi extract — removes grease, safe for washing fruit, gentle on hands",
+        "image": "/assets/prod-dish-soap.webp",
+        "price_before": 900,
+        "price_after": 800
+      },
+      {
+        "id": "p18",
+        "category": "health",
+        "name": "Turmacin MSM",
+        "desc": "Turmeric, selenium and purified MSM — support healthy joints and cartilage and ease of movement",
+        "image": "/assets/prod-turmacin.webp",
+        "price_before": 3850,
+        "price_after": 3500
+      },
+      {
+        "id": "p23",
+        "category": "beauty",
+        "name": "Evening Care Foam Cleanser",
+        "desc": "With cordyceps and sanghwang mushroom extracts — deeply cleanses pores and hydrates without tightness",
+        "image": "/assets/prod-foam-cleanser.webp",
+        "price_before": 850,
+        "price_after": 750
+      },
+      {
         "id": "p27",
         "category": "hygiene",
         "name": "Body Scrub",
@@ -522,6 +735,42 @@
         "image": "/assets/prod-body-scrub.webp",
         "price_before": 1550,
         "price_after": 1400
+      },
+      {
+        "id": "p40",
+        "category": "home",
+        "name": "Bathroom Cleaner (2 bottles + sprayer)",
+        "desc": "Plant-based surfactants remove limescale and odours for quick, safe cleaning for the whole family",
+        "image": "/assets/prod-bathroom-cleaner.webp",
+        "price_before": 1300,
+        "price_after": 1200
+      },
+      {
+        "id": "p19",
+        "category": "health",
+        "name": "Premium Lutein",
+        "desc": "FloraGLO lutein, zinc and vitamin A — support macular health and help vision in low light",
+        "image": "/assets/prod-lutein.webp",
+        "price_before": 3500,
+        "price_after": 3200
+      },
+      {
+        "id": "p41",
+        "category": "home",
+        "name": "Eco Food Wrap (20 cm)",
+        "desc": "Bio-PE made from sugarcane molasses, BPA-free — keeps vegetables, fruit and meat fresh",
+        "image": "/assets/prod-eco-wrap.webp",
+        "price_before": 1000,
+        "price_after": 900
+      },
+      {
+        "id": "p20",
+        "category": "health",
+        "name": "Fermented Noni Concentrate",
+        "desc": "Organic superfood from Java noni fruit, fermented for 1,440 hours — supports immunity and energy",
+        "image": "/assets/prod-noni.webp",
+        "price_before": 6000,
+        "price_after": 5500
       }
     ],
     "price_switch_before": "Before registration",
