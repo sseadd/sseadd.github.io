@@ -82,15 +82,6 @@
         "price_after": 700
       },
       {
-        "id": "p15",
-        "category": "hygiene",
-        "name": "Хербал шампунь",
-        "desc": "Травяной шампунь с комплексами Сэнмодан и HGSC — глубоко очищает и питает волосы, поддерживает pH-баланс",
-        "image": "/assets/prod-shampoo.webp",
-        "price_before": 1300,
-        "price_after": 1200
-      },
-      {
         "id": "p34",
         "category": "home",
         "name": "Капсулы для стирки (100 шт)",
@@ -100,6 +91,15 @@
         "price_after": 2000
       },
       {
+        "id": "p15",
+        "category": "hygiene",
+        "name": "Хербал шампунь",
+        "desc": "Травяной шампунь с комплексами Сэнмодан и HGSC — глубоко очищает и питает волосы, поддерживает pH-баланс",
+        "image": "/assets/prod-shampoo.webp",
+        "price_before": 1300,
+        "price_after": 1200
+      },
+      {
         "id": "p13",
         "category": "beauty",
         "name": "ББ-крем SPF30",
@@ -107,6 +107,15 @@
         "image": "/assets/prod-bb-cream.webp",
         "price_before": 800,
         "price_after": 700
+      },
+      {
+        "id": "p35",
+        "category": "home",
+        "name": "Листовой порошок",
+        "desc": "Листовой порошок 3 в 1 заменяет средство для стирки, кондиционер и отбеливатель, удаляет пятна в холодной воде",
+        "image": "/assets/prod-laundry-sheets.webp",
+        "price_before": 1000,
+        "price_after": 900
       },
       {
         "id": "p06",
@@ -136,24 +145,6 @@
         "price_after": 1000
       },
       {
-        "id": "p35",
-        "category": "home",
-        "name": "Листовой порошок",
-        "desc": "Листовой порошок 3 в 1 заменяет средство для стирки, кондиционер и отбеливатель, удаляет пятна в холодной воде",
-        "image": "/assets/prod-laundry-sheets.webp",
-        "price_before": 1000,
-        "price_after": 900
-      },
-      {
-        "id": "p14",
-        "category": "beauty",
-        "name": "Тканевая маска «Питание и упругость» (10 шт)",
-        "desc": "Профессиональная тканевая маска на основе морских водорослей — глубоко увлажняет, питает и укрепляет кожу",
-        "image": "/assets/prod-sheet-mask.webp",
-        "price_before": 1000,
-        "price_after": 900
-      },
-      {
         "id": "p07",
         "category": "health",
         "name": "Спирулина",
@@ -172,31 +163,13 @@
         "price_after": 600
       },
       {
-        "id": "p17",
-        "category": "hygiene",
-        "name": "Мыло для рук",
-        "desc": "Жидкое мыло с экстрактом апельсина — мягко очищает и увлажняет кожу рук всей семьи, не пересушивая",
-        "image": "/assets/prod-hand-soap.webp",
-        "price_before": 400,
-        "price_after": 350
-      },
-      {
-        "id": "p30",
-        "category": "food",
-        "name": "Кофе Арабика без сахара (50 шт)",
-        "desc": "Растворимый кофе из колумбийской арабики со стевией вместо сахара, с молоком высшего сорта и казеином",
-        "image": "/assets/prod-coffee-stevia.webp",
-        "price_before": 2100,
-        "price_after": 1900
-      },
-      {
-        "id": "p21",
+        "id": "p14",
         "category": "beauty",
-        "name": "The Fame крем для кожи вокруг глаз",
-        "desc": "С пантенолом и церамидами — увлажняет нежную кожу вокруг глаз и укрепляет её барьер при ежедневном уходе",
-        "image": "/assets/prod-fame-eye-cream.webp",
-        "price_before": 1750,
-        "price_after": 1600
+        "name": "Тканевая маска «Питание и упругость» (10 шт)",
+        "desc": "Профессиональная тканевая маска на основе морских водорослей — глубоко увлажняет, питает и укрепляет кожу",
+        "image": "/assets/prod-sheet-mask.webp",
+        "price_before": 1000,
+        "price_after": 900
       },
       {
         "id": "p08",
@@ -208,13 +181,31 @@
         "price_after": 2800
       },
       {
-        "id": "p37",
-        "category": "home",
-        "name": "Пятновыводитель",
-        "desc": "7 ферментов и растительные ПАВ удаляют стойкие пятна от кофе, косметики и еды, сохраняя структуру ткани",
-        "image": "/assets/prod-stain-remover.webp",
-        "price_before": 800,
-        "price_after": 700
+        "id": "p17",
+        "category": "hygiene",
+        "name": "Мыло для рук",
+        "desc": "Жидкое мыло с экстрактом апельсина — мягко очищает и увлажняет кожу рук всей семьи, не пересушивая",
+        "image": "/assets/prod-hand-soap.webp",
+        "price_before": 400,
+        "price_after": 350
+      },
+      {
+        "id": "p21",
+        "category": "beauty",
+        "name": "The Fame крем для кожи вокруг глаз",
+        "desc": "С пантенолом и церамидами — увлажняет нежную кожу вокруг глаз и укрепляет её барьер при ежедневном уходе",
+        "image": "/assets/prod-fame-eye-cream.webp",
+        "price_before": 1750,
+        "price_after": 1600
+      },
+      {
+        "id": "p30",
+        "category": "food",
+        "name": "Кофе Арабика без сахара (50 шт)",
+        "desc": "Растворимый кофе из колумбийской арабики со стевией вместо сахара, с молоком высшего сорта и казеином",
+        "image": "/assets/prod-coffee-stevia.webp",
+        "price_before": 2100,
+        "price_after": 1900
       },
       {
         "id": "p24",
@@ -224,6 +215,15 @@
         "image": "/assets/prod-hand-cream.webp",
         "price_before": 1300,
         "price_after": 1200
+      },
+      {
+        "id": "p37",
+        "category": "home",
+        "name": "Пятновыводитель",
+        "desc": "7 ферментов и растительные ПАВ удаляют стойкие пятна от кофе, косметики и еды, сохраняя структуру ткани",
+        "image": "/assets/prod-stain-remover.webp",
+        "price_before": 800,
+        "price_after": 700
       },
       {
         "id": "p09",
@@ -244,15 +244,6 @@
         "price_after": 400
       },
       {
-        "id": "p31",
-        "category": "food",
-        "name": "Морская капуста в оливковом масле (36 уп.)",
-        "desc": "Хрустящий перекус из морской капусты в оливковом масле первого отжима с солью Синана — минералы и витамины",
-        "image": "/assets/prod-seaweed.webp",
-        "price_before": 1900,
-        "price_after": 1700
-      },
-      {
         "id": "p38",
         "category": "home",
         "name": "Таблетки для посудомоечной машины",
@@ -271,15 +262,6 @@
         "price_after": 1200
       },
       {
-        "id": "p10",
-        "category": "health",
-        "name": "Красный женьшень в стик-желе",
-        "desc": "Корейское желе в стиках с гинзенозидами — поддерживает иммунитет, память и помогает справляться с усталостью",
-        "image": "/assets/prod-ginseng.webp",
-        "price_before": 3900,
-        "price_after": 3500
-      },
-      {
         "id": "p23",
         "category": "beauty",
         "name": "Ивнинг Кеар пенка для умывания",
@@ -289,13 +271,22 @@
         "price_after": 750
       },
       {
-        "id": "p26",
-        "category": "hygiene",
-        "name": "Ультра Рич гель для душа",
-        "desc": "С маслом ши и морингой — глубоко очищает и питает кожу, долго увлажняет, приятный аромат для всей семьи",
-        "image": "/assets/prod-shower-gel.webp",
-        "price_before": 1300,
-        "price_after": 1200
+        "id": "p31",
+        "category": "food",
+        "name": "Морская капуста в оливковом масле (36 уп.)",
+        "desc": "Хрустящий перекус из морской капусты в оливковом масле первого отжима с солью Синана — минералы и витамины",
+        "image": "/assets/prod-seaweed.webp",
+        "price_before": 1900,
+        "price_after": 1700
+      },
+      {
+        "id": "p10",
+        "category": "health",
+        "name": "Красный женьшень в стик-желе",
+        "desc": "Корейское желе в стиках с гинзенозидами — поддерживает иммунитет, память и помогает справляться с усталостью",
+        "image": "/assets/prod-ginseng.webp",
+        "price_before": 3900,
+        "price_after": 3500
       },
       {
         "id": "p39",
@@ -307,13 +298,13 @@
         "price_after": 800
       },
       {
-        "id": "p32",
-        "category": "food",
-        "name": "Вегетарианская лапша (брикет 24 шт)",
-        "desc": "Острая лапша из картофельного крахмала с овощами и 6 г клетчатки — без мяса и трансжиров",
-        "image": "/assets/prod-noodles.webp",
-        "price_before": 3000,
-        "price_after": 2700
+        "id": "p26",
+        "category": "hygiene",
+        "name": "Ультра Рич гель для душа",
+        "desc": "С маслом ши и морингой — глубоко очищает и питает кожу, долго увлажняет, приятный аромат для всей семьи",
+        "image": "/assets/prod-shower-gel.webp",
+        "price_before": 1300,
+        "price_after": 1200
       },
       {
         "id": "p18",
@@ -325,13 +316,13 @@
         "price_after": 3500
       },
       {
-        "id": "p44",
-        "category": "beauty",
-        "name": "The Fame эссенция",
-        "desc": "С пантенолом, 5 видами гиалуроновой кислоты и церамидами — питает кожу и дарит сияние без липкости",
-        "image": "/assets/prod-fame-essence.webp",
-        "price_before": 1900,
-        "price_after": 1700
+        "id": "p40",
+        "category": "home",
+        "name": "Чистящее средство для ванной (2 емкости + распылитель)",
+        "desc": "На растительных ПАВ — удаляет налёт и запахи, быстрая и безопасная уборка для всей семьи",
+        "image": "/assets/prod-bathroom-cleaner.webp",
+        "price_before": 1300,
+        "price_after": 1200
       },
       {
         "id": "p27",
@@ -343,22 +334,22 @@
         "price_after": 1400
       },
       {
-        "id": "p40",
-        "category": "home",
-        "name": "Чистящее средство для ванной (2 емкости + распылитель)",
-        "desc": "На растительных ПАВ — удаляет налёт и запахи, быстрая и безопасная уборка для всей семьи",
-        "image": "/assets/prod-bathroom-cleaner.webp",
-        "price_before": 1300,
-        "price_after": 1200
+        "id": "p44",
+        "category": "beauty",
+        "name": "The Fame эссенция",
+        "desc": "С пантенолом, 5 видами гиалуроновой кислоты и церамидами — питает кожу и дарит сияние без липкости",
+        "image": "/assets/prod-fame-essence.webp",
+        "price_before": 1900,
+        "price_after": 1700
       },
       {
-        "id": "p45",
-        "category": "beauty",
-        "name": "Хэлси Глоу база под макияж",
-        "desc": "База SPF30 PA++ с розовой водой и жемчужным порошком — ровный тон и здоровое сияние кожи",
-        "image": "/assets/prod-makeup-base.webp",
-        "price_before": 1100,
-        "price_after": 1000
+        "id": "p32",
+        "category": "food",
+        "name": "Вегетарианская лапша (брикет 24 шт)",
+        "desc": "Острая лапша из картофельного крахмала с овощами и 6 г клетчатки — без мяса и трансжиров",
+        "image": "/assets/prod-noodles.webp",
+        "price_before": 3000,
+        "price_after": 2700
       },
       {
         "id": "p19",
@@ -370,22 +361,13 @@
         "price_after": 3200
       },
       {
-        "id": "p33",
-        "category": "food",
-        "name": "Картофельный рамен, неострый (4 шт)",
-        "desc": "Корейская лапша из натурального картофельного крахмала с мягким вкусом и упругой текстурой, подходит детям",
-        "image": "/assets/prod-potato-ramen.webp",
-        "price_before": 700,
-        "price_after": 600
-      },
-      {
-        "id": "p48",
-        "category": "hygiene",
-        "name": "Шампунь и гель для душа для мужчин",
-        "desc": "Шампунь и гель 2 в 1 с миррой и бергамотом — очищает волосы и тело, контролирует жирность, цитрусовый аромат",
-        "image": "/assets/prod-mens-wash.webp",
-        "price_before": 1550,
-        "price_after": 1400
+        "id": "p45",
+        "category": "beauty",
+        "name": "Хэлси Глоу база под макияж",
+        "desc": "База SPF30 PA++ с розовой водой и жемчужным порошком — ровный тон и здоровое сияние кожи",
+        "image": "/assets/prod-makeup-base.webp",
+        "price_before": 1100,
+        "price_after": 1000
       },
       {
         "id": "p41",
@@ -397,6 +379,15 @@
         "price_after": 900
       },
       {
+        "id": "p48",
+        "category": "hygiene",
+        "name": "Шампунь и гель для душа для мужчин",
+        "desc": "Шампунь и гель 2 в 1 с миррой и бергамотом — очищает волосы и тело, контролирует жирность, цитрусовый аромат",
+        "image": "/assets/prod-mens-wash.webp",
+        "price_before": 1550,
+        "price_after": 1400
+      },
+      {
         "id": "p46",
         "category": "beauty",
         "name": "Тушь «Сила объёма»",
@@ -404,15 +395,6 @@
         "image": "/assets/prod-mascara.webp",
         "price_before": 1300,
         "price_after": 1200
-      },
-      {
-        "id": "p20",
-        "category": "health",
-        "name": "Ферментированный концентрат Нони",
-        "desc": "Органический суперфуд из плодов нони с Явы после 1440 часов ферментации — поддерживает иммунитет и энергию",
-        "image": "/assets/prod-noni.webp",
-        "price_before": 6000,
-        "price_after": 5500
       },
       {
         "id": "p51",
@@ -424,6 +406,24 @@
         "price_after": 450
       },
       {
+        "id": "p20",
+        "category": "health",
+        "name": "Ферментированный концентрат Нони",
+        "desc": "Органический суперфуд из плодов нони с Явы после 1440 часов ферментации — поддерживает иммунитет и энергию",
+        "image": "/assets/prod-noni.webp",
+        "price_before": 6000,
+        "price_after": 5500
+      },
+      {
+        "id": "p33",
+        "category": "food",
+        "name": "Картофельный рамен, неострый (4 шт)",
+        "desc": "Корейская лапша из натурального картофельного крахмала с мягким вкусом и упругой текстурой, подходит детям",
+        "image": "/assets/prod-potato-ramen.webp",
+        "price_before": 700,
+        "price_after": 600
+      },
+      {
         "id": "p49",
         "category": "hygiene",
         "name": "Масло для волос",
@@ -431,24 +431,6 @@
         "image": "/assets/prod-hair-oil.webp",
         "price_before": 1000,
         "price_after": 900
-      },
-      {
-        "id": "p42",
-        "category": "food",
-        "name": "Вегетарианская лапша в стакане (18 шт)",
-        "desc": "Острая лапша в стакане из картофельной муки с 4000 мг клетчатки — быстрый перекус без мяса",
-        "image": "/assets/prod-noodle-cups.webp",
-        "price_before": 2200,
-        "price_after": 2000
-      },
-      {
-        "id": "p47",
-        "category": "beauty",
-        "name": "The Fame дорожный набор",
-        "desc": "Набор из 5 дорожных средств с пантенолом и гиалуроновой кислотой для питания и увлажнения кожи",
-        "image": "/assets/prod-fame-travel-kit.webp",
-        "price_before": 3500,
-        "price_after": 3200
       },
       {
         "id": "p43",
@@ -476,6 +458,96 @@
         "image": "/assets/prod-body-lotion.webp",
         "price_before": 1000,
         "price_after": 900
+      },
+      {
+        "id": "p47",
+        "category": "beauty",
+        "name": "The Fame дорожный набор",
+        "desc": "Набор из 5 дорожных средств с пантенолом и гиалуроновой кислотой для питания и увлажнения кожи",
+        "image": "/assets/prod-fame-travel-kit.webp",
+        "price_before": 3500,
+        "price_after": 3200
+      },
+      {
+        "id": "p59",
+        "category": "home",
+        "name": "Чистящее средство для кухни (2 емкости + распылитель)",
+        "desc": "Удаляет жир и запахи с помощью натуральных компонентов из кокоса и кукурузы — безопасная чистота на кухне",
+        "image": "/assets/prod-kitchen-cleaner.webp",
+        "price_before": 1300,
+        "price_after": 1200
+      },
+      {
+        "id": "p53",
+        "category": "health",
+        "name": "rTG Омега-3",
+        "desc": "Высокоочищенный рыбий жир в биодоступной форме с ЭПК и ДГК — поддерживает сердце, мозг и сосуды",
+        "image": "/assets/prod-rtg-omega3.webp",
+        "price_before": 4300,
+        "price_after": 3900
+      },
+      {
+        "id": "p42",
+        "category": "food",
+        "name": "Вегетарианская лапша в стакане (18 шт)",
+        "desc": "Острая лапша в стакане из картофельной муки с 4000 мг клетчатки — быстрый перекус без мяса",
+        "image": "/assets/prod-noodle-cups.webp",
+        "price_before": 2200,
+        "price_after": 2000
+      },
+      {
+        "id": "p57",
+        "category": "hygiene",
+        "name": "Хербал гель для душа",
+        "desc": "Травяной гель с 10 восточными травами — глубоко очищает, питает и успокаивает кожу, свежесть для всей семьи",
+        "image": "/assets/prod-herbal-shower-gel.webp",
+        "price_before": 1000,
+        "price_after": 900
+      },
+      {
+        "id": "p55",
+        "category": "beauty",
+        "name": "The Fame набор",
+        "desc": "5-ступенчатый уход с пантенолом и гиалуроновой кислотой — увлажняет, восстанавливает барьер кожи, одобрен Dermatest",
+        "image": "/assets/prod-fame-set.webp",
+        "price_before": 8800,
+        "price_after": 8000
+      },
+      {
+        "id": "p60",
+        "category": "home",
+        "name": "Губка хозяйственная (4 шт)",
+        "desc": "Трёхслойная антибактериальная губка с сертификатом SF — защита на 99,9% и эффективное удаление жира с посуды",
+        "image": "/assets/prod-household-sponge.webp",
+        "price_before": 500,
+        "price_after": 450
+      },
+      {
+        "id": "p58",
+        "category": "hygiene",
+        "name": "Питательный крем для ног",
+        "desc": "С 9,8% мочевины и маслом ши — смягчает огрубевшую кожу, устраняет сухость, без липкости",
+        "image": "/assets/prod-foot-cream.webp",
+        "price_before": 1300,
+        "price_after": 1200
+      },
+      {
+        "id": "p56",
+        "category": "beauty",
+        "name": "Абсолют маска Мёд и Женьшень",
+        "desc": "С мёдом манука и женьшенем — интенсивно питает и подтягивает кожу, улучшая текстуру после первого применения",
+        "image": "/assets/prod-honey-mask.webp",
+        "price_before": 2200,
+        "price_after": 2000
+      },
+      {
+        "id": "p54",
+        "category": "health",
+        "name": "Ай Лютеин",
+        "desc": "Лютеин, витамин А и цинк — поддерживают здоровье сетчатки и остроту зрения, для водителей и работы за компьютером",
+        "image": "/assets/prod-eye-lutein.webp",
+        "price_before": 3000,
+        "price_after": 2700
       }
     ],
     "price_switch_before": "До регистрации",
@@ -575,15 +647,6 @@
         "price_after": 700
       },
       {
-        "id": "p15",
-        "category": "hygiene",
-        "name": "Herbal Shampoo",
-        "desc": "Herbal shampoo with Saenmodan and HGSC complexes — deeply cleanses and nourishes hair, keeps pH balanced",
-        "image": "/assets/prod-shampoo.webp",
-        "price_before": 1300,
-        "price_after": 1200
-      },
-      {
         "id": "p34",
         "category": "home",
         "name": "Laundry Pods (100 pcs)",
@@ -593,6 +656,15 @@
         "price_after": 2000
       },
       {
+        "id": "p15",
+        "category": "hygiene",
+        "name": "Herbal Shampoo",
+        "desc": "Herbal shampoo with Saenmodan and HGSC complexes — deeply cleanses and nourishes hair, keeps pH balanced",
+        "image": "/assets/prod-shampoo.webp",
+        "price_before": 1300,
+        "price_after": 1200
+      },
+      {
         "id": "p13",
         "category": "beauty",
         "name": "BB Cream SPF30",
@@ -600,6 +672,15 @@
         "image": "/assets/prod-bb-cream.webp",
         "price_before": 800,
         "price_after": 700
+      },
+      {
+        "id": "p35",
+        "category": "home",
+        "name": "Laundry Sheets",
+        "desc": "3-in-1 laundry sheets replace detergent, softener and bleach and remove stains in cold water",
+        "image": "/assets/prod-laundry-sheets.webp",
+        "price_before": 1000,
+        "price_after": 900
       },
       {
         "id": "p06",
@@ -629,24 +710,6 @@
         "price_after": 1000
       },
       {
-        "id": "p35",
-        "category": "home",
-        "name": "Laundry Sheets",
-        "desc": "3-in-1 laundry sheets replace detergent, softener and bleach and remove stains in cold water",
-        "image": "/assets/prod-laundry-sheets.webp",
-        "price_before": 1000,
-        "price_after": 900
-      },
-      {
-        "id": "p14",
-        "category": "beauty",
-        "name": "Sheet Mask — Nourish & Firm (10 pcs)",
-        "desc": "Professional seaweed-based sheet mask — deeply hydrates, nourishes and firms the skin",
-        "image": "/assets/prod-sheet-mask.webp",
-        "price_before": 1000,
-        "price_after": 900
-      },
-      {
         "id": "p07",
         "category": "health",
         "name": "Spirulina",
@@ -665,31 +728,13 @@
         "price_after": 600
       },
       {
-        "id": "p17",
-        "category": "hygiene",
-        "name": "Hand Soap",
-        "desc": "Liquid hand soap with orange extract — gently cleanses and moisturises without drying skin",
-        "image": "/assets/prod-hand-soap.webp",
-        "price_before": 400,
-        "price_after": 350
-      },
-      {
-        "id": "p30",
-        "category": "food",
-        "name": "Café Arabica Zero Sugar (50 pcs)",
-        "desc": "Instant Colombian arabica coffee sweetened with stevia instead of sugar, with premium milk and casein",
-        "image": "/assets/prod-coffee-stevia.webp",
-        "price_before": 2100,
-        "price_after": 1900
-      },
-      {
-        "id": "p21",
+        "id": "p14",
         "category": "beauty",
-        "name": "The Fame Eye Cream",
-        "desc": "With panthenol and ceramides — hydrates delicate skin around the eyes and strengthens its barrier daily",
-        "image": "/assets/prod-fame-eye-cream.webp",
-        "price_before": 1750,
-        "price_after": 1600
+        "name": "Sheet Mask — Nourish & Firm (10 pcs)",
+        "desc": "Professional seaweed-based sheet mask — deeply hydrates, nourishes and firms the skin",
+        "image": "/assets/prod-sheet-mask.webp",
+        "price_before": 1000,
+        "price_after": 900
       },
       {
         "id": "p08",
@@ -701,13 +746,31 @@
         "price_after": 2800
       },
       {
-        "id": "p37",
-        "category": "home",
-        "name": "Stain Remover",
-        "desc": "7 enzymes and plant-based surfactants remove stubborn coffee, makeup and food stains, protecting the fabric",
-        "image": "/assets/prod-stain-remover.webp",
-        "price_before": 800,
-        "price_after": 700
+        "id": "p17",
+        "category": "hygiene",
+        "name": "Hand Soap",
+        "desc": "Liquid hand soap with orange extract — gently cleanses and moisturises without drying skin",
+        "image": "/assets/prod-hand-soap.webp",
+        "price_before": 400,
+        "price_after": 350
+      },
+      {
+        "id": "p21",
+        "category": "beauty",
+        "name": "The Fame Eye Cream",
+        "desc": "With panthenol and ceramides — hydrates delicate skin around the eyes and strengthens its barrier daily",
+        "image": "/assets/prod-fame-eye-cream.webp",
+        "price_before": 1750,
+        "price_after": 1600
+      },
+      {
+        "id": "p30",
+        "category": "food",
+        "name": "Café Arabica Zero Sugar (50 pcs)",
+        "desc": "Instant Colombian arabica coffee sweetened with stevia instead of sugar, with premium milk and casein",
+        "image": "/assets/prod-coffee-stevia.webp",
+        "price_before": 2100,
+        "price_after": 1900
       },
       {
         "id": "p24",
@@ -717,6 +780,15 @@
         "image": "/assets/prod-hand-cream.webp",
         "price_before": 1300,
         "price_after": 1200
+      },
+      {
+        "id": "p37",
+        "category": "home",
+        "name": "Stain Remover",
+        "desc": "7 enzymes and plant-based surfactants remove stubborn coffee, makeup and food stains, protecting the fabric",
+        "image": "/assets/prod-stain-remover.webp",
+        "price_before": 800,
+        "price_after": 700
       },
       {
         "id": "p09",
@@ -737,15 +809,6 @@
         "price_after": 400
       },
       {
-        "id": "p31",
-        "category": "food",
-        "name": "Roasted Seaweed in Olive Oil (36 packs)",
-        "desc": "Crispy seaweed snack roasted in extra virgin olive oil with Sinan sea salt — rich in minerals and vitamins",
-        "image": "/assets/prod-seaweed.webp",
-        "price_before": 1900,
-        "price_after": 1700
-      },
-      {
         "id": "p38",
         "category": "home",
         "name": "Dishwasher Tablets",
@@ -764,15 +827,6 @@
         "price_after": 1200
       },
       {
-        "id": "p10",
-        "category": "health",
-        "name": "Red Ginseng Jelly Sticks",
-        "desc": "Korean jelly sticks with ginsenosides — support immunity and memory and help fight fatigue",
-        "image": "/assets/prod-ginseng.webp",
-        "price_before": 3900,
-        "price_after": 3500
-      },
-      {
         "id": "p23",
         "category": "beauty",
         "name": "Evening Care Foam Cleanser",
@@ -782,13 +836,22 @@
         "price_after": 750
       },
       {
-        "id": "p26",
-        "category": "hygiene",
-        "name": "Ultra Rich Body Wash",
-        "desc": "With shea butter and moringa — deeply cleanses and nourishes, with long-lasting hydration",
-        "image": "/assets/prod-shower-gel.webp",
-        "price_before": 1300,
-        "price_after": 1200
+        "id": "p31",
+        "category": "food",
+        "name": "Roasted Seaweed in Olive Oil (36 packs)",
+        "desc": "Crispy seaweed snack roasted in extra virgin olive oil with Sinan sea salt — rich in minerals and vitamins",
+        "image": "/assets/prod-seaweed.webp",
+        "price_before": 1900,
+        "price_after": 1700
+      },
+      {
+        "id": "p10",
+        "category": "health",
+        "name": "Red Ginseng Jelly Sticks",
+        "desc": "Korean jelly sticks with ginsenosides — support immunity and memory and help fight fatigue",
+        "image": "/assets/prod-ginseng.webp",
+        "price_before": 3900,
+        "price_after": 3500
       },
       {
         "id": "p39",
@@ -800,13 +863,13 @@
         "price_after": 800
       },
       {
-        "id": "p32",
-        "category": "food",
-        "name": "Vegetarian Noodles (24-pack)",
-        "desc": "Spicy potato-starch noodles with vegetables and 6 g of fiber — no meat, no trans fats",
-        "image": "/assets/prod-noodles.webp",
-        "price_before": 3000,
-        "price_after": 2700
+        "id": "p26",
+        "category": "hygiene",
+        "name": "Ultra Rich Body Wash",
+        "desc": "With shea butter and moringa — deeply cleanses and nourishes, with long-lasting hydration",
+        "image": "/assets/prod-shower-gel.webp",
+        "price_before": 1300,
+        "price_after": 1200
       },
       {
         "id": "p18",
@@ -818,13 +881,13 @@
         "price_after": 3500
       },
       {
-        "id": "p44",
-        "category": "beauty",
-        "name": "The Fame Essence",
-        "desc": "With panthenol, 5 hyaluronic acids and ceramides — nourishes skin and adds glow without stickiness",
-        "image": "/assets/prod-fame-essence.webp",
-        "price_before": 1900,
-        "price_after": 1700
+        "id": "p40",
+        "category": "home",
+        "name": "Bathroom Cleaner (2 bottles + sprayer)",
+        "desc": "Plant-based surfactants remove limescale and odours for quick, safe cleaning for the whole family",
+        "image": "/assets/prod-bathroom-cleaner.webp",
+        "price_before": 1300,
+        "price_after": 1200
       },
       {
         "id": "p27",
@@ -836,22 +899,22 @@
         "price_after": 1400
       },
       {
-        "id": "p40",
-        "category": "home",
-        "name": "Bathroom Cleaner (2 bottles + sprayer)",
-        "desc": "Plant-based surfactants remove limescale and odours for quick, safe cleaning for the whole family",
-        "image": "/assets/prod-bathroom-cleaner.webp",
-        "price_before": 1300,
-        "price_after": 1200
+        "id": "p44",
+        "category": "beauty",
+        "name": "The Fame Essence",
+        "desc": "With panthenol, 5 hyaluronic acids and ceramides — nourishes skin and adds glow without stickiness",
+        "image": "/assets/prod-fame-essence.webp",
+        "price_before": 1900,
+        "price_after": 1700
       },
       {
-        "id": "p45",
-        "category": "beauty",
-        "name": "Healthy Glow Makeup Base",
-        "desc": "SPF30 PA++ makeup base with rose water and pearl powder — even skin tone and a healthy glow",
-        "image": "/assets/prod-makeup-base.webp",
-        "price_before": 1100,
-        "price_after": 1000
+        "id": "p32",
+        "category": "food",
+        "name": "Vegetarian Noodles (24-pack)",
+        "desc": "Spicy potato-starch noodles with vegetables and 6 g of fiber — no meat, no trans fats",
+        "image": "/assets/prod-noodles.webp",
+        "price_before": 3000,
+        "price_after": 2700
       },
       {
         "id": "p19",
@@ -863,22 +926,13 @@
         "price_after": 3200
       },
       {
-        "id": "p33",
-        "category": "food",
-        "name": "Potato Ramen, Mild (4 pcs)",
-        "desc": "Korean noodles made from natural potato starch, mild flavor and springy texture, great for kids and adults",
-        "image": "/assets/prod-potato-ramen.webp",
-        "price_before": 700,
-        "price_after": 600
-      },
-      {
-        "id": "p48",
-        "category": "hygiene",
-        "name": "Men's Shampoo & Body Wash",
-        "desc": "2-in-1 shampoo and body wash with myrrh and bergamot — cleanses, controls sebum, fresh citrus scent",
-        "image": "/assets/prod-mens-wash.webp",
-        "price_before": 1550,
-        "price_after": 1400
+        "id": "p45",
+        "category": "beauty",
+        "name": "Healthy Glow Makeup Base",
+        "desc": "SPF30 PA++ makeup base with rose water and pearl powder — even skin tone and a healthy glow",
+        "image": "/assets/prod-makeup-base.webp",
+        "price_before": 1100,
+        "price_after": 1000
       },
       {
         "id": "p41",
@@ -890,6 +944,15 @@
         "price_after": 900
       },
       {
+        "id": "p48",
+        "category": "hygiene",
+        "name": "Men's Shampoo & Body Wash",
+        "desc": "2-in-1 shampoo and body wash with myrrh and bergamot — cleanses, controls sebum, fresh citrus scent",
+        "image": "/assets/prod-mens-wash.webp",
+        "price_before": 1550,
+        "price_after": 1400
+      },
+      {
         "id": "p46",
         "category": "beauty",
         "name": "Volume Power Mascara",
@@ -897,15 +960,6 @@
         "image": "/assets/prod-mascara.webp",
         "price_before": 1300,
         "price_after": 1200
-      },
-      {
-        "id": "p20",
-        "category": "health",
-        "name": "Fermented Noni Concentrate",
-        "desc": "Organic superfood from Java noni fruit, fermented for 1,440 hours — supports immunity and energy",
-        "image": "/assets/prod-noni.webp",
-        "price_before": 6000,
-        "price_after": 5500
       },
       {
         "id": "p51",
@@ -917,6 +971,24 @@
         "price_after": 450
       },
       {
+        "id": "p20",
+        "category": "health",
+        "name": "Fermented Noni Concentrate",
+        "desc": "Organic superfood from Java noni fruit, fermented for 1,440 hours — supports immunity and energy",
+        "image": "/assets/prod-noni.webp",
+        "price_before": 6000,
+        "price_after": 5500
+      },
+      {
+        "id": "p33",
+        "category": "food",
+        "name": "Potato Ramen, Mild (4 pcs)",
+        "desc": "Korean noodles made from natural potato starch, mild flavor and springy texture, great for kids and adults",
+        "image": "/assets/prod-potato-ramen.webp",
+        "price_before": 700,
+        "price_after": 600
+      },
+      {
         "id": "p49",
         "category": "hygiene",
         "name": "Hair Oil",
@@ -924,24 +996,6 @@
         "image": "/assets/prod-hair-oil.webp",
         "price_before": 1000,
         "price_after": 900
-      },
-      {
-        "id": "p42",
-        "category": "food",
-        "name": "Vegetarian Noodle Cups (18 pcs)",
-        "desc": "Spicy instant noodle cups made from potato flour with 4,000 mg of fiber — a quick meat-free snack",
-        "image": "/assets/prod-noodle-cups.webp",
-        "price_before": 2200,
-        "price_after": 2000
-      },
-      {
-        "id": "p47",
-        "category": "beauty",
-        "name": "The Fame Travel Kit",
-        "desc": "Set of 5 travel-size skincare products with panthenol and hyaluronic acid for nourished, hydrated skin",
-        "image": "/assets/prod-fame-travel-kit.webp",
-        "price_before": 3500,
-        "price_after": 3200
       },
       {
         "id": "p43",
@@ -969,6 +1023,96 @@
         "image": "/assets/prod-body-lotion.webp",
         "price_before": 1000,
         "price_after": 900
+      },
+      {
+        "id": "p47",
+        "category": "beauty",
+        "name": "The Fame Travel Kit",
+        "desc": "Set of 5 travel-size skincare products with panthenol and hyaluronic acid for nourished, hydrated skin",
+        "image": "/assets/prod-fame-travel-kit.webp",
+        "price_before": 3500,
+        "price_after": 3200
+      },
+      {
+        "id": "p59",
+        "category": "home",
+        "name": "Kitchen Cleaner (2 bottles + sprayer)",
+        "desc": "Removes grease and odours with natural coconut- and corn-based ingredients — a safe, clean kitchen",
+        "image": "/assets/prod-kitchen-cleaner.webp",
+        "price_before": 1300,
+        "price_after": 1200
+      },
+      {
+        "id": "p53",
+        "category": "health",
+        "name": "rTG Omega-3",
+        "desc": "Highly purified fish oil in a bioavailable form with EPA and DHA — supports heart, brain and blood vessels",
+        "image": "/assets/prod-rtg-omega3.webp",
+        "price_before": 4300,
+        "price_after": 3900
+      },
+      {
+        "id": "p42",
+        "category": "food",
+        "name": "Vegetarian Noodle Cups (18 pcs)",
+        "desc": "Spicy instant noodle cups made from potato flour with 4,000 mg of fiber — a quick meat-free snack",
+        "image": "/assets/prod-noodle-cups.webp",
+        "price_before": 2200,
+        "price_after": 2000
+      },
+      {
+        "id": "p57",
+        "category": "hygiene",
+        "name": "Herbal Shower Gel",
+        "desc": "Herbal shower gel with 10 oriental herbs — deeply cleanses, nourishes and soothes skin for the whole family",
+        "image": "/assets/prod-herbal-shower-gel.webp",
+        "price_before": 1000,
+        "price_after": 900
+      },
+      {
+        "id": "p55",
+        "category": "beauty",
+        "name": "The Fame Skincare Set",
+        "desc": "5-step system with panthenol and hyaluronic acid — hydrates, restores the skin barrier, Dermatest-approved",
+        "image": "/assets/prod-fame-set.webp",
+        "price_before": 8800,
+        "price_after": 8000
+      },
+      {
+        "id": "p60",
+        "category": "home",
+        "name": "Household Sponge (4 pcs)",
+        "desc": "3-layer antibacterial sponge with SF certification — 99.9% protection and effective grease removal",
+        "image": "/assets/prod-household-sponge.webp",
+        "price_before": 500,
+        "price_after": 450
+      },
+      {
+        "id": "p58",
+        "category": "hygiene",
+        "name": "Nourishing Foot Cream",
+        "desc": "With 9.8% urea and shea butter — softens rough skin and relieves dryness without stickiness",
+        "image": "/assets/prod-foot-cream.webp",
+        "price_before": 1300,
+        "price_after": 1200
+      },
+      {
+        "id": "p56",
+        "category": "beauty",
+        "name": "Absolute Mask Honey & Ginseng",
+        "desc": "With manuka honey and ginseng — intensively nourishes and lifts skin, improving texture from the first use",
+        "image": "/assets/prod-honey-mask.webp",
+        "price_before": 2200,
+        "price_after": 2000
+      },
+      {
+        "id": "p54",
+        "category": "health",
+        "name": "Eye Lutein",
+        "desc": "Lutein, vitamin A and zinc — support retina health and sharp vision, for drivers and computer work",
+        "image": "/assets/prod-eye-lutein.webp",
+        "price_before": 3000,
+        "price_after": 2700
       }
     ],
     "price_switch_before": "Before registration",
