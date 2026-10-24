@@ -848,13 +848,24 @@ body {
 }
 
 @media (max-width: 1024px) {
+  /* на планшетах и телефонах плашка «прилипает» под шапкой, пока листаешь каталог */
   .price-switch {
-    position: static;
+    position: sticky;
+    top: 88px;
+    left: auto;
     transform: none;
     flex-direction: row;
-    max-width: 340px;
+    gap: 10px;
+    padding: 8px 16px;
+    border-radius: 999px;
+    max-width: calc(100% - 32px);
     margin: 0 auto 32px;
     width: fit-content;
+  }
+
+  .price-switch-label {
+    max-width: none;
+    white-space: nowrap;
   }
 
   .price-switch-track {
@@ -868,6 +879,26 @@ body {
 
   .price-switch.after .price-switch-thumb {
     transform: translateX(36px);
+  }
+}
+
+/* на узких экранах кнопка «На главную» занимает левый верх, поэтому плашка стоит ниже неё */
+@media (max-width: 680px) {
+  .price-switch {
+    top: 128px;
+    gap: 8px;
+    padding: 7px 12px;
+  }
+
+  .price-switch-label {
+    font-size: 10.5px;
+  }
+}
+
+@media (max-width: 360px) {
+  .price-switch-label {
+    white-space: normal;
+    max-width: 62px;
   }
 }
 
